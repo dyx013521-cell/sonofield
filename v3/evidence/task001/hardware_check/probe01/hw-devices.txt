@@ -1,0 +1,7 @@
+TARGET=localhost:3121/xilinx_tcf/Digilent/210299245711 DEVICE_COUNT=2
+TARGET=localhost:3121/xilinx_tcf/Digilent/210299245711 INDEX=0 DEVICE=arm_dap_0 PART=arm_dap
+TARGET=localhost:3121/xilinx_tcf/Digilent/210299245711 INDEX=1 DEVICE=xc7z010_1 PART=xc7z010
+TARGET=localhost:3121/xilinx_tcf/Digilent/210299835073 DEVICE_COUNT=2
+TARGET=localhost:3121/xilinx_tcf/Digilent/210299835073 INDEX=0 DEVICE=arm_dap_0_1 PART=arm_dap
+TARGET=localhost:3121/xilinx_tcf/Digilent/210299835073 INDEX=1 DEVICE=xc7z010_1_1 PART=xc7z010
+FPGA_DEVICE_COUNT=4

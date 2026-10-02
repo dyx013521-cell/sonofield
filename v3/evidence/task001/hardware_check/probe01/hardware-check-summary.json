@@ -1,0 +1,54 @@
+{
+  "started_at": "2026-10-02T14:50:52.5105201+08:00",
+  "completed_at": "2026-10-02T14:53:08.3506304+08:00",
+  "powershell_version": "7.6.5",
+  "shell": "C:\\Users\\BELYA\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+  "source_commit": "a79cffd7d0fdcefdc89758e3894a5ee62eb3c598",
+  "user_reported_topology": {
+    "jtag": "Both PC-native USB direct",
+    "uart": "Both USB dock"
+  },
+  "present_device_count": 303,
+  "usb_device_count": 15,
+  "all_port_device_count": 5,
+  "usb_uart_device_count": 1,
+  "jtag_usb_candidate_count": 2,
+  "uart_devices": [
+    {
+      "Status": "OK",
+      "FriendlyName": "USB-SERIAL CH340 (COM7)",
+      "InstanceId": "USB\\VID_1A86&PID_7523\\8&148914A8&0&1"
+    }
+  ],
+  "jtag_usb_candidates": [
+    {
+      "Status": "OK",
+      "FriendlyName": "USB Serial Converter",
+      "InstanceId": "USB\\VID_0403&PID_6014\\210299835073"
+    },
+    {
+      "Status": "OK",
+      "FriendlyName": "USB Serial Converter",
+      "InstanceId": "USB\\VID_0403&PID_6014\\210299245711"
+    }
+  ],
+  "vivado_exit_code": 0,
+  "vivado_probe": {
+    "captured_at": "2026-10-02T14:52:05+0800",
+    "vivado_version": "2025.2",
+    "programmed": "false",
+    "board_reset": "false",
+    "device_refresh": "false",
+    "hw_target_count": "2",
+    "opened_target_count": "2",
+    "hardware_device_count": "4",
+    "probe_error_count": "0"
+  },
+  "query_errors": [],
+  "jtag_uart_board_mapping": "JTAG_AND_UART_BOARD_MAPPING_UNCONFIRMED",
+  "usb_physical_port_mapping": "USB_PHYSICAL_PORT_MAPPING_REQUIRES_MANUAL_CONFIRMATION",
+  "readiness": "NOT_READY_FOR_BITSTREAM",
+  "programmed": false,
+  "board_tested": false,
+  "hardware_verified": false
+}

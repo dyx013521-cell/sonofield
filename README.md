@@ -1,10 +1,11 @@
 # SonoField v3 — Dual EBAZ4205 Timing Synchronization
 
-本仓库为 SonoField v3 当前开发交付。**截至 2026-10-02，TASK-001 双板时间同步已达到 SIMULATED / SYNTHESIZED / IMPLEMENTED；BOARD_TESTED / HARDWARE_VERIFIED 尚未完成。** 本次同步整理了 2026-09-30 的验证证据，没有重新执行仿真、综合、布局布线或硬件测试。
+本仓库为 SonoField v3 当前开发交付。**截至 2026-10-02，TASK-001 双板时间同步已达到 SIMULATED / SYNTHESIZED / IMPLEMENTED；BOARD_TESTED / HARDWARE_VERIFIED 尚未完成。** 软件基线来自 2026-09-30。最新只读检测发现两个 JTAG target、两个 XC7Z010 和一路 USB UART（COM7）。用户确认 A=245711+COM7、B=835073；Board B UART、角色指定、电气核对及上板审查待完成，准备度为 NOT_READY_FOR_BITSTREAM。
 
 ## 项目进展与阅读入口
 
 - [当前进展、验收状态与下一步（PROGRESS.md）](PROGRESS.md)：建议从这里开始阅读，也作为 ChatGPT 分析项目的入口。
+- [2026-10-02 双板硬件检测报告](v3/evidence/task001/DUAL_BOARD_HARDWARE_CHECK.md)：JTAG/UART、USB 拓扑、身份映射与上板准备度；[原始数据](v3/evidence/task001/hardware_check/)。
 - [中文交接说明](v3/docs/HANDOFF.md)：复现命令、硬件参数缺口和实板验收顺序。
 - [架构与同步协议](v3/docs/ARCHITECTURE.md)、[EBAZ4205 接线表](v3/docs/PINOUT.md)。
 - [机器可读验证基线](v3/evidence/task001/SYNC_MODULE_BASELINE.json)、[仿真报告](v3/evidence/task001/simulation_report.md)、[时序及未关闭审查项](v3/evidence/task001/timing_report.md)、[硬件状态报告](v3/evidence/task001/hardware_report.md)。

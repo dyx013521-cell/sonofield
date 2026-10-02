@@ -1,0 +1,12 @@
+
+Name           : vivado.exe
+ProcessId      : 95392
+ExecutablePath : D:\amd2025_2\2025.2\Vivado\bin\unwrapped\win64.o\vivado.exe
+CommandLine    : "D:/amd2025_2/2025.2/Vivado/bin/unwrapped/win64.o/vivado.exe"   -gui_launcher_event rodinguilauncherevent83120
+
+Name           : vivado.exe
+ProcessId      : 94936
+ExecutablePath : D:\amd2025_2\2025.2\Vivado\bin\unwrapped\win64.o\vivado.exe
+CommandLine    : "D:/amd2025_2/2025.2/Vivado/bin/unwrapped/win64.o/vivado.exe"   -gui_launcher_event rodinguilauncherevent99032
+
+

@@ -1,0 +1,1820 @@
+[
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "MediaTek Bluetooth Adapter",
+    "InstanceId": "USB\\VID_0489&PID_E111&MI_00\\8&8944179&1&0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\VID_048D&PID_C197&COL05\\8&45B6FFC&0&0004"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DA&SUBSYS_00000000&REV_00\\3&11583659&1&08"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DA&SUBSYS_00000000&REV_00\\3&11583659&1&10"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DA&SUBSYS_00000000&REV_00\\3&11583659&1&18"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DA&SUBSYS_00000000&REV_00\\3&11583659&1&20"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DA&SUBSYS_00000000&REV_00\\3&11583659&1&40"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "高精度事件计时器",
+    "InstanceId": "ACPI\\PNP0103\\3&11583659&1"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "OTA1",
+    "InstanceId": "BTHENUM\\{66666666-6666-6666-6666-666666666666}_LOCALMFG&0046\\A&363D197&0&646876548E87_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "通用属性配置文件",
+    "InstanceId": "BTHLEDEVICE\\{00001801-0000-1000-8000-00805F9B34FB}_DEV_VID&010C45_PID&FEFE_REV&0138_FCAF73DA7661\\B&BE12F3F&0&000A"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\FTCS0038&COL04\\4&27A1E836&0&0003"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "High Definition Audio 控制器",
+    "InstanceId": "PCI\\VEN_1022&DEV_15E3&SUBSYS_38BB17AA&REV_00\\4&6C4AD28&0&0641"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "realme Buds Air6",
+    "InstanceId": "BTHENUM\\DEV_081287122738\\A&363D197&0&BLUETOOTHDEVICE_081287122738"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "母板资源",
+    "InstanceId": "ACPI\\PNP0C02\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "母板资源",
+    "InstanceId": "ACPI\\PNP0C02\\1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Keyboard",
+    "FriendlyName": "HID Keyboard Device",
+    "InstanceId": "HID\\VID_048D&PID_C197&COL04\\8&45B6FFC&0&0003"
+  },
+  {
+    "Status": "OK",
+    "Class": "Ports",
+    "FriendlyName": "蓝牙链接上的标准串行 (COM6)",
+    "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0046\\A&2E6F9637&0&646876548E87_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "Microsoft 流服务代理",
+    "InstanceId": "SW\\{96E080C7-143C-11D1-B40F-00A0C9223196}\\{3C0D501A-140B-11D1-B40F-00A0C9223196}"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft ACPI 兼容的嵌入式控制器",
+    "InstanceId": "ACPI\\PNP0C09\\1"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\VID_048D&PID_C197&COL03\\8&45B6FFC&0&0002"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Lenovo Fn and function keys",
+    "InstanceId": "ACPI\\LHK2019\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Battery",
+    "FriendlyName": "Microsoft ACPI 兼容的控制方法电池",
+    "InstanceId": "ACPI\\PNP0C0A\\1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Mouse",
+    "FriendlyName": "HID-compliant mouse",
+    "InstanceId": "HID\\TENCENTMYAPPSHIDBUS&COL01\\1&1F851A3D&0&0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "ACPI 处理器聚合器",
+    "InstanceId": "ACPI\\ACPI000C\\2&DABA3FF&1"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\TENCENTMYAPPSHIDBUS&COL06\\1&1F851A3D&0&0005"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "Bose Ultra Avrcp 传输",
+    "InstanceId": "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\\A&363D197&0&B70BD7C42BDB_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\VID_048D&PID_C197&COL02\\8&45B6FFC&0&0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "PrintQueue",
+    "FriendlyName": "根打印队列",
+    "InstanceId": "SWD\\PRINTENUM\\PRINTQUEUES"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "可编程中断控制器",
+    "InstanceId": "ACPI\\PNP0000\\4&8CBA2E1&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareComponent",
+    "FriendlyName": "AMD-OpenCL User Mode Driver",
+    "InstanceId": "SWD\\DRIVERENUM\\AMDOCL&5&CF93321&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "通用访问配置文件",
+    "InstanceId": "BTHLEDEVICE\\{00001800-0000-1000-8000-00805F9B34FB}_DEV_VID&010C45_PID&FEFE_REV&0138_FCAF73DA7661\\B&BE12F3F&0&0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "realme Buds Air6 Avrcp 传输",
+    "InstanceId": "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\\A&363D197&0&081287122738_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\VID_048D&PID_C197&COL01\\8&45B6FFC&0&0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "USB Serial Converter",
+    "InstanceId": "USB\\VID_0403&PID_6014\\210299835073"
+  },
+  {
+    "Status": "OK",
+    "Class": "Ports",
+    "FriendlyName": "USB-SERIAL CH340 (COM7)",
+    "InstanceId": "USB\\VID_1A86&PID_7523\\8&148914A8&0&1"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "卷管理器",
+    "InstanceId": "ROOT\\VOLMGR\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USBDevice",
+    "FriendlyName": "Camera DFU Device",
+    "InstanceId": "USB\\VID_174F&PID_246F&MI_02\\7&2C27EE68&1&0002"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "扫描参数服务",
+    "InstanceId": "BTHLEDEVICE\\{00001813-0000-1000-8000-00805F9B34FB}_DEV_VID&010C45_PID&FEFE_REV&0138_FCAF73DA7661\\B&BE12F3F&0&0026"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "真我GT Neo6",
+    "InstanceId": "BTHLE\\DEV_4C2BC34CA34D\\A&2C9BE30&0&4C2BC34CA34D"
+  },
+  {
+    "Status": "OK",
+    "Class": "Keyboard",
+    "FriendlyName": "PS/2 标准键盘",
+    "InstanceId": "ACPI\\KBC8042\\4&8CBA2E1&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "AMD Audio CoProcessor",
+    "InstanceId": "PCI\\VEN_1022&DEV_15E2&SUBSYS_38CE17AA&REV_62\\4&6C4AD28&0&0541"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "Microsoft 蓝牙枚举器",
+    "InstanceId": "BTH\\MS_BTHBRB\\9&3CEF728&0&1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Volume",
+    "FriendlyName": "卷",
+    "InstanceId": "STORAGE\\VOLUME\\{F9EFCCC3-78AB-11F0-8B56-806E6F6E6963}#0000000010500000"
+  },
+  {
+    "Status": "OK",
+    "Class": "SecurityDevices",
+    "FriendlyName": "受信任的平台模块 2.0",
+    "InstanceId": "ACPI\\MSFT0101\\2&DABA3FF&1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Firmware",
+    "FriendlyName": "设备固件",
+    "InstanceId": "UEFI\\RES_{D08486BA-56E7-468E-8E5E-878DAEA722F9}\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareComponent",
+    "FriendlyName": "AMD-UWP Version Control",
+    "InstanceId": "SWD\\DRIVERENUM\\AMDUWP&5&CF93321&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14E7&SUBSYS_00000000&REV_00\\3&11583659&1&C7"
+  },
+  {
+    "Status": "OK",
+    "Class": "Volume",
+    "FriendlyName": "卷",
+    "InstanceId": "STORAGE\\VOLUME\\{F9EFCCC3-78AB-11F0-8B56-806E6F6E6963}#0000000000100000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "I2C HID 设备",
+    "InstanceId": "ACPI\\IDEA5003\\1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "WAN Miniport (PPPOE)",
+    "InstanceId": "SWD\\MSRRAS\\MS_PPPOEMINIPORT"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareComponent",
+    "FriendlyName": "MediaTek Bluetooth Audio Component",
+    "InstanceId": "SWD\\DRIVERENUM\\MTKBTACX&9&3CEF728&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft Hyper-V 虚拟机总线提供程序",
+    "InstanceId": "ROOT\\VMBUS\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "Realtek Gaming 2.5GbE Family Controller",
+    "InstanceId": "PCI\\VEN_10EC&DEV_8125&SUBSYS_382D17AA&REV_05\\01000000684CE00000"
+  },
+  {
+    "Status": "OK",
+    "Class": "PrintQueue",
+    "FriendlyName": "OneNote (Desktop)",
+    "InstanceId": "SWD\\PRINTENUM\\{8A91937F-C5CD-4227-A1CF-C2883F634196}"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft 基本显示驱动程序",
+    "InstanceId": "ROOT\\BASICDISPLAY\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "耳机音频网关服务",
+    "InstanceId": "BTHENUM\\{00001112-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Display",
+    "FriendlyName": "AMD Radeon(TM) 610M",
+    "InstanceId": "PCI\\VEN_1002&DEV_164E&SUBSYS_3E2917AA&REV_D8\\4&6C4AD28&0&0041"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "High Definition Audio 控制器",
+    "InstanceId": "PCI\\VEN_10DE&DEV_22EB&SUBSYS_000010DE&REV_A1\\4&1C4856D7&0&0109"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft 虚拟机监控程序服务",
+    "InstanceId": "ROOT\\HVSERVICE\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合蓝牙低能耗 GATT 的 HID 设备",
+    "InstanceId": "BTHLEDEVICE\\{00001812-0000-1000-8000-00805F9B34FB}_DEV_VID&010C45_PID&FEFE_REV&0138_FCAF73DA7661\\B&BE12F3F&0&002C"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "AMD GPIO Controller",
+    "InstanceId": "ACPI\\AMDI0030\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "DiskDrive",
+    "FriendlyName": "UMIS RPJYJ1T24MML1AWY",
+    "InstanceId": "SCSI\\DISK&VEN_NVME&PROD_UMIS_RPJYJ1T24MM\\5&2765A48B&0&000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "EDIFIER W820NB 双金标版 Avrcp 传输",
+    "InstanceId": "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_LOCALMFG&0046\\A&363D197&0&646876548E87_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "Microsoft 蓝牙 LE 枚举器",
+    "InstanceId": "BTH\\MS_BTHLE\\9&3CEF728&0&3"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "Nahimic VAD",
+    "InstanceId": "SWD\\DRIVERENUM\\{741A2100-1023-11E9-B56E-0800200C9A66}#NAHIMIC_XVAD&6&2B1CBAD2&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Bose Ultra Hands-Free AG",
+    "InstanceId": "BTHENUM\\{0000111E-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\\A&363D197&0&B70BD7C42BDB_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "PrintQueue",
+    "FriendlyName": "Microsoft Print to PDF",
+    "InstanceId": "SWD\\PRINTENUM\\{E7AFAE3D-4C2A-411E-8AB2-B34613FABDC7}"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareDevice",
+    "FriendlyName": "Microsoft RRAS Root Enumerator",
+    "InstanceId": "SWD\\MSRRAS\\{5E259276-BC7E-40E3-B93B-8F89B5F3ABC0}"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "ACPI 处理器容器设备",
+    "InstanceId": "ACPI\\ACPI0010\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft Windows Management Interface for ACPI",
+    "InstanceId": "ACPI\\PNP0C14\\4"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioEndpoint",
+    "FriendlyName": "扬声器 (ToDesk Virtual Audio)",
+    "InstanceId": "SWD\\MMDEVAPI\\{0.0.0.00000000}.{447D48D8-946F-4314-BE34-4C2DC67952E4}"
+  },
+  {
+    "Status": "OK",
+    "Class": "Firmware",
+    "FriendlyName": "设备固件",
+    "InstanceId": "UEFI\\RES_{7B3FDEC4-0EE3-4AB7-B2E9-70FD6DABECDE}\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "EDIFIER W820NB 双金标版",
+    "InstanceId": "BTHENUM\\DEV_646876548E87\\A&363D197&0&BLUETOOTHDEVICE_646876548E87"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "蓝牙 LE 通用属性服务",
+    "InstanceId": "BTHLEDEVICE\\{00001855-0000-1000-8000-00805F9B34FB}_4C2BC34CA34D\\B&16DCC9F5&0&0082"
+  },
+  {
+    "Status": "OK",
+    "Class": "UCM",
+    "FriendlyName": "UCM-UCSI ACPI 设备",
+    "InstanceId": "ACPI\\USBC000\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "真我GT Neo6",
+    "InstanceId": "BTHENUM\\DEV_84E9C13B2802\\A&363D197&0&BLUETOOTHDEVICE_84E9C13B2802"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "edif",
+    "InstanceId": "BTHENUM\\{EDF00000-EDFE-DFED-FEDF-EDFEDFEDFEDF}_LOCALMFG&0046\\A&363D197&0&646876548E87_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "USB 根集线器(USB 3.0)",
+    "InstanceId": "USB\\ROOT_HUB30\\5&D4A2187&0&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "WAN Miniport (PPTP)",
+    "InstanceId": "SWD\\MSRRAS\\MS_PPTPMINIPORT"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14E4&SUBSYS_00000000&REV_00\\3&11583659&1&C4"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "Awinic Smart Amplifier Driver for Speakers",
+    "InstanceId": "ACPI\\AWDZ8399\\1"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "Nahimic Easy Surround device",
+    "InstanceId": "SWD\\DRIVERENUM\\{741A2100-1023-11E9-B56E-0800200C9A66}#NAHIMIC_BTLINK&6&2B1CBAD2&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft Hyper-V 虚拟化基础结构驱动程序",
+    "InstanceId": "ROOT\\VID\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Firmware",
+    "FriendlyName": "设备固件",
+    "InstanceId": "UEFI\\RES_{A9898AFA-EF58-48FE-B09A-F476AFCE467C}\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Mouse",
+    "FriendlyName": "HID-compliant mouse",
+    "InstanceId": "HID\\TENCENTMYAPPSHIDBUS&COL02\\1&1F851A3D&0&0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "WAN Miniport (IKEv2)",
+    "InstanceId": "SWD\\MSRRAS\\MS_AGILEVPNMINIPORT"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "复合总线枚举器",
+    "InstanceId": "ROOT\\COMPOSITEBUS\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Monitor",
+    "FriendlyName": "Lenovo DisplayHDR",
+    "InstanceId": "DISPLAY\\BOE0D20\\5&CF93321&0&UID512"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft 虚拟驱动器枚举器",
+    "InstanceId": "ROOT\\VDRVROOT\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "数值数据处理器",
+    "InstanceId": "ACPI\\PNP0C04\\4&8CBA2E1&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\TENCENTMYAPPSHIDBUS&COL07\\1&1F851A3D&0&0006"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "个人区域网 NAP 服务",
+    "InstanceId": "BTHENUM\\{00001116-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "设备信息服务",
+    "InstanceId": "BTHLEDEVICE\\{0000180A-0000-1000-8000-00805F9B34FB}_DEV_VID&02045E_PID&0B13_REV&0509_78862E772F40\\B&D7C1A71&B&0009"
+  },
+  {
+    "Status": "OK",
+    "Class": "Battery",
+    "FriendlyName": "Microsoft AC 适配器",
+    "InstanceId": "ACPI\\ACPI0003\\2&DABA3FF&1"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "Nahimic mirroring device",
+    "InstanceId": "SWD\\DRIVERENUM\\{741A2100-1023-11E9-B56E-0800200C9A66}#NAHIMIC_MIRRORING&6&2B1CBAD2&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "SCSIAdapter",
+    "FriendlyName": "Microsoft 存储空间控制器",
+    "InstanceId": "ROOT\\SPACEPORT\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "Bose Ultra",
+    "InstanceId": "BTHENUM\\{0000110B-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\\A&363D197&0&B70BD7C42BDB_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "SMS/MMS",
+    "InstanceId": "BTHENUM\\{00001132-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "EDIFIER W820NB 双金标版 Avrcp 传输",
+    "InstanceId": "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_LOCALMFG&0046\\A&363D197&0&646876548E87_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "真我GT Neo6 A2DP SNK",
+    "InstanceId": "BTHENUM\\{0000110A-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "通用 USB 集线器",
+    "InstanceId": "USB\\VID_1A86&PID_8095\\7&2E3FCB7B&0&1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "Microsoft Kernel Debug Network Adapter",
+    "InstanceId": "ROOT\\KDNIC\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Ports",
+    "FriendlyName": "蓝牙链接上的标准串行 (COM5)",
+    "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\A&2E6F9637&0&000000000000_00000001"
+  },
+  {
+    "Status": "OK",
+    "Class": "Ports",
+    "FriendlyName": "蓝牙链接上的标准串行 (COM4)",
+    "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\A&2E6F9637&0&000000000000_0000000B"
+  },
+  {
+    "Status": "OK",
+    "Class": "VolumeSnapshot",
+    "FriendlyName": "通用卷影复制",
+    "InstanceId": "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT1"
+  },
+  {
+    "Status": "OK",
+    "Class": "VolumeSnapshot",
+    "FriendlyName": "通用卷影复制",
+    "InstanceId": "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT2"
+  },
+  {
+    "Status": "OK",
+    "Class": "VolumeSnapshot",
+    "FriendlyName": "通用卷影复制",
+    "InstanceId": "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT3"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "SecureAFP",
+    "InstanceId": "BTHENUM\\{A49EAA15-CB06-495C-9F4F-BB80A90CDF00}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "realme Buds Air6 Hands-Free",
+    "InstanceId": "BTHHFENUM\\BTHHFPAUDIO\\B&D4B34B8&5&97"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14E1&SUBSYS_00000000&REV_00\\3&11583659&1&C1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "X87-5.0-BT2",
+    "InstanceId": "BTHLE\\DEV_FCAF73DA7661\\A&2C9BE30&0&FCAF73DA7661"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "电话簿访问 PSE 服务",
+    "InstanceId": "BTHENUM\\{0000112F-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "蓝牙 LE 通用属性服务",
+    "InstanceId": "BTHLEDEVICE\\{0000AA15-0000-1000-8000-00805F9B34FB}_4C2BC34CA34D\\B&16DCC9F5&0&0086"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "ACPI 盖子",
+    "InstanceId": "ACPI\\PNP0C0D\\2&DABA3FF&1"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "蓝牙外围设备",
+    "InstanceId": "BTHENUM\\{00001855-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "Xbox Wireless Controller",
+    "InstanceId": "BTHLE\\DEV_78862E772F40\\A&2C9BE30&0&78862E772F40"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准 ISA 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_790E&SUBSYS_386817AA&REV_51\\3&11583659&1&A3"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "通用属性配置文件",
+    "InstanceId": "BTHLEDEVICE\\{00001801-0000-1000-8000-00805F9B34FB}_DEV_VID&02045E_PID&0B13_REV&0509_78862E772F40\\B&D7C1A71&B&0008"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft Windows Management Interface for ACPI",
+    "InstanceId": "ACPI\\PNP0C14\\LSK20"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\IDEA5003&COL01\\4&10D72E27&1&0000"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "蓝牙外围设备",
+    "InstanceId": "BTHENUM\\{00001801-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "AMD USB 2.0 可扩展主机控制器 - 1.20 (Microsoft)",
+    "InstanceId": "PCI\\VEN_1022&DEV_15B8&SUBSYS_382917AA&REV_00\\4&1CEC15E5&0&0043"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "系统计时器",
+    "InstanceId": "ACPI\\PNP0100\\4&8CBA2E1&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareDevice",
+    "FriendlyName": "蓝牙",
+    "InstanceId": "SWD\\RADIO\\BLUETOOTH_4845E687415A"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "Realtek(R) Audio",
+    "InstanceId": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0287&SUBSYS_17AA3927&REV_1000\\5&1839F7AF&0&0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "Mouse",
+    "FriendlyName": "HID-compliant mouse",
+    "InstanceId": "HID\\FTCS0038&COL01\\4&27A1E836&0&0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Firmware",
+    "FriendlyName": "系统固件",
+    "InstanceId": "UEFI\\RES_{BE248459-CAF2-4B09-AF02-69B6A49974C1}\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft Windows Management Interface for ACPI",
+    "InstanceId": "ACPI\\PNP0C14\\0X00"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareComponent",
+    "FriendlyName": "Realtek Audio Universal Service",
+    "InstanceId": "SWD\\DRIVERENUM\\{C3A63EDD-2D27-4B66-B155-5E94B43D926A}#REALTEKSRV&6&2B1CBAD2&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "真我GT Neo6 Avrcp 传输",
+    "InstanceId": "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "Bose Ultra",
+    "InstanceId": "BTHENUM\\DEV_B70BD7C42BDB\\A&363D197&0&BLUETOOTHDEVICE_B70BD7C42BDB"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "蓝牙 LE 通用属性服务",
+    "InstanceId": "BTHLEDEVICE\\{0000184C-0000-1000-8000-00805F9B34FB}_4C2BC34CA34D\\B&16DCC9F5&0&005A"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioEndpoint",
+    "FriendlyName": "麦克风阵列 (Realtek(R) Audio)",
+    "InstanceId": "SWD\\MMDEVAPI\\{0.0.1.00000000}.{350E4A54-1CEF-42ED-A878-869EC51052FB}"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "oppointeraction",
+    "InstanceId": "BTHENUM\\{0000079A-D102-11E1-9B23-00025B00A5A5}_VID&000102B0_PID&0000\\A&363D197&0&081287122738_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "通用 USB 集线器",
+    "InstanceId": "USB\\VID_05E3&PID_0610\\6&1CB538DD&0&2"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "通用访问配置文件",
+    "InstanceId": "BTHLEDEVICE\\{00001800-0000-1000-8000-00805F9B34FB}_DEV_VID&02045E_PID&0B13_REV&0509_78862E772F40\\B&D7C1A71&B&0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "通用属性配置文件",
+    "InstanceId": "BTHLEDEVICE\\{00001801-0000-1000-8000-00805F9B34FB}_4C2BC34CA34D\\B&16DCC9F5&0&0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "UMBus Root Bus Enumerator",
+    "InstanceId": "ROOT\\UMBUS\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "充电均衡驱动程序",
+    "InstanceId": "ROOT\\CAD\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Keyboard",
+    "FriendlyName": "HID Keyboard Device",
+    "InstanceId": "HID\\TENCENTMYAPPSHIDBUS&COL03\\1&1F851A3D&0&0002"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "ACP HDA Node",
+    "InstanceId": "ACP\\DEVTYPE_0001&DEVREV_0000&VEN_1022&DEV_15E2&SUBSYS_17AA38CE&REV_62\\5&68B4E69&0&01"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "Bluetooth Device (RFCOMM Protocol TDI)",
+    "InstanceId": "BTH\\MS_RFCOMM\\9&3CEF728&0&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareDevice",
+    "FriendlyName": "Microsoft Radio Device Enumeration Bus",
+    "InstanceId": "SWD\\RADIO\\{3DB5895D-CC28-44B3-AD3D-6F01A782B8D2}"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareDevice",
+    "FriendlyName": "Microsoft Device Association Root Enumerator",
+    "InstanceId": "SWD\\MSDAS\\{CE958E9A-424F-4C88-86F4-11314821E75A}"
+  },
+  {
+    "Status": "OK",
+    "Class": "Computer",
+    "FriendlyName": "基于 ACPI x64 的电脑",
+    "InstanceId": "ROOT\\ACPI_HAL\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14E6&SUBSYS_00000000&REV_00\\3&11583659&1&C6"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "个人区域网服务",
+    "InstanceId": "BTHENUM\\{00001115-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "WAN Miniport (Network Monitor)",
+    "InstanceId": "SWD\\MSRRAS\\MS_NDISWANBH"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "WAN Miniport (IP)",
+    "InstanceId": "SWD\\MSRRAS\\MS_NDISWANIP"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "通用访问配置文件",
+    "InstanceId": "BTHLEDEVICE\\{00001800-0000-1000-8000-00805F9B34FB}_4C2BC34CA34D\\B&16DCC9F5&0&0014"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft Windows Management Interface for ACPI",
+    "InstanceId": "ACPI\\PNP0C14\\AOD"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI Express 根复合体",
+    "InstanceId": "ACPI\\PNP0A08\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Lenovo ACPI-Compliant Virtual Power Controller",
+    "InstanceId": "ACPI\\VPC2004\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI Express 根端口",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DB&SUBSYS_14531022&REV_00\\3&11583659&1&09"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI Express 根端口",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DB&SUBSYS_14531022&REV_00\\3&11583659&1&0A"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI Express 根端口",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DB&SUBSYS_14531022&REV_00\\3&11583659&1&12"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI Express 根端口",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DB&SUBSYS_14531022&REV_00\\3&11583659&1&1B"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "realme Buds Air6 Avrcp 传输",
+    "InstanceId": "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\\A&363D197&0&081287122738_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "USB Composite Device",
+    "InstanceId": "USB\\VID_174F&PID_246F\\0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "蓝牙 LE XINPUT 兼容的输入设备",
+    "InstanceId": "BTHLEDEVICE\\{00001812-0000-1000-8000-00805F9B34FB}_DEV_VID&02045E_PID&0B13_REV&0509_78862E772F40\\B&D7C1A71&B&0016"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "蓝牙外围设备",
+    "InstanceId": "BTHENUM\\{0000AFAF-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "USB 根集线器(USB 3.0)",
+    "InstanceId": "USB\\ROOT_HUB30\\5&21D782F4&0&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft Hyper-V PCI 服务器",
+    "InstanceId": "ROOT\\VPCIVSP\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14D8&SUBSYS_380217AA&REV_00\\3&11583659&1&00"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Lenovo Virtual Bus",
+    "InstanceId": "ROOT\\LENOVO_VIRTUAL_BUS\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "USB Composite Device",
+    "InstanceId": "USB\\VID_0489&PID_E111\\000000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "ACPI 电源按钮",
+    "InstanceId": "ACPI\\PNP0C0C\\2&DABA3FF&1"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft ACPI-Compliant System",
+    "InstanceId": "ACPI_HAL\\PNP0C08\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": null,
+    "InstanceId": "HTREE\\ROOT\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft 基本呈现驱动程序",
+    "InstanceId": "ROOT\\BASICRENDER\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareDevice",
+    "FriendlyName": "WLAN",
+    "InstanceId": "SWD\\RADIO\\{3E4E57CE-02AD-481D-8A24-2E512604649D}"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioEndpoint",
+    "FriendlyName": "麦克风 (ToDesk Virtual Audio)",
+    "InstanceId": "SWD\\MMDEVAPI\\{0.0.1.00000000}.{0726DB27-B531-48D9-BA38-6064F126F050}"
+  },
+  {
+    "Status": "OK",
+    "Class": "Computer",
+    "FriendlyName": "LENOVO 83LV",
+    "InstanceId": "SWD\\COMPUTER\\MFG_LENOVO&FAM_LEGION_R9000P_ADR10&PROD_83LV&SKU_LENOVO_MT_83LV_BU_IDEA_FM_LEGION_R9"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "蓝牙 LE 通用属性服务",
+    "InstanceId": "BTHLEDEVICE\\{0000180F-0000-1000-8000-00805F9B34FB}_DEV_VID&010C45_PID&FEFE_REV&0138_FCAF73DA7661\\B&BE12F3F&0&0021"
+  },
+  {
+    "Status": "OK",
+    "Class": "Ports",
+    "FriendlyName": "蓝牙链接上的标准串行 (COM3)",
+    "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\\A&2E6F9637&0&081287122738_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft Windows Management Interface for ACPI",
+    "InstanceId": "ACPI\\PNP0C14\\GMZN"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "WAN Miniport (SSTP)",
+    "InstanceId": "SWD\\MSRRAS\\MS_SSTPMINIPORT"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\IDEA5003&COL02\\4&10D72E27&1&0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft UEFI 兼容系统",
+    "InstanceId": "ACPI_HAL\\UEFI\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioProcessingObject",
+    "FriendlyName": "Sonar APO",
+    "InstanceId": "SWD\\DRIVERENUM\\{E83B603A-ABA0-4D94-BF87-3BBA62F4B383}#APOSWC&1&14041D6&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14E3&SUBSYS_00000000&REV_00\\3&11583659&1&C3"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "系统扬声器",
+    "InstanceId": "ACPI\\PNP0800\\4&8CBA2E1&0"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "蓝牙外围设备",
+    "InstanceId": "BTHENUM\\{00001800-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的触摸板",
+    "InstanceId": "HID\\FTCS0038&COL02\\4&27A1E836&0&0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "Bose Ultra Hands-Free",
+    "InstanceId": "BTHHFENUM\\BTHHFPAUDIO\\B&3635F4DE&0&97"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioProcessingObject",
+    "FriendlyName": "Voice Clarity",
+    "InstanceId": "SWD\\DRIVERENUM\\{96BEDF2C-18CB-4A15-B821-5E95ED0FEA61}#VOCAEFFECTPACK&1&18DAA584&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "Bose Ultra Avrcp 传输",
+    "InstanceId": "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\\A&363D197&0&B70BD7C42BDB_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "ACPI 固定功能按钮",
+    "InstanceId": "ACPI\\FIXEDBUTTON\\2&DABA3FF&1"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "InSecureAFP",
+    "InstanceId": "BTHENUM\\{A49ECC15-CB06-495C-9F4F-BB80A90CDF00}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "realme Buds Air6 Hands-Free AG",
+    "InstanceId": "BTHENUM\\{0000111E-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\\A&363D197&0&081287122738_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "USB 根集线器(USB 3.0)",
+    "InstanceId": "USB\\ROOT_HUB30\\5&17A63683&0&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "母板资源",
+    "InstanceId": "ACPI\\PNP0C02\\8B"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "母板资源",
+    "InstanceId": "ACPI\\PNP0C02\\8C"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\TENCENTMYAPPSHIDBUS&COL04\\1&1F851A3D&0&0003"
+  },
+  {
+    "Status": "OK",
+    "Class": "Volume",
+    "FriendlyName": "卷",
+    "InstanceId": "STORAGE\\VOLUME\\{F9EFCCC3-78AB-11F0-8B56-806E6F6E6963}#0000004B2A600000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Camera",
+    "FriendlyName": "Integrated Camera",
+    "InstanceId": "USB\\VID_174F&PID_246F&MI_00\\7&2C27EE68&1&0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI Express 根端口",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022&REV_00\\3&11583659&1&41"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI Express 根端口",
+    "InstanceId": "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022&REV_00\\3&11583659&1&43"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioProcessingObject",
+    "FriendlyName": "Elevoc Audio Effects Component",
+    "InstanceId": "SWD\\DRIVERENUM\\{F8AD342D-16E2-42B7-A8E3-EDED26AAD9E9}#ELEVOCAPO&6&2B1CBAD2&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioProcessingObject",
+    "FriendlyName": "Realtek Audio Effects Component",
+    "InstanceId": "SWD\\DRIVERENUM\\{C3A63EDD-2D27-4B66-B155-5E94B43D926A}#REALTEKAPO&6&2B1CBAD2&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "直接内存访问控制器",
+    "InstanceId": "ACPI\\PNP0200\\4&8CBA2E1&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "MyAppsVirtualBus",
+    "FriendlyName": "TMyAppsHidBus Device",
+    "InstanceId": "ROOT\\MYAPPSVIRTUALBUS\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "MyAppsVirtualBus",
+    "FriendlyName": "MyAppsUsbController Device",
+    "InstanceId": "ROOT\\MYAPPSVIRTUALBUS\\0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14E0&SUBSYS_00000000&REV_00\\3&11583659&1&C0"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "AMD USB 3.10 可扩展主机控制器 - 1.20 (Microsoft)",
+    "InstanceId": "PCI\\VEN_1022&DEV_15B6&SUBSYS_382717AA&REV_00\\4&6C4AD28&0&0341"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft Hyper-V 虚拟磁盘服务器",
+    "InstanceId": "ROOT\\STORVSP\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioProcessingObject",
+    "FriendlyName": "Elevoc Audio Effects Component",
+    "InstanceId": "SWD\\DRIVERENUM\\{A882D99B-2BB1-484C-B438-A24B8B506686}#ELEVOCAPO&6&2B1CBAD2&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "NVIDIA Virtual Audio Device (Wave Extensible) (WDM)",
+    "InstanceId": "ROOT\\UNNAMED_DEVICE\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "真我GT Neo6 Hands-Free HF Audio",
+    "InstanceId": "BTHHFENUM\\BTHHFPAUDIO\\B&336CF16E&0&97"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "realme Buds Air6",
+    "InstanceId": "BTHENUM\\{0000110B-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\\A&363D197&0&081287122738_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "SCSIAdapter",
+    "FriendlyName": "Xvdd SCSI Miniport",
+    "InstanceId": "SWD\\XVDDENUM\\XVDDROOTDEVICE_INSTANCE"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "通用 SuperSpeed USB 集线器",
+    "InstanceId": "USB\\VID_05E3&PID_0620\\6&1CB538DD&0&4"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareDevice",
+    "FriendlyName": "Microsoft GS 波表合成器",
+    "InstanceId": "SWD\\MMDEVAPI\\MICROSOFTGSWAVETABLESYNTH"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "系统 CMOS/实时时钟",
+    "InstanceId": "ACPI\\PNP0B00\\4&8CBA2E1&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "MediaTek Wi-Fi 7 MT7925 Wireless LAN Card",
+    "InstanceId": "PCI\\VEN_14C3&DEV_7925&SUBSYS_E0FF17AA&REV_00\\4&12704026&0&0012"
+  },
+  {
+    "Status": "OK",
+    "Class": "Display",
+    "FriendlyName": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "InstanceId": "PCI\\VEN_10DE&DEV_2D59&SUBSYS_3E2917AA&REV_A1\\EF3DCDFBF92DB04800"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareComponent",
+    "FriendlyName": "Universal Device Client Device Plugins",
+    "InstanceId": "SWD\\DRIVERENUM\\UDCCOMPONENT&1&79F5D87&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "真我GT Neo6 Hands-Free HF",
+    "InstanceId": "BTHENUM\\{0000111F-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioProcessingObject",
+    "FriendlyName": "Nahimic Nh4 Audio Effects Component",
+    "InstanceId": "SWD\\DRIVERENUM\\{741A2100-1023-11E9-B56E-0800200C9A66}#AVOLUTE_NH4APO&6&2B1CBAD2&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "HID-compliant device",
+    "InstanceId": "HID\\IDEA5003&COL03\\4&10D72E27&1&0002"
+  },
+  {
+    "Status": "OK",
+    "Class": "PrintQueue",
+    "FriendlyName": "导出为WPS PDF",
+    "InstanceId": "SWD\\PRINTENUM\\{ACE20E4E-E01E-4AE4-A2AA-E2B0DE9FC7CE}"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "AMD Crash Defender",
+    "InstanceId": "ROOT\\AMDLOG\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "USB 输入设备",
+    "InstanceId": "USB\\VID_048D&PID_C197\\7&2E3FCB7B&0&4"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "NDIS 虚拟网络适配器枚举器",
+    "InstanceId": "ROOT\\NDISVIRTUALBUS\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "AMD I2C Controller",
+    "InstanceId": "ACPI\\AMDI0010\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "AMD I2C Controller",
+    "InstanceId": "ACPI\\AMDI0010\\1"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "AMD I2C Controller",
+    "InstanceId": "ACPI\\AMDI0010\\3"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareDevice",
+    "FriendlyName": "NVIDIA Platform Controllers and Framework",
+    "InstanceId": "ACPI\\NVDA0820\\NPCF"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "AMD USB 3.10 可扩展主机控制器 - 1.20 (Microsoft)",
+    "InstanceId": "PCI\\VEN_1022&DEV_15B7&SUBSYS_382A17AA&REV_00\\4&6C4AD28&0&0441"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "Microsoft Input Configuration Device",
+    "InstanceId": "HID\\FTCS0038&COL03\\4&27A1E836&0&0002"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "Bluetooth Device (Personal Area Network)",
+    "InstanceId": "BTH\\MS_BTHPAN\\9&3CEF728&0&2"
+  },
+  {
+    "Status": "OK",
+    "Class": "AudioEndpoint",
+    "FriendlyName": "扬声器 (Realtek(R) Audio)",
+    "InstanceId": "SWD\\MMDEVAPI\\{0.0.0.00000000}.{5B62507F-FAEC-4997-9683-57AB8D2321C9}"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "蓝牙外围设备",
+    "InstanceId": "BTHENUM\\{DF21FE2C-2515-4FDB-8886-F12C4D67927C}_VID&000102B0_PID&0000\\A&363D197&0&081287122738_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "EDIFIER W820NB 双金标版",
+    "InstanceId": "BTHENUM\\{0000110B-0000-1000-8000-00805F9B34FB}_LOCALMFG&0046\\A&363D197&0&646876548E87_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "SCSIAdapter",
+    "FriendlyName": "标准 NVM Express 控制器",
+    "InstanceId": "PCI\\VEN_1CC4&DEV_6C14&SUBSYS_6C141CC4&REV_03\\4&124F59FA&0&000A"
+  },
+  {
+    "Status": "OK",
+    "Class": "USB",
+    "FriendlyName": "USB Serial Converter",
+    "InstanceId": "USB\\VID_0403&PID_6014\\210299245711"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "AMD SMBus",
+    "InstanceId": "PCI\\VEN_1022&DEV_790B&SUBSYS_388A17AA&REV_71\\3&11583659&1&A0"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14E5&SUBSYS_00000000&REV_00\\3&11583659&1&C5"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "真我GT Neo6 Avrcp 传输",
+    "InstanceId": "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的供应商定义设备",
+    "InstanceId": "HID\\TENCENTMYAPPSHIDBUS&COL05\\1&1F851A3D&0&0004"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "系统板",
+    "InstanceId": "ACPI\\PNP0C01\\4&8CBA2E1&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "SoftwareComponent",
+    "FriendlyName": "AMD-Windows Support Components",
+    "InstanceId": "SWD\\DRIVERENUM\\AMDWIN&5&CF93321&0"
+  },
+  {
+    "Status": "OK",
+    "Class": "SecurityDevices",
+    "FriendlyName": "AMD PSP 11.0 Device",
+    "InstanceId": "PCI\\VEN_1022&DEV_1649&SUBSYS_382C17AA&REV_00\\4&6C4AD28&0&0241"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "I2C HID 设备",
+    "InstanceId": "ACPI\\FTCS0038\\3&62D7E73&1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\0"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\2"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\3"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\4"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\5"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\6"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\7"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\8"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\9"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\A"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\B"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\C"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\D"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\E"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\F"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Microsoft System Management BIOS Driver",
+    "InstanceId": "ROOT\\MSSMBIOS\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "设备标识服务",
+    "InstanceId": "BTHENUM\\{00001200-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\\A&363D197&0&081287122738_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "EDIFIER W820NB 双金标版 Hands-Free AG",
+    "InstanceId": "BTHENUM\\{0000111E-0000-1000-8000-00805F9B34FB}_LOCALMFG&0046\\A&363D197&0&646876548E87_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "设备信息服务",
+    "InstanceId": "BTHLEDEVICE\\{0000180A-0000-1000-8000-00805F9B34FB}_DEV_VID&010C45_PID&FEFE_REV&0138_FCAF73DA7661\\B&BE12F3F&0&000E"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "对象推送服务",
+    "InstanceId": "BTHENUM\\{00001105-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "NVIDIA High Definition Audio",
+    "InstanceId": "HDAUDIO\\FUNC_01&VEN_10DE&DEV_00AD&SUBSYS_10DE0000&REV_1001\\5&88A2E9B&0&0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "蓝牙 LE 通用属性服务",
+    "InstanceId": "BTHLEDEVICE\\{0000180F-0000-1000-8000-00805F9B34FB}_DEV_VID&02045E_PID&0B13_REV&0509_78862E772F40\\B&D7C1A71&B&0012"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "EDIFIER W820NB 双金标版 Hands-Free",
+    "InstanceId": "BTHHFENUM\\BTHHFPAUDIO\\B&2901C58C&0&97"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "即插即用软件设备枚举器",
+    "InstanceId": "ROOT\\SYSTEM\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "Universal Device Client Device",
+    "InstanceId": "ROOT\\SYSTEM\\0001"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "SteelSeries Device Factory",
+    "InstanceId": "ROOT\\SYSTEM\\0002"
+  },
+  {
+    "Status": "OK",
+    "Class": "Volume",
+    "FriendlyName": "卷",
+    "InstanceId": "STORAGE\\VOLUME\\{F9EFCCC3-78AB-11F0-8B56-806E6F6E6963}#0000000011500000"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "InSecureAFP",
+    "InstanceId": "BTHENUM\\{A49EEE15-CB06-495C-9F4F-BB80A90CDF00}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "远程桌面设备重定向程序总线",
+    "InstanceId": "ROOT\\RDPBUS\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的无线通信控制",
+    "InstanceId": "HID\\VID_048D&PID_C197&COL07\\8&45B6FFC&0&0006"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "蓝牙 LE 通用属性服务",
+    "InstanceId": "BTHLEDEVICE\\{00000001-5F60-4C4F-9C83-A7953298D40D}_DEV_VID&02045E_PID&0B13_REV&0509_78862E772F40\\B&D7C1A71&B&0024"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\10"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\11"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\12"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\13"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\14"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\15"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\16"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\17"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\18"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\19"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\1A"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\1B"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\1C"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\1D"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\1E"
+  },
+  {
+    "Status": "OK",
+    "Class": "Processor",
+    "FriendlyName": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "InstanceId": "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\\1F"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "PCI 标准主机 CPU 桥",
+    "InstanceId": "PCI\\VEN_1022&DEV_14E2&SUBSYS_00000000&REV_00\\3&11583659&1&C2"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "WAN Miniport (IPv6)",
+    "InstanceId": "SWD\\MSRRAS\\MS_NDISWANIPV6"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "ToDesk Virtual Audio",
+    "InstanceId": "ROOT\\MEDIA\\0000"
+  },
+  {
+    "Status": "OK",
+    "Class": "MEDIA",
+    "FriendlyName": "SteelSeries Sonar Virtual Audio Device",
+    "InstanceId": "ROOT\\MEDIA\\0001"
+  },
+  {
+    "Status": "OK",
+    "Class": null,
+    "FriendlyName": "蓝牙外围设备",
+    "InstanceId": "BTHENUM\\{0000AA15-0000-1000-8000-00805F9B34FB}_VID&0001001D_PID&0000\\A&363D197&0&84E9C13B2802_C00000000"
+  },
+  {
+    "Status": "OK",
+    "Class": "HIDClass",
+    "FriendlyName": "符合 HID 标准的用户控制设备",
+    "InstanceId": "HID\\VID_048D&PID_C197&COL06\\8&45B6FFC&0&0005"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "蓝牙 LE 通用属性服务",
+    "InstanceId": "BTHLEDEVICE\\{0000AFAF-0000-1000-8000-00805F9B34FB}_4C2BC34CA34D\\B&16DCC9F5&0&008D"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "蓝牙 LE 通用属性服务",
+    "InstanceId": "BTHLEDEVICE\\{0000FEE0-0000-1000-8000-00805F9B34FB}_DEV_VID&010C45_PID&FEFE_REV&0138_FCAF73DA7661\\B&BE12F3F&0&005E"
+  },
+  {
+    "Status": "OK",
+    "Class": "System",
+    "FriendlyName": "AMD Provisioning Packages",
+    "InstanceId": "ACPI\\AMDI0052\\2&DABA3FF&1"
+  },
+  {
+    "Status": "OK",
+    "Class": "Bluetooth",
+    "FriendlyName": "蓝牙 LE 通用属性服务",
+    "InstanceId": "BTHLEDEVICE\\{00001849-0000-1000-8000-00805F9B34FB}_4C2BC34CA34D\\B&16DCC9F5&0&0028"
+  },
+  {
+    "Status": "OK",
+    "Class": "Net",
+    "FriendlyName": "WAN Miniport (L2TP)",
+    "InstanceId": "SWD\\MSRRAS\\MS_L2TPMINIPORT"
+  }
+]

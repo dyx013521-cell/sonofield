@@ -10,3 +10,5 @@ __pycache__/
 v3/evidence/task001/clockInfo.txt
 v3/evidence/task001/dfx_runtime.txt
 v3/evidence/task001/tight_setup_hold_pins.txt
+dfx_runtime.txt
+v3/evidence/task001/hardware_check/dfx_runtime.txt

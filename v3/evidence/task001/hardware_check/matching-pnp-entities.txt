@@ -1,0 +1,277 @@
+
+Name                   : 蓝牙链接上的标准串行 (COM6)
+PNPDeviceID            : BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0046\A&2E6F9637&0&646876548E87_C00000000
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD-OpenCL User Mode Driver
+PNPDeviceID            : SWD\DRIVERENUM\AMDOCL&5&CF93321&0
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : USB Serial Converter
+PNPDeviceID            : USB\VID_0403&PID_6014\210299835073
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : USB-SERIAL CH340 (COM7)
+PNPDeviceID            : USB\VID_1A86&PID_7523\8&148914A8&0&1
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Audio CoProcessor
+PNPDeviceID            : PCI\VEN_1022&DEV_15E2&SUBSYS_38CE17AA&REV_62\4&6C4AD28&0&0541
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD-UWP Version Control
+PNPDeviceID            : SWD\DRIVERENUM\AMDUWP&5&CF93321&0
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Radeon(TM) 610M
+PNPDeviceID            : PCI\VEN_1002&DEV_164E&SUBSYS_3E2917AA&REV_D8\4&6C4AD28&0&0041
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD GPIO Controller
+PNPDeviceID            : ACPI\AMDI0030\0
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : 蓝牙链接上的标准串行 (COM5)
+PNPDeviceID            : BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\A&2E6F9637&0&000000000000_00000001
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : 蓝牙链接上的标准串行 (COM4)
+PNPDeviceID            : BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\A&2E6F9637&0&000000000000_0000000B
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD USB 2.0 可扩展主机控制器 - 1.20 (Microsoft)
+PNPDeviceID            : PCI\VEN_1022&DEV_15B8&SUBSYS_382917AA&REV_00\4&1CEC15E5&0&0043
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : 蓝牙链接上的标准串行 (COM3)
+PNPDeviceID            : BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\A&2E6F9637&0&081287122738_C00000000
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD USB 3.10 可扩展主机控制器 - 1.20 (Microsoft)
+PNPDeviceID            : PCI\VEN_1022&DEV_15B6&SUBSYS_382717AA&REV_00\4&6C4AD28&0&0341
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Crash Defender
+PNPDeviceID            : ROOT\AMDLOG\0000
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD I2C Controller
+PNPDeviceID            : ACPI\AMDI0010\0
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD I2C Controller
+PNPDeviceID            : ACPI\AMDI0010\1
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD I2C Controller
+PNPDeviceID            : ACPI\AMDI0010\3
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD USB 3.10 可扩展主机控制器 - 1.20 (Microsoft)
+PNPDeviceID            : PCI\VEN_1022&DEV_15B7&SUBSYS_382A17AA&REV_00\4&6C4AD28&0&0441
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : USB Serial Converter
+PNPDeviceID            : USB\VID_0403&PID_6014\210299245711
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD SMBus
+PNPDeviceID            : PCI\VEN_1022&DEV_790B&SUBSYS_388A17AA&REV_71\3&11583659&1&A0
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD-Windows Support Components
+PNPDeviceID            : SWD\DRIVERENUM\AMDWIN&5&CF93321&0
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD PSP 11.0 Device
+PNPDeviceID            : PCI\VEN_1022&DEV_1649&SUBSYS_382C17AA&REV_00\4&6C4AD28&0&0241
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\0
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\1
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\2
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\3
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\4
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\5
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\6
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\7
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\8
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\9
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\A
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\B
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\C
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\D
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\E
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\F
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\10
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\11
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\12
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\13
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\14
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\15
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\16
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\17
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\18
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\19
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\1A
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\1B
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\1C
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\1D
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\1E
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Ryzen 9 8945HX with Radeon Graphics        
+PNPDeviceID            : ACPI\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_97_-_AMD_RYZEN_9_8945HX_WITH_RADEON_GRAPHICS________\1F
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+Name                   : AMD Provisioning Packages
+PNPDeviceID            : ACPI\AMDI0052\2&DABA3FF&1
+Status                 : OK
+ConfigManagerErrorCode : CM_PROB_NONE
+
+

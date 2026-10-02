@@ -1,0 +1,758 @@
+OBJECT=localhost:3121/xilinx_tcf/Digilent/210299245711
+Property          Type     Read-only  Value
+CLASS             string   true       hw_target
+DEVICE_COUNT      int      true       0
+HW_JTAG           hw_jtag  true       
+IS_OPENED         bool     true       0
+IS_STAPL          bool     true       0
+IS_SVF            bool     true       0
+MAX_DEVICE_COUNT  int      false      32
+NAME              string   true       localhost:3121/xilinx_tcf/Digilent/210299245711
+PARAM.DEVICE      string   true       jsn-JTAG-HS3-210299245711
+PARAM.FREQUENCY   enum     false      15000000
+PARAM.TYPE        string   true       xilinx_tcf
+TID               string   true       jsn-JTAG-HS3-210299245711
+UID               string   true       Digilent/210299245711
+CLASS=hw_target
+DEVICE_COUNT=0
+HW_JTAG=
+IS_OPENED=0
+IS_STAPL=0
+IS_SVF=0
+MAX_DEVICE_COUNT=32
+NAME=localhost:3121/xilinx_tcf/Digilent/210299245711
+PARAM.DEVICE=jsn-JTAG-HS3-210299245711
+PARAM.FREQUENCY=15000000
+PARAM.TYPE=xilinx_tcf
+TID=jsn-JTAG-HS3-210299245711
+UID=Digilent/210299245711
+TARGET_PROPERTIES_AFTER_OPEN
+OBJECT=localhost:3121/xilinx_tcf/Digilent/210299245711
+Property          Type     Read-only  Value
+CLASS             string   true       hw_target
+DEVICE_COUNT      int      true       2
+HW_JTAG           hw_jtag  true       
+IS_OPENED         bool     true       1
+IS_STAPL          bool     true       0
+IS_SVF            bool     true       0
+MAX_DEVICE_COUNT  int      false      32
+NAME              string   true       localhost:3121/xilinx_tcf/Digilent/210299245711
+PARAM.DEVICE      string   true       jsn-JTAG-HS3-210299245711
+PARAM.FREQUENCY   enum     false      15000000
+PARAM.TYPE        string   true       xilinx_tcf
+TID               string   true       jsn-JTAG-HS3-210299245711
+UID               string   true       Digilent/210299245711
+CLASS=hw_target
+DEVICE_COUNT=2
+HW_JTAG=
+IS_OPENED=1
+IS_STAPL=0
+IS_SVF=0
+MAX_DEVICE_COUNT=32
+NAME=localhost:3121/xilinx_tcf/Digilent/210299245711
+PARAM.DEVICE=jsn-JTAG-HS3-210299245711
+PARAM.FREQUENCY=15000000
+PARAM.TYPE=xilinx_tcf
+TID=jsn-JTAG-HS3-210299245711
+UID=Digilent/210299245711
+OBJECT=arm_dap_0
+Property                   Type          Read-only  Value
+CLASS                      string        true       hw_device
+NAME                       string        true       arm_dap_0
+PART                       string        true       arm_dap
+VARIANT_NAME               string        true       
+PROGRAM.LOG                string        true       
+INDEX                      int           true       0
+IDCODE                     string        true       01001011101000000000010001110111
+IDCODE_HEX                 string        true       4BA00477
+IR_LENGTH                  int           true       4
+USER_CHAIN_COUNT           string        true       0
+IS_SYSMON_SUPPORTED        bool          true       0
+PROGRAM.IS_SUPPORTED       bool          true       0
+PROGRAM.FILE               string        false      
+PROGRAM.BOOT_FILE          string        false      
+PROGRAM.OPTIONS            string        false      
+PROGRAM.HW_BITSTREAM       hw_bitstream  true       
+AUTH_JTAG.FILE             string        false      
+PROBES.FILE                string        false      
+FULL_PROBES.FILE           string        false      
+BOOT_PROBES.FILE           string        false      
+PARTIAL_PROBES.FILES       string*       false      
+PROGRAM.HW_CFGMEM          hw_cfgmem     true       
+PROGRAM.HW_CFGMEM_BITFILE  string        true       
+PROGRAM.HW_CFGMEM_TYPE     string        true       
+PROGRAM.READBACK_FILE      string        false      
+PROGRAM.IS_RSA_PROGRAMMED  bool          true       0
+PROGRAM.IS_AES_PROGRAMMED  bool          true       0
+PROGRAM.DPA_PROTECT        bool          false      0
+PROGRAM.DPA_COUNT          int           false      0
+PROGRAM.DPA_MODE           string        false      
+DID                        string        true       jsn-JTAG-HS3-210299245711-4ba00477-0
+MASK                       string        true       00001111111111111111111111111111
+MASK_HEX                   string        true       0FFFFFFF
+UNKNOWN_DEVICE             bool          true       0
+XSDB_USER_BSCAN            string        false      1,3
+BSCAN_SWITCH_USER_MASK     string        false      0001
+CLASS=hw_device
+NAME=arm_dap_0
+PART=arm_dap
+VARIANT_NAME=
+PROGRAM.LOG=
+INDEX=0
+IDCODE=01001011101000000000010001110111
+IDCODE_HEX=4BA00477
+IR_LENGTH=4
+USER_CHAIN_COUNT=0
+IS_SYSMON_SUPPORTED=0
+PROGRAM.IS_SUPPORTED=0
+PROGRAM.FILE=
+PROGRAM.BOOT_FILE=
+PROGRAM.OPTIONS=
+PROGRAM.HW_BITSTREAM=
+AUTH_JTAG.FILE=
+PROBES.FILE=
+FULL_PROBES.FILE=
+BOOT_PROBES.FILE=
+PARTIAL_PROBES.FILES=
+PROGRAM.HW_CFGMEM=
+PROGRAM.HW_CFGMEM_BITFILE=
+PROGRAM.HW_CFGMEM_TYPE=
+PROGRAM.READBACK_FILE=
+PROGRAM.IS_RSA_PROGRAMMED=0
+PROGRAM.IS_AES_PROGRAMMED=0
+PROGRAM.DPA_PROTECT=0
+PROGRAM.DPA_COUNT=0
+PROGRAM.DPA_MODE=
+DID=jsn-JTAG-HS3-210299245711-4ba00477-0
+MASK=00001111111111111111111111111111
+MASK_HEX=0FFFFFFF
+UNKNOWN_DEVICE=0
+XSDB_USER_BSCAN=1,3
+BSCAN_SWITCH_USER_MASK=0001
+USE_BSCAN_FALLBACK=Default
+OBJECT=xc7z010_1
+Property                                                            Type          Read-only  Value
+CLASS                                                               string        true       hw_device
+NAME                                                                string        true       xc7z010_1
+PART                                                                string        true       xc7z010
+VARIANT_NAME                                                        string        true       
+PROGRAM.LOG                                                         string        true       
+INDEX                                                               int           true       1
+IDCODE                                                              string        true       00010011011100100010000010010011
+IDCODE_HEX                                                          string        true       13722093
+IR_LENGTH                                                           int           true       6
+USER_CHAIN_COUNT                                                    string        true       4
+IS_SYSMON_SUPPORTED                                                 bool          true       1
+PROGRAM.IS_SUPPORTED                                                bool          true       1
+PROGRAM.FILE                                                        string        false      
+PROGRAM.BOOT_FILE                                                   string        false      
+PROGRAM.OPTIONS                                                     string        false      
+PROGRAM.HW_BITSTREAM                                                hw_bitstream  true       
+AUTH_JTAG.FILE                                                      string        false      
+PROBES.FILE                                                         string        false      
+FULL_PROBES.FILE                                                    string        false      
+BOOT_PROBES.FILE                                                    string        false      
+PARTIAL_PROBES.FILES                                                string*       false      
+PROGRAM.HW_CFGMEM                                                   hw_cfgmem     true       
+PROGRAM.HW_CFGMEM_BITFILE                                           string        true       
+PROGRAM.HW_CFGMEM_TYPE                                              string        true       
+PROGRAM.READBACK_FILE                                               string        false      
+PROGRAM.IS_RSA_PROGRAMMED                                           bool          true       0
+PROGRAM.IS_AES_PROGRAMMED                                           bool          true       0
+PROGRAM.DPA_PROTECT                                                 bool          false      0
+PROGRAM.DPA_COUNT                                                   int           false      0
+PROGRAM.DPA_MODE                                                    string        false      
+REGISTER.BOOT_STATUS                                                string        true       00000000000000000000000000000001
+REGISTER.BOOT_STATUS.BIT00_0_STATUS_VALID                           string        true       1
+REGISTER.BOOT_STATUS.BIT01_0_FALLBACK                               string        true       0
+REGISTER.BOOT_STATUS.BIT02_0_INTERNAL_PROG                          string        true       0
+REGISTER.BOOT_STATUS.BIT03_0_WATCHDOG_TIMEOUT_ERROR                 string        true       0
+REGISTER.BOOT_STATUS.BIT04_0_ID_ERROR                               string        true       0
+REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR                              string        true       0
+REGISTER.BOOT_STATUS.BIT06_0_WRAP_ERROR                             string        true       0
+REGISTER.BOOT_STATUS.BIT07_0_SECURITY_ERROR                         string        true       0
+REGISTER.BOOT_STATUS.BIT08_1_STATUS_VALID                           string        true       0
+REGISTER.BOOT_STATUS.BIT09_1_FALLBACK                               string        true       0
+REGISTER.BOOT_STATUS.BIT10_1_INTERNAL_PROG                          string        true       0
+REGISTER.BOOT_STATUS.BIT11_1_WATCHDOG_TIMEOUT_ERROR                 string        true       0
+REGISTER.BOOT_STATUS.BIT12_1_ID_ERROR                               string        true       0
+REGISTER.BOOT_STATUS.BIT13_1_CRC_ERROR                              string        true       0
+REGISTER.BOOT_STATUS.BIT14_1_WRAP_ERROR                             string        true       0
+REGISTER.BOOT_STATUS.BIT15_1_SECURITY_ERROR                         string        true       0
+REGISTER.BOOT_STATUS.BIT16_RESERVED                                 string        true       0000000000000000
+REGISTER.CONFIG_STATUS                                              string        true       01000110000100000111111111111100
+REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR                              string        true       0
+REGISTER.CONFIG_STATUS.BIT01_DECRYPTOR_ENABLE                       string        true       0
+REGISTER.CONFIG_STATUS.BIT02_PLL_LOCK_STATUS                        string        true       1
+REGISTER.CONFIG_STATUS.BIT03_DCI_MATCH_STATUS                       string        true       1
+REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS            string        true       1
+REGISTER.CONFIG_STATUS.BIT05_GTS_CFG_B_STATUS                       string        true       1
+REGISTER.CONFIG_STATUS.BIT06_GWE_STATUS                             string        true       1
+REGISTER.CONFIG_STATUS.BIT07_GHIGH_STATUS                           string        true       1
+REGISTER.CONFIG_STATUS.BIT08_MODE_PIN_M[0]                          string        true       1
+REGISTER.CONFIG_STATUS.BIT09_MODE_PIN_M[1]                          string        true       1
+REGISTER.CONFIG_STATUS.BIT10_MODE_PIN_M[2]                          string        true       1
+REGISTER.CONFIG_STATUS.BIT11_INIT_B_INTERNAL_SIGNAL_STATUS          string        true       1
+REGISTER.CONFIG_STATUS.BIT12_INIT_B_PIN                             string        true       1
+REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS            string        true       1
+REGISTER.CONFIG_STATUS.BIT14_DONE_PIN                               string        true       1
+REGISTER.CONFIG_STATUS.BIT15_IDCODE_ERROR                           string        true       0
+REGISTER.CONFIG_STATUS.BIT16_SECURITY_ERROR                         string        true       0
+REGISTER.CONFIG_STATUS.BIT17_SYSTEM_MONITOR_OVER-TEMP_ALARM_STATUS  string        true       0
+REGISTER.CONFIG_STATUS.BIT18_CFG_STARTUP_STATE_MACHINE_PHASE        string        true       100
+REGISTER.CONFIG_STATUS.BIT21_RESERVED                               string        true       0000
+REGISTER.CONFIG_STATUS.BIT25_CFG_BUS_WIDTH_DETECTION                string        true       11
+REGISTER.CONFIG_STATUS.BIT27_HMAC_ERROR                             string        true       0
+REGISTER.CONFIG_STATUS.BIT28_PUDC_B_PIN                             string        true       0
+REGISTER.CONFIG_STATUS.BIT29_BAD_PACKET_ERROR                       string        true       0
+REGISTER.CONFIG_STATUS.BIT30_CFGBVS_PIN                             string        true       1
+REGISTER.CONFIG_STATUS.BIT31_RESERVED                               string        true       0
+REGISTER.COR0                                                       string        true       02003fe5
+REGISTER.COR0.BIT00_GWE_CYCLE                                       string        true       101
+REGISTER.COR0.BIT03_GTS_CYCLE                                       string        true       100
+REGISTER.COR0.BIT06_LOCK_CYCLE                                      string        true       111
+REGISTER.COR0.BIT09_MATCH_CYCLE                                     string        true       111
+REGISTER.COR0.BIT12_DONE_CYCLE                                      string        true       011
+REGISTER.COR0.BIT15_SSCLKSRC                                        string        true       00
+REGISTER.COR0.BIT17_OSCFSEL                                         string        true       000000
+REGISTER.COR0.BIT23_SINGLE                                          string        true       0
+REGISTER.COR0.BIT24_DRIVE_DONE                                      string        true       0
+REGISTER.COR0.BIT25_DONE_PIPE                                       string        true       1
+REGISTER.COR0.BIT26_RESERVED                                        string        true       0
+REGISTER.COR0.BIT27_PWRDWN_STAT                                     string        true       0
+REGISTER.COR0.BIT28_RESERVED                                        string        true       0000
+REGISTER.COR1                                                       string        true       00000000
+REGISTER.COR1.BIT00_BPI_PAGE_SIZE                                   string        true       00
+REGISTER.COR1.BIT02_BPI_1ST_READ_CYCLE                              string        true       00
+REGISTER.COR1.BIT04_RESERVED                                        string        true       0000
+REGISTER.COR1.BIT08_RBCRC_EN                                        string        true       0
+REGISTER.COR1.BIT09_RBCRC_NO_PIN                                    string        true       0
+REGISTER.COR1.BIT10_RESERVED                                        string        true       00000
+REGISTER.COR1.BIT15_RBCRC_ACTION                                    string        true       00
+REGISTER.COR1.BIT17_PERSIST_DEASSERT_AT_DESYNC                      string        true       0
+REGISTER.COR1.BIT18_RESERVED                                        string        true       00000000000000
+REGISTER.IR                                                         string        true       110101
+REGISTER.IR.BIT0_ALWAYS_ONE                                         string        true       1
+REGISTER.IR.BIT1_ALWAYS_ZERO                                        string        true       0
+REGISTER.IR.BIT2_ISC_DONE                                           string        true       1
+REGISTER.IR.BIT3_ISC_ENABLED                                        string        true       0
+REGISTER.IR.BIT4_INIT_COMPLETE                                      string        true       1
+REGISTER.IR.BIT5_DONE                                               string        true       1
+REGISTER.TIMER                                                      string        true       00000000
+REGISTER.TIMER.BIT00_TIMER_VALUE                                    string        true       000000000000000000000000000000
+REGISTER.TIMER.BIT30_TIMER_CFG_MON                                  string        true       0
+REGISTER.TIMER.BIT31_TIMER_USR_MON                                  string        true       0
+REGISTER.USERCODE                                                   string        true       ffffffff
+REGISTER.USR_ACCESS                                                 string        true       00000000
+REGISTER.WBSTAR                                                     string        true       00000000
+REGISTER.WBSTAR.BIT00_START_ADDR                                    string        true       00000000000000000000000000000
+REGISTER.WBSTAR.BIT29_RS_TS_B                                       string        true       0
+REGISTER.WBSTAR.BIT30_RS                                            string        true       00
+DID                                                                 string        true       jsn-JTAG-HS3-210299245711-13722093-0
+MASK                                                                string        true       00001111111111111111111111111111
+MASK_HEX                                                            string        true       0FFFFFFF
+UNKNOWN_DEVICE                                                      bool          true       0
+XSDB_USER_BSCAN                                                     string        false      1,3
+BSCAN_SWITCH_USER_MASK                                              string        false      0001
+CLASS=hw_device
+NAME=xc7z010_1
+PART=xc7z010
+VARIANT_NAME=
+PROGRAM.LOG=
+INDEX=1
+IDCODE=00010011011100100010000010010011
+IDCODE_HEX=13722093
+IR_LENGTH=6
+USER_CHAIN_COUNT=4
+IS_SYSMON_SUPPORTED=1
+PROGRAM.IS_SUPPORTED=1
+PROGRAM.FILE=
+PROGRAM.BOOT_FILE=
+PROGRAM.OPTIONS=
+PROGRAM.HW_BITSTREAM=
+AUTH_JTAG.FILE=
+PROBES.FILE=
+FULL_PROBES.FILE=
+BOOT_PROBES.FILE=
+PARTIAL_PROBES.FILES=
+PROGRAM.HW_CFGMEM=
+PROGRAM.HW_CFGMEM_BITFILE=
+PROGRAM.HW_CFGMEM_TYPE=
+PROGRAM.READBACK_FILE=
+PROGRAM.IS_RSA_PROGRAMMED=0
+PROGRAM.IS_AES_PROGRAMMED=0
+PROGRAM.DPA_PROTECT=0
+PROGRAM.DPA_COUNT=0
+PROGRAM.DPA_MODE=
+REGISTER.BOOT_STATUS=00000000000000000000000000000001
+REGISTER.BOOT_STATUS.BIT00_0_STATUS_VALID=1
+REGISTER.BOOT_STATUS.BIT01_0_FALLBACK=0
+REGISTER.BOOT_STATUS.BIT02_0_INTERNAL_PROG=0
+REGISTER.BOOT_STATUS.BIT03_0_WATCHDOG_TIMEOUT_ERROR=0
+REGISTER.BOOT_STATUS.BIT04_0_ID_ERROR=0
+REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR=0
+REGISTER.BOOT_STATUS.BIT06_0_WRAP_ERROR=0
+REGISTER.BOOT_STATUS.BIT07_0_SECURITY_ERROR=0
+REGISTER.BOOT_STATUS.BIT08_1_STATUS_VALID=0
+REGISTER.BOOT_STATUS.BIT09_1_FALLBACK=0
+REGISTER.BOOT_STATUS.BIT10_1_INTERNAL_PROG=0
+REGISTER.BOOT_STATUS.BIT11_1_WATCHDOG_TIMEOUT_ERROR=0
+REGISTER.BOOT_STATUS.BIT12_1_ID_ERROR=0
+REGISTER.BOOT_STATUS.BIT13_1_CRC_ERROR=0
+REGISTER.BOOT_STATUS.BIT14_1_WRAP_ERROR=0
+REGISTER.BOOT_STATUS.BIT15_1_SECURITY_ERROR=0
+REGISTER.BOOT_STATUS.BIT16_RESERVED=0000000000000000
+REGISTER.CONFIG_STATUS=01000110000100000111111111111100
+REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR=0
+REGISTER.CONFIG_STATUS.BIT01_DECRYPTOR_ENABLE=0
+REGISTER.CONFIG_STATUS.BIT02_PLL_LOCK_STATUS=1
+REGISTER.CONFIG_STATUS.BIT03_DCI_MATCH_STATUS=1
+REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS=1
+REGISTER.CONFIG_STATUS.BIT05_GTS_CFG_B_STATUS=1
+REGISTER.CONFIG_STATUS.BIT06_GWE_STATUS=1
+REGISTER.CONFIG_STATUS.BIT07_GHIGH_STATUS=1
+REGISTER.CONFIG_STATUS.BIT08_MODE_PIN_M[0]=1
+REGISTER.CONFIG_STATUS.BIT09_MODE_PIN_M[1]=1
+REGISTER.CONFIG_STATUS.BIT10_MODE_PIN_M[2]=1
+REGISTER.CONFIG_STATUS.BIT11_INIT_B_INTERNAL_SIGNAL_STATUS=1
+REGISTER.CONFIG_STATUS.BIT12_INIT_B_PIN=1
+REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS=1
+REGISTER.CONFIG_STATUS.BIT14_DONE_PIN=1
+REGISTER.CONFIG_STATUS.BIT15_IDCODE_ERROR=0
+REGISTER.CONFIG_STATUS.BIT16_SECURITY_ERROR=0
+REGISTER.CONFIG_STATUS.BIT17_SYSTEM_MONITOR_OVER-TEMP_ALARM_STATUS=0
+REGISTER.CONFIG_STATUS.BIT18_CFG_STARTUP_STATE_MACHINE_PHASE=100
+REGISTER.CONFIG_STATUS.BIT21_RESERVED=0000
+REGISTER.CONFIG_STATUS.BIT25_CFG_BUS_WIDTH_DETECTION=11
+REGISTER.CONFIG_STATUS.BIT27_HMAC_ERROR=0
+REGISTER.CONFIG_STATUS.BIT28_PUDC_B_PIN=0
+REGISTER.CONFIG_STATUS.BIT29_BAD_PACKET_ERROR=0
+REGISTER.CONFIG_STATUS.BIT30_CFGBVS_PIN=1
+REGISTER.CONFIG_STATUS.BIT31_RESERVED=0
+REGISTER.COR0=02003fe5
+REGISTER.COR0.BIT00_GWE_CYCLE=101
+REGISTER.COR0.BIT03_GTS_CYCLE=100
+REGISTER.COR0.BIT06_LOCK_CYCLE=111
+REGISTER.COR0.BIT09_MATCH_CYCLE=111
+REGISTER.COR0.BIT12_DONE_CYCLE=011
+REGISTER.COR0.BIT15_SSCLKSRC=00
+REGISTER.COR0.BIT17_OSCFSEL=000000
+REGISTER.COR0.BIT23_SINGLE=0
+REGISTER.COR0.BIT24_DRIVE_DONE=0
+REGISTER.COR0.BIT25_DONE_PIPE=1
+REGISTER.COR0.BIT26_RESERVED=0
+REGISTER.COR0.BIT27_PWRDWN_STAT=0
+REGISTER.COR0.BIT28_RESERVED=0000
+REGISTER.COR1=00000000
+REGISTER.COR1.BIT00_BPI_PAGE_SIZE=00
+REGISTER.COR1.BIT02_BPI_1ST_READ_CYCLE=00
+REGISTER.COR1.BIT04_RESERVED=0000
+REGISTER.COR1.BIT08_RBCRC_EN=0
+REGISTER.COR1.BIT09_RBCRC_NO_PIN=0
+REGISTER.COR1.BIT10_RESERVED=00000
+REGISTER.COR1.BIT15_RBCRC_ACTION=00
+REGISTER.COR1.BIT17_PERSIST_DEASSERT_AT_DESYNC=0
+REGISTER.COR1.BIT18_RESERVED=00000000000000
+REGISTER.IR=110101
+REGISTER.IR.BIT0_ALWAYS_ONE=1
+REGISTER.IR.BIT1_ALWAYS_ZERO=0
+REGISTER.IR.BIT2_ISC_DONE=1
+REGISTER.IR.BIT3_ISC_ENABLED=0
+REGISTER.IR.BIT4_INIT_COMPLETE=1
+REGISTER.IR.BIT5_DONE=1
+REGISTER.TIMER=00000000
+REGISTER.TIMER.BIT00_TIMER_VALUE=000000000000000000000000000000
+REGISTER.TIMER.BIT30_TIMER_CFG_MON=0
+REGISTER.TIMER.BIT31_TIMER_USR_MON=0
+REGISTER.USERCODE=ffffffff
+REGISTER.USR_ACCESS=00000000
+REGISTER.WBSTAR=00000000
+REGISTER.WBSTAR.BIT00_START_ADDR=00000000000000000000000000000
+REGISTER.WBSTAR.BIT29_RS_TS_B=0
+REGISTER.WBSTAR.BIT30_RS=00
+DID=jsn-JTAG-HS3-210299245711-13722093-0
+MASK=00001111111111111111111111111111
+MASK_HEX=0FFFFFFF
+UNKNOWN_DEVICE=0
+XSDB_USER_BSCAN=1,3
+BSCAN_SWITCH_USER_MASK=0001
+USE_BSCAN_FALLBACK=Default
+OBJECT=localhost:3121/xilinx_tcf/Digilent/210299835073
+Property          Type     Read-only  Value
+CLASS             string   true       hw_target
+DEVICE_COUNT      int      true       0
+HW_JTAG           hw_jtag  true       
+IS_OPENED         bool     true       0
+IS_STAPL          bool     true       0
+IS_SVF            bool     true       0
+MAX_DEVICE_COUNT  int      false      32
+NAME              string   true       localhost:3121/xilinx_tcf/Digilent/210299835073
+PARAM.DEVICE      string   true       jsn-JTAG-HS3-210299835073
+PARAM.FREQUENCY   enum     false      15000000
+PARAM.TYPE        string   true       xilinx_tcf
+TID               string   true       jsn-JTAG-HS3-210299835073
+UID               string   true       Digilent/210299835073
+CLASS=hw_target
+DEVICE_COUNT=0
+HW_JTAG=
+IS_OPENED=0
+IS_STAPL=0
+IS_SVF=0
+MAX_DEVICE_COUNT=32
+NAME=localhost:3121/xilinx_tcf/Digilent/210299835073
+PARAM.DEVICE=jsn-JTAG-HS3-210299835073
+PARAM.FREQUENCY=15000000
+PARAM.TYPE=xilinx_tcf
+TID=jsn-JTAG-HS3-210299835073
+UID=Digilent/210299835073
+TARGET_PROPERTIES_AFTER_OPEN
+OBJECT=localhost:3121/xilinx_tcf/Digilent/210299835073
+Property          Type     Read-only  Value
+CLASS             string   true       hw_target
+DEVICE_COUNT      int      true       2
+HW_JTAG           hw_jtag  true       
+IS_OPENED         bool     true       1
+IS_STAPL          bool     true       0
+IS_SVF            bool     true       0
+MAX_DEVICE_COUNT  int      false      32
+NAME              string   true       localhost:3121/xilinx_tcf/Digilent/210299835073
+PARAM.DEVICE      string   true       jsn-JTAG-HS3-210299835073
+PARAM.FREQUENCY   enum     false      15000000
+PARAM.TYPE        string   true       xilinx_tcf
+TID               string   true       jsn-JTAG-HS3-210299835073
+UID               string   true       Digilent/210299835073
+CLASS=hw_target
+DEVICE_COUNT=2
+HW_JTAG=
+IS_OPENED=1
+IS_STAPL=0
+IS_SVF=0
+MAX_DEVICE_COUNT=32
+NAME=localhost:3121/xilinx_tcf/Digilent/210299835073
+PARAM.DEVICE=jsn-JTAG-HS3-210299835073
+PARAM.FREQUENCY=15000000
+PARAM.TYPE=xilinx_tcf
+TID=jsn-JTAG-HS3-210299835073
+UID=Digilent/210299835073
+OBJECT=arm_dap_0_1
+Property                   Type          Read-only  Value
+CLASS                      string        true       hw_device
+NAME                       string        true       arm_dap_0_1
+PART                       string        true       arm_dap
+VARIANT_NAME               string        true       
+PROGRAM.LOG                string        true       
+INDEX                      int           true       0
+IDCODE                     string        true       01001011101000000000010001110111
+IDCODE_HEX                 string        true       4BA00477
+IR_LENGTH                  int           true       4
+USER_CHAIN_COUNT           string        true       0
+IS_SYSMON_SUPPORTED        bool          true       0
+PROGRAM.IS_SUPPORTED       bool          true       0
+PROGRAM.FILE               string        false      
+PROGRAM.BOOT_FILE          string        false      
+PROGRAM.OPTIONS            string        false      
+PROGRAM.HW_BITSTREAM       hw_bitstream  true       
+AUTH_JTAG.FILE             string        false      
+PROBES.FILE                string        false      
+FULL_PROBES.FILE           string        false      
+BOOT_PROBES.FILE           string        false      
+PARTIAL_PROBES.FILES       string*       false      
+PROGRAM.HW_CFGMEM          hw_cfgmem     true       
+PROGRAM.HW_CFGMEM_BITFILE  string        true       
+PROGRAM.HW_CFGMEM_TYPE     string        true       
+PROGRAM.READBACK_FILE      string        false      
+PROGRAM.IS_RSA_PROGRAMMED  bool          true       0
+PROGRAM.IS_AES_PROGRAMMED  bool          true       0
+PROGRAM.DPA_PROTECT        bool          false      0
+PROGRAM.DPA_COUNT          int           false      0
+PROGRAM.DPA_MODE           string        false      
+DID                        string        true       jsn-JTAG-HS3-210299835073-4ba00477-0
+MASK                       string        true       00001111111111111111111111111111
+MASK_HEX                   string        true       0FFFFFFF
+UNKNOWN_DEVICE             bool          true       0
+XSDB_USER_BSCAN            string        false      1,3
+BSCAN_SWITCH_USER_MASK     string        false      0001
+CLASS=hw_device
+NAME=arm_dap_0_1
+PART=arm_dap
+VARIANT_NAME=
+PROGRAM.LOG=
+INDEX=0
+IDCODE=01001011101000000000010001110111
+IDCODE_HEX=4BA00477
+IR_LENGTH=4
+USER_CHAIN_COUNT=0
+IS_SYSMON_SUPPORTED=0
+PROGRAM.IS_SUPPORTED=0
+PROGRAM.FILE=
+PROGRAM.BOOT_FILE=
+PROGRAM.OPTIONS=
+PROGRAM.HW_BITSTREAM=
+AUTH_JTAG.FILE=
+PROBES.FILE=
+FULL_PROBES.FILE=
+BOOT_PROBES.FILE=
+PARTIAL_PROBES.FILES=
+PROGRAM.HW_CFGMEM=
+PROGRAM.HW_CFGMEM_BITFILE=
+PROGRAM.HW_CFGMEM_TYPE=
+PROGRAM.READBACK_FILE=
+PROGRAM.IS_RSA_PROGRAMMED=0
+PROGRAM.IS_AES_PROGRAMMED=0
+PROGRAM.DPA_PROTECT=0
+PROGRAM.DPA_COUNT=0
+PROGRAM.DPA_MODE=
+DID=jsn-JTAG-HS3-210299835073-4ba00477-0
+MASK=00001111111111111111111111111111
+MASK_HEX=0FFFFFFF
+UNKNOWN_DEVICE=0
+XSDB_USER_BSCAN=1,3
+BSCAN_SWITCH_USER_MASK=0001
+USE_BSCAN_FALLBACK=Default
+OBJECT=xc7z010_1_1
+Property                                                            Type          Read-only  Value
+CLASS                                                               string        true       hw_device
+NAME                                                                string        true       xc7z010_1_1
+PART                                                                string        true       xc7z010
+VARIANT_NAME                                                        string        true       
+PROGRAM.LOG                                                         string        true       
+INDEX                                                               int           true       1
+IDCODE                                                              string        true       00010011011100100010000010010011
+IDCODE_HEX                                                          string        true       13722093
+IR_LENGTH                                                           int           true       6
+USER_CHAIN_COUNT                                                    string        true       4
+IS_SYSMON_SUPPORTED                                                 bool          true       1
+PROGRAM.IS_SUPPORTED                                                bool          true       1
+PROGRAM.FILE                                                        string        false      
+PROGRAM.BOOT_FILE                                                   string        false      
+PROGRAM.OPTIONS                                                     string        false      
+PROGRAM.HW_BITSTREAM                                                hw_bitstream  true       
+AUTH_JTAG.FILE                                                      string        false      
+PROBES.FILE                                                         string        false      
+FULL_PROBES.FILE                                                    string        false      
+BOOT_PROBES.FILE                                                    string        false      
+PARTIAL_PROBES.FILES                                                string*       false      
+PROGRAM.HW_CFGMEM                                                   hw_cfgmem     true       
+PROGRAM.HW_CFGMEM_BITFILE                                           string        true       
+PROGRAM.HW_CFGMEM_TYPE                                              string        true       
+PROGRAM.READBACK_FILE                                               string        false      
+PROGRAM.IS_RSA_PROGRAMMED                                           bool          true       0
+PROGRAM.IS_AES_PROGRAMMED                                           bool          true       0
+PROGRAM.DPA_PROTECT                                                 bool          false      0
+PROGRAM.DPA_COUNT                                                   int           false      0
+PROGRAM.DPA_MODE                                                    string        false      
+REGISTER.BOOT_STATUS                                                string        true       00000000000000000000000000000001
+REGISTER.BOOT_STATUS.BIT00_0_STATUS_VALID                           string        true       1
+REGISTER.BOOT_STATUS.BIT01_0_FALLBACK                               string        true       0
+REGISTER.BOOT_STATUS.BIT02_0_INTERNAL_PROG                          string        true       0
+REGISTER.BOOT_STATUS.BIT03_0_WATCHDOG_TIMEOUT_ERROR                 string        true       0
+REGISTER.BOOT_STATUS.BIT04_0_ID_ERROR                               string        true       0
+REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR                              string        true       0
+REGISTER.BOOT_STATUS.BIT06_0_WRAP_ERROR                             string        true       0
+REGISTER.BOOT_STATUS.BIT07_0_SECURITY_ERROR                         string        true       0
+REGISTER.BOOT_STATUS.BIT08_1_STATUS_VALID                           string        true       0
+REGISTER.BOOT_STATUS.BIT09_1_FALLBACK                               string        true       0
+REGISTER.BOOT_STATUS.BIT10_1_INTERNAL_PROG                          string        true       0
+REGISTER.BOOT_STATUS.BIT11_1_WATCHDOG_TIMEOUT_ERROR                 string        true       0
+REGISTER.BOOT_STATUS.BIT12_1_ID_ERROR                               string        true       0
+REGISTER.BOOT_STATUS.BIT13_1_CRC_ERROR                              string        true       0
+REGISTER.BOOT_STATUS.BIT14_1_WRAP_ERROR                             string        true       0
+REGISTER.BOOT_STATUS.BIT15_1_SECURITY_ERROR                         string        true       0
+REGISTER.BOOT_STATUS.BIT16_RESERVED                                 string        true       0000000000000000
+REGISTER.CONFIG_STATUS                                              string        true       01000110000100000111111111111100
+REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR                              string        true       0
+REGISTER.CONFIG_STATUS.BIT01_DECRYPTOR_ENABLE                       string        true       0
+REGISTER.CONFIG_STATUS.BIT02_PLL_LOCK_STATUS                        string        true       1
+REGISTER.CONFIG_STATUS.BIT03_DCI_MATCH_STATUS                       string        true       1
+REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS            string        true       1
+REGISTER.CONFIG_STATUS.BIT05_GTS_CFG_B_STATUS                       string        true       1
+REGISTER.CONFIG_STATUS.BIT06_GWE_STATUS                             string        true       1
+REGISTER.CONFIG_STATUS.BIT07_GHIGH_STATUS                           string        true       1
+REGISTER.CONFIG_STATUS.BIT08_MODE_PIN_M[0]                          string        true       1
+REGISTER.CONFIG_STATUS.BIT09_MODE_PIN_M[1]                          string        true       1
+REGISTER.CONFIG_STATUS.BIT10_MODE_PIN_M[2]                          string        true       1
+REGISTER.CONFIG_STATUS.BIT11_INIT_B_INTERNAL_SIGNAL_STATUS          string        true       1
+REGISTER.CONFIG_STATUS.BIT12_INIT_B_PIN                             string        true       1
+REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS            string        true       1
+REGISTER.CONFIG_STATUS.BIT14_DONE_PIN                               string        true       1
+REGISTER.CONFIG_STATUS.BIT15_IDCODE_ERROR                           string        true       0
+REGISTER.CONFIG_STATUS.BIT16_SECURITY_ERROR                         string        true       0
+REGISTER.CONFIG_STATUS.BIT17_SYSTEM_MONITOR_OVER-TEMP_ALARM_STATUS  string        true       0
+REGISTER.CONFIG_STATUS.BIT18_CFG_STARTUP_STATE_MACHINE_PHASE        string        true       100
+REGISTER.CONFIG_STATUS.BIT21_RESERVED                               string        true       0000
+REGISTER.CONFIG_STATUS.BIT25_CFG_BUS_WIDTH_DETECTION                string        true       11
+REGISTER.CONFIG_STATUS.BIT27_HMAC_ERROR                             string        true       0
+REGISTER.CONFIG_STATUS.BIT28_PUDC_B_PIN                             string        true       0
+REGISTER.CONFIG_STATUS.BIT29_BAD_PACKET_ERROR                       string        true       0
+REGISTER.CONFIG_STATUS.BIT30_CFGBVS_PIN                             string        true       1
+REGISTER.CONFIG_STATUS.BIT31_RESERVED                               string        true       0
+REGISTER.COR0                                                       string        true       02003fe5
+REGISTER.COR0.BIT00_GWE_CYCLE                                       string        true       101
+REGISTER.COR0.BIT03_GTS_CYCLE                                       string        true       100
+REGISTER.COR0.BIT06_LOCK_CYCLE                                      string        true       111
+REGISTER.COR0.BIT09_MATCH_CYCLE                                     string        true       111
+REGISTER.COR0.BIT12_DONE_CYCLE                                      string        true       011
+REGISTER.COR0.BIT15_SSCLKSRC                                        string        true       00
+REGISTER.COR0.BIT17_OSCFSEL                                         string        true       000000
+REGISTER.COR0.BIT23_SINGLE                                          string        true       0
+REGISTER.COR0.BIT24_DRIVE_DONE                                      string        true       0
+REGISTER.COR0.BIT25_DONE_PIPE                                       string        true       1
+REGISTER.COR0.BIT26_RESERVED                                        string        true       0
+REGISTER.COR0.BIT27_PWRDWN_STAT                                     string        true       0
+REGISTER.COR0.BIT28_RESERVED                                        string        true       0000
+REGISTER.COR1                                                       string        true       00000000
+REGISTER.COR1.BIT00_BPI_PAGE_SIZE                                   string        true       00
+REGISTER.COR1.BIT02_BPI_1ST_READ_CYCLE                              string        true       00
+REGISTER.COR1.BIT04_RESERVED                                        string        true       0000
+REGISTER.COR1.BIT08_RBCRC_EN                                        string        true       0
+REGISTER.COR1.BIT09_RBCRC_NO_PIN                                    string        true       0
+REGISTER.COR1.BIT10_RESERVED                                        string        true       00000
+REGISTER.COR1.BIT15_RBCRC_ACTION                                    string        true       00
+REGISTER.COR1.BIT17_PERSIST_DEASSERT_AT_DESYNC                      string        true       0
+REGISTER.COR1.BIT18_RESERVED                                        string        true       00000000000000
+REGISTER.IR                                                         string        true       110101
+REGISTER.IR.BIT0_ALWAYS_ONE                                         string        true       1
+REGISTER.IR.BIT1_ALWAYS_ZERO                                        string        true       0
+REGISTER.IR.BIT2_ISC_DONE                                           string        true       1
+REGISTER.IR.BIT3_ISC_ENABLED                                        string        true       0
+REGISTER.IR.BIT4_INIT_COMPLETE                                      string        true       1
+REGISTER.IR.BIT5_DONE                                               string        true       1
+REGISTER.TIMER                                                      string        true       00000000
+REGISTER.TIMER.BIT00_TIMER_VALUE                                    string        true       000000000000000000000000000000
+REGISTER.TIMER.BIT30_TIMER_CFG_MON                                  string        true       0
+REGISTER.TIMER.BIT31_TIMER_USR_MON                                  string        true       0
+REGISTER.USERCODE                                                   string        true       ffffffff
+REGISTER.USR_ACCESS                                                 string        true       00000000
+REGISTER.WBSTAR                                                     string        true       00000000
+REGISTER.WBSTAR.BIT00_START_ADDR                                    string        true       00000000000000000000000000000
+REGISTER.WBSTAR.BIT29_RS_TS_B                                       string        true       0
+REGISTER.WBSTAR.BIT30_RS                                            string        true       00
+DID                                                                 string        true       jsn-JTAG-HS3-210299835073-13722093-0
+MASK                                                                string        true       00001111111111111111111111111111
+MASK_HEX                                                            string        true       0FFFFFFF
+UNKNOWN_DEVICE                                                      bool          true       0
+XSDB_USER_BSCAN                                                     string        false      1,3
+BSCAN_SWITCH_USER_MASK                                              string        false      0001
+CLASS=hw_device
+NAME=xc7z010_1_1
+PART=xc7z010
+VARIANT_NAME=
+PROGRAM.LOG=
+INDEX=1
+IDCODE=00010011011100100010000010010011
+IDCODE_HEX=13722093
+IR_LENGTH=6
+USER_CHAIN_COUNT=4
+IS_SYSMON_SUPPORTED=1
+PROGRAM.IS_SUPPORTED=1
+PROGRAM.FILE=
+PROGRAM.BOOT_FILE=
+PROGRAM.OPTIONS=
+PROGRAM.HW_BITSTREAM=
+AUTH_JTAG.FILE=
+PROBES.FILE=
+FULL_PROBES.FILE=
+BOOT_PROBES.FILE=
+PARTIAL_PROBES.FILES=
+PROGRAM.HW_CFGMEM=
+PROGRAM.HW_CFGMEM_BITFILE=
+PROGRAM.HW_CFGMEM_TYPE=
+PROGRAM.READBACK_FILE=
+PROGRAM.IS_RSA_PROGRAMMED=0
+PROGRAM.IS_AES_PROGRAMMED=0
+PROGRAM.DPA_PROTECT=0
+PROGRAM.DPA_COUNT=0
+PROGRAM.DPA_MODE=
+REGISTER.BOOT_STATUS=00000000000000000000000000000001
+REGISTER.BOOT_STATUS.BIT00_0_STATUS_VALID=1
+REGISTER.BOOT_STATUS.BIT01_0_FALLBACK=0
+REGISTER.BOOT_STATUS.BIT02_0_INTERNAL_PROG=0
+REGISTER.BOOT_STATUS.BIT03_0_WATCHDOG_TIMEOUT_ERROR=0
+REGISTER.BOOT_STATUS.BIT04_0_ID_ERROR=0
+REGISTER.BOOT_STATUS.BIT05_0_CRC_ERROR=0
+REGISTER.BOOT_STATUS.BIT06_0_WRAP_ERROR=0
+REGISTER.BOOT_STATUS.BIT07_0_SECURITY_ERROR=0
+REGISTER.BOOT_STATUS.BIT08_1_STATUS_VALID=0
+REGISTER.BOOT_STATUS.BIT09_1_FALLBACK=0
+REGISTER.BOOT_STATUS.BIT10_1_INTERNAL_PROG=0
+REGISTER.BOOT_STATUS.BIT11_1_WATCHDOG_TIMEOUT_ERROR=0
+REGISTER.BOOT_STATUS.BIT12_1_ID_ERROR=0
+REGISTER.BOOT_STATUS.BIT13_1_CRC_ERROR=0
+REGISTER.BOOT_STATUS.BIT14_1_WRAP_ERROR=0
+REGISTER.BOOT_STATUS.BIT15_1_SECURITY_ERROR=0
+REGISTER.BOOT_STATUS.BIT16_RESERVED=0000000000000000
+REGISTER.CONFIG_STATUS=01000110000100000111111111111100
+REGISTER.CONFIG_STATUS.BIT00_CRC_ERROR=0
+REGISTER.CONFIG_STATUS.BIT01_DECRYPTOR_ENABLE=0
+REGISTER.CONFIG_STATUS.BIT02_PLL_LOCK_STATUS=1
+REGISTER.CONFIG_STATUS.BIT03_DCI_MATCH_STATUS=1
+REGISTER.CONFIG_STATUS.BIT04_END_OF_STARTUP_(EOS)_STATUS=1
+REGISTER.CONFIG_STATUS.BIT05_GTS_CFG_B_STATUS=1
+REGISTER.CONFIG_STATUS.BIT06_GWE_STATUS=1
+REGISTER.CONFIG_STATUS.BIT07_GHIGH_STATUS=1
+REGISTER.CONFIG_STATUS.BIT08_MODE_PIN_M[0]=1
+REGISTER.CONFIG_STATUS.BIT09_MODE_PIN_M[1]=1
+REGISTER.CONFIG_STATUS.BIT10_MODE_PIN_M[2]=1
+REGISTER.CONFIG_STATUS.BIT11_INIT_B_INTERNAL_SIGNAL_STATUS=1
+REGISTER.CONFIG_STATUS.BIT12_INIT_B_PIN=1
+REGISTER.CONFIG_STATUS.BIT13_DONE_INTERNAL_SIGNAL_STATUS=1
+REGISTER.CONFIG_STATUS.BIT14_DONE_PIN=1
+REGISTER.CONFIG_STATUS.BIT15_IDCODE_ERROR=0
+REGISTER.CONFIG_STATUS.BIT16_SECURITY_ERROR=0
+REGISTER.CONFIG_STATUS.BIT17_SYSTEM_MONITOR_OVER-TEMP_ALARM_STATUS=0
+REGISTER.CONFIG_STATUS.BIT18_CFG_STARTUP_STATE_MACHINE_PHASE=100
+REGISTER.CONFIG_STATUS.BIT21_RESERVED=0000
+REGISTER.CONFIG_STATUS.BIT25_CFG_BUS_WIDTH_DETECTION=11
+REGISTER.CONFIG_STATUS.BIT27_HMAC_ERROR=0
+REGISTER.CONFIG_STATUS.BIT28_PUDC_B_PIN=0
+REGISTER.CONFIG_STATUS.BIT29_BAD_PACKET_ERROR=0
+REGISTER.CONFIG_STATUS.BIT30_CFGBVS_PIN=1
+REGISTER.CONFIG_STATUS.BIT31_RESERVED=0
+REGISTER.COR0=02003fe5
+REGISTER.COR0.BIT00_GWE_CYCLE=101
+REGISTER.COR0.BIT03_GTS_CYCLE=100
+REGISTER.COR0.BIT06_LOCK_CYCLE=111
+REGISTER.COR0.BIT09_MATCH_CYCLE=111
+REGISTER.COR0.BIT12_DONE_CYCLE=011
+REGISTER.COR0.BIT15_SSCLKSRC=00
+REGISTER.COR0.BIT17_OSCFSEL=000000
+REGISTER.COR0.BIT23_SINGLE=0
+REGISTER.COR0.BIT24_DRIVE_DONE=0
+REGISTER.COR0.BIT25_DONE_PIPE=1
+REGISTER.COR0.BIT26_RESERVED=0
+REGISTER.COR0.BIT27_PWRDWN_STAT=0
+REGISTER.COR0.BIT28_RESERVED=0000
+REGISTER.COR1=00000000
+REGISTER.COR1.BIT00_BPI_PAGE_SIZE=00
+REGISTER.COR1.BIT02_BPI_1ST_READ_CYCLE=00
+REGISTER.COR1.BIT04_RESERVED=0000
+REGISTER.COR1.BIT08_RBCRC_EN=0
+REGISTER.COR1.BIT09_RBCRC_NO_PIN=0
+REGISTER.COR1.BIT10_RESERVED=00000
+REGISTER.COR1.BIT15_RBCRC_ACTION=00
+REGISTER.COR1.BIT17_PERSIST_DEASSERT_AT_DESYNC=0
+REGISTER.COR1.BIT18_RESERVED=00000000000000
+REGISTER.IR=110101
+REGISTER.IR.BIT0_ALWAYS_ONE=1
+REGISTER.IR.BIT1_ALWAYS_ZERO=0
+REGISTER.IR.BIT2_ISC_DONE=1
+REGISTER.IR.BIT3_ISC_ENABLED=0
+REGISTER.IR.BIT4_INIT_COMPLETE=1
+REGISTER.IR.BIT5_DONE=1
+REGISTER.TIMER=00000000
+REGISTER.TIMER.BIT00_TIMER_VALUE=000000000000000000000000000000
+REGISTER.TIMER.BIT30_TIMER_CFG_MON=0
+REGISTER.TIMER.BIT31_TIMER_USR_MON=0
+REGISTER.USERCODE=ffffffff
+REGISTER.USR_ACCESS=00000000
+REGISTER.WBSTAR=00000000
+REGISTER.WBSTAR.BIT00_START_ADDR=00000000000000000000000000000
+REGISTER.WBSTAR.BIT29_RS_TS_B=0
+REGISTER.WBSTAR.BIT30_RS=00
+DID=jsn-JTAG-HS3-210299835073-13722093-0
+MASK=00001111111111111111111111111111
+MASK_HEX=0FFFFFFF
+UNKNOWN_DEVICE=0
+XSDB_USER_BSCAN=1,3
+BSCAN_SWITCH_USER_MASK=0001
+USE_BSCAN_FALLBACK=Default

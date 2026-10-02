@@ -2,6 +2,8 @@
 
 当前阶段只开发双 EBAZ4205 的时间同步。工程器件固定为 `xc7z010clg400-1`，主板 N18/X5 输入 50MHz，约束周期20ns；全部自动化入口为 PowerShell 7。
 
+2026-10-02 新增只读硬件检测：两个 JTAG target 各识别一个 XC7Z010；用户确认 Board A=210299245711+COM7、Board B=210299835073。Board B UART 未发现，Master/Slave 角色未指定。详见 [双板硬件检测报告](../evidence/task001/DUAL_BOARD_HARDWARE_CHECK.md)。当前仍为 NOT_READY_FOR_BITSTREAM；检测成功不改变 BOARD_TESTED / HARDWARE_VERIFIED 状态。
+
 ## 本地使用
 
 在仓库根目录打开 PowerShell 7：

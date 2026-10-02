@@ -1,0 +1,118 @@
+{
+  "algorithm": "SHA256",
+  "scope": "Hardware evidence and interpreted summary including user-confirmed board mapping; excludes this manifest",
+  "files": [
+    {
+      "path": "v3/evidence/task001/hardware_check/hardware-check-summary.json",
+      "sha256": "3c1c789aa4809491d04037ab479b4f6aa6698b0f2b2d4d0b4949a77d3e1cc49a"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/hw-devices.txt",
+      "sha256": "69e2ddc16c3919b75c1bed5e8926184f3950b8fc180294c40b445096c605fb73"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/hw-properties.txt",
+      "sha256": "b4cc6283addf2d83378fbcef8e15640faa9a44d1d651a71d03b53abf182414b7"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/hw-server-after.txt",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/hw-server-before.txt",
+      "sha256": "ecc13f824185a50db62a3b6500ae09130e14f6997fde0c7dc884327305e21cfc"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/hw-targets.txt",
+      "sha256": "789cd579f03eab9dbabd50c5d1b18b7bd46d9bdc63c7447ea28a0098438bd900"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/jtag-usb-devices.txt",
+      "sha256": "85d4f6234bf4d80e63e678dbc5982bb37a3537d83c19376626fc91202165d7b6"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/matching-pnp-entities.txt",
+      "sha256": "add94f7e2f0c034e72100c7e8aef7e9dd1cc55912439fc8b93fc0d4348d07653"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/probe01/hardware-check-summary.json",
+      "sha256": "57b3603a9fc3ad5417dcf2f42f5b5078a4a000ca7222333670752e30eb27195a"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/probe01/hw-devices.txt",
+      "sha256": "239df524e08207319dfb697d6427a04b2d85088e90f24ad84f8e72e9a0ced4b4"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/probe01/hw-properties.txt",
+      "sha256": "9ee6f3ebf9ab7a7143a97eb23e108e64fa67cf7939e85117a4be30fe083860a3"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/probe01/hw-targets.txt",
+      "sha256": "789cd579f03eab9dbabd50c5d1b18b7bd46d9bdc63c7447ea28a0098438bd900"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/probe01/vivado-hardware-console.log",
+      "sha256": "0e8e4a274b197738a3ead432fde02cd08a0fcb2a883e8ae8e4365397c341d270"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/probe01/vivado-probe-status.tsv",
+      "sha256": "c249eeb9774d45a9bd54f614f709fe8a06ddc39a11317c87edb38c0aa62bab55"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/probe01/vivado.log",
+      "sha256": "a2686808f11b28a57a13b2bd1c8d411bde4e9c608ef615081cc2ab49a623322a"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/query-errors.txt",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/serial-ports.txt",
+      "sha256": "c37d12a09fd29f8735b8931a3df708048d985a7f0ae952d01638aef925769d9b"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/uart-devices.txt",
+      "sha256": "1efa81b7b8f537eb3a6ef49cb9c5a608aa09aae449138023c7d0bfab7582a38c"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/usb-controller-associations.txt",
+      "sha256": "314a00d438cc9ded167010bbde3566ea98f916657972e5646afcb114686609df"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/usb-device-tree.txt",
+      "sha256": "6483e1ebefd0c79e107845b5718c64afd3665616bc49bf75ae49d26c8dba76f0"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/usb-drivers.txt",
+      "sha256": "130192c5faa094e6ae6df8615e14ba949e155a6552ec9d13ee7b7036faf56d35"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/usb-properties.json",
+      "sha256": "2ef779d7a61ba67d837451015eed3dd75c02825c54ed5a3a24830d912d754b08"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/vivado-hardware-console.log",
+      "sha256": "9c7400b1cce86c786aa5ae8c4962d6fd93f9a2f7dc085a2da789dd95f9f8b828"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/vivado-hardware.log",
+      "sha256": "a2ff2f15782138458b781f4233b16964254d1ab0544236c633f99581c39a95ac"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/vivado-probe-status.tsv",
+      "sha256": "abb56a84ed4226ddd539ec66a9fcdcc2f59b19fd9b7fc6ddad9b3dab01965da8"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/vivado.log",
+      "sha256": "a2686808f11b28a57a13b2bd1c8d411bde4e9c608ef615081cc2ab49a623322a"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/windows-device-inventory.json",
+      "sha256": "49c0be1b56c8c99bfa49b3162323c65912c186e639b38ca1bc350c0fc4b767c4"
+    },
+    {
+      "path": "v3/evidence/task001/hardware_check/windows-device-inventory.txt",
+      "sha256": "1c5a096107981b830301de654a2f0ed5bba0725460f597390f3ac9a0fda6aa05"
+    }
+  ]
+}

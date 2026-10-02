@@ -1,0 +1,107 @@
+
+DeviceName         : WinUsb Device
+DeviceID           : USB\VID_174F&PID_246F&MI_02\7&2C27EE68&1&0002
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : winusb.inf
+IsSigned           : True
+
+DeviceName         : Integrated Camera
+DeviceID           : USB\VID_174F&PID_246F&MI_00\7&2C27EE68&1&0000
+DriverProviderName : Realtek
+DriverVersion      : 10.0.22000.20384
+InfName            : oem70.inf
+IsSigned           : True
+
+DeviceName         : USB Composite Device
+DeviceID           : USB\VID_174F&PID_246F\0001
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : usb.inf
+IsSigned           : True
+
+DeviceName         : USB Root Hub (USB 3.0)
+DeviceID           : USB\ROOT_HUB30\5&17A63683&0&0
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : usbhub3.inf
+IsSigned           : True
+
+DeviceName         : USB Serial Converter
+DeviceID           : USB\VID_0403&PID_6014\210299245711
+DriverProviderName : FTDI
+DriverVersion      : 2.12.36.20
+InfName            : oem107.inf
+IsSigned           : True
+
+DeviceName         : USB Serial Converter
+DeviceID           : USB\VID_0403&PID_6014\210299835073
+DriverProviderName : FTDI
+DriverVersion      : 2.12.36.20
+InfName            : oem107.inf
+IsSigned           : True
+
+DeviceName         : USB-SERIAL CH340
+DeviceID           : USB\VID_1A86&PID_7523\8&148914A8&0&1
+DriverProviderName : wch.cn
+DriverVersion      : 3.9.2024.9
+InfName            : oem64.inf
+IsSigned           : True
+
+DeviceName         : Generic USB Hub
+DeviceID           : USB\VID_1A86&PID_8095\7&2E3FCB7B&0&1
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : usbhub3.inf
+IsSigned           : True
+
+DeviceName         : USB Input Device
+DeviceID           : USB\VID_048D&PID_C197\7&2E3FCB7B&0&4
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : input.inf
+IsSigned           : True
+
+DeviceName         : MediaTek Bluetooth Adapter
+DeviceID           : USB\VID_0489&PID_E111&MI_00\8&8944179&1&0000
+DriverProviderName : Mediatek Inc.
+DriverVersion      : 25.20.3.54
+InfName            : oem13.inf
+IsSigned           : True
+
+DeviceName         : USB Composite Device
+DeviceID           : USB\VID_0489&PID_E111\000000000
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : usb.inf
+IsSigned           : True
+
+DeviceName         : Generic USB Hub
+DeviceID           : USB\VID_05E3&PID_0610\6&1CB538DD&0&2
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : usbhub3.inf
+IsSigned           : True
+
+DeviceName         : Generic SuperSpeed USB Hub
+DeviceID           : USB\VID_05E3&PID_0620\6&1CB538DD&0&4
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : usbhub3.inf
+IsSigned           : True
+
+DeviceName         : USB Root Hub (USB 3.0)
+DeviceID           : USB\ROOT_HUB30\5&21D782F4&0&0
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : usbhub3.inf
+IsSigned           : True
+
+DeviceName         : USB Root Hub (USB 3.0)
+DeviceID           : USB\ROOT_HUB30\5&D4A2187&0&0
+DriverProviderName : Microsoft
+DriverVersion      : 10.0.26100.9444
+InfName            : usbhub3.inf
+IsSigned           : True
+
+

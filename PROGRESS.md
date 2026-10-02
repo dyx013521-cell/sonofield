@@ -1,6 +1,6 @@
 # SonoField v3 当前进展
 
-整理日期：2026-10-02（Asia/Shanghai）。最近已归档的工程验证：2026-09-30。
+整理日期：2026-10-02（Asia/Shanghai）。软件基线验证：2026-09-30；最新只读硬件检测：2026-10-02。
 仓库：<https://github.com/dyx013521-cell/sonofield>。
 
 ## 当前结论
@@ -9,7 +9,15 @@
 
 状态为 **SIMULATED / SYNTHESIZED / IMPLEMENTED**。**BOARD_TESTED / HARDWARE_VERIFIED 尚未达到**。不能据此宣称实板亚周期同步、超过一小时稳定运行、声场正确或悬浮成功。
 
-此次 GitHub 同步核对了现有交付与 16 项源文件 SHA256，上传源码、测试、约束、构建脚本、报告、原始日志、硬件参考资料及综合/布局布线检查点，并添加本进展索引。此次没有重跑 Vivado，也没有进行新的 JTAG 扫描或硬件测量；下文数值均来自已归档基线。
+首次 GitHub 同步核对了现有交付与 16 项源文件 SHA256，上传源码、测试、约束、构建脚本、报告、原始日志、硬件参考资料及综合/布局布线检查点。2026-10-02 后续完成了新的 Windows USB/UART 与 Vivado JTAG 只读检测；没有重跑仿真/综合/实现，没有生成或下载 bitstream，也没有物理测量。下文软件性能数值仍来自已归档基线。
+
+## 最新硬件检测（2026-10-02）
+
+新增 [双板硬件检测报告](v3/evidence/task001/DUAL_BOARD_HARDWARE_CHECK.md)、[原始证据](v3/evidence/task001/hardware_check/) 和 [机器可读结果](v3/evidence/task001/hardware_check/hardware-check-summary.json)。两个独立 JTAG target 均成功打开，每条链路识别一个 XC7Z010；另有各一个 ARM DAP，共 2 个 FPGA、4 个链上 hardware device。两个电缆 serial 为 `210299245711` 与 `210299835073`。
+
+USB UART 目前仅发现 CH340 `COM7`，第二路未发现。检测后用户确认 **Board A=JTAG 210299245711 + COM7；Board B=JTAG 210299835073，UART 待发现**；Master/Slave 角色尚未指定。用户说明两路 JTAG 直连电脑、两路 UART 经扩展坞；系统逻辑父级不能完整证明物理端口，其中一路 JTAG 含 Hub 节点，不能据此猜测接线。当前仍为 **NOT_READY_FOR_BITSTREAM**，BOARD_TESTED / HARDWARE_VERIFIED 均为 false。下一步补齐 Board B UART、落实身份标签和角色、完成供电/VCCO/共地/P5 接线与启动/时序审查。
+
+再次提供的 EBAZ4205 硬件说明与归档文件 SHA256 一致；其中设计资料与旧实验操作建议不替代当前工程规则或实板测量。
 
 ## 固定工程事实与架构
 
@@ -47,7 +55,8 @@
 | Slave 综合 / 实现 | SYNTHESIZED / IMPLEMENTED | 同上 |
 | Master 时序 | Setup WNS 0.936 ns；Hold WHS 0.006 ns；CDC critical 0 | [timing_report.md](v3/evidence/task001/timing_report.md)、[Master timing.rpt](v3/evidence/task001/ebaz_master/timing.rpt) |
 | Slave 时序 | Setup WNS 0.199 ns；Hold WHS 0.052 ns；CDC critical 0 | [Slave timing.rpt](v3/evidence/task001/ebaz_slave/timing.rpt) |
-| 硬件可用性扫描 | 当时发现 0 个可访问 JTAG 目标；未下载 FPGA | [hardware_report.md](v3/evidence/task001/hardware_report.md)、[hardware_probe.txt](v3/evidence/task001/hardware_probe.txt) |
+| 2026-09-30 历史硬件扫描 | 当时发现 0 个可访问 JTAG 目标；未下载 FPGA | [hardware_report.md](v3/evidence/task001/hardware_report.md)、[hardware_probe.txt](v3/evidence/task001/hardware_probe.txt) |
+| 2026-10-02 最新硬件扫描 | 2 个 target、2 个 XC7Z010；USB UART 仅 COM7；未下载 FPGA | [DUAL_BOARD_HARDWARE_CHECK.md](v3/evidence/task001/DUAL_BOARD_HARDWARE_CHECK.md) |
 
 覆盖 CRC 错误、重复/缺失帧、随机链路延迟、共同清零/触发、超时及恢复；顶层测试包括本地晶振相差 100 ppm 与转发时钟断开/恢复。
 

@@ -1,0 +1,12 @@
+
+Status       : OK
+Class        : USB
+FriendlyName : USB Serial Converter
+InstanceId   : USB\VID_0403&PID_6014\210299835073
+
+Status       : OK
+Class        : USB
+FriendlyName : USB Serial Converter
+InstanceId   : USB\VID_0403&PID_6014\210299245711
+
+

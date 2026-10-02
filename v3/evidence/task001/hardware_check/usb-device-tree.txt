@@ -1,0 +1,1010 @@
+{
+  "InstanceId": "USB\\VID_0489&PID_E111&MI_00\\8&8944179&1&0000",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_0489&PID_E111&REV_0100&MI_00",
+      "USB\\VID_0489&PID_E111&MI_00"
+    ],
+    "DEVPKEY_Device_Service": "BTHUSB",
+    "DEVPKEY_Device_Driver": "{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}\\0000",
+    "DEVPKEY_Device_Manufacturer": "Mediatek Inc.",
+    "DEVPKEY_Device_LocationInfo": "0005.0000.0004.002.003.000.000.000.000",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\VID_0489&PID_E111\\000000000",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "BT_FUNCTION",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(2)#USB(3)#USBMI(0)",
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(2)#USB(3)#USB(3)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT2)#ACPI(HS03)#USBMI(0)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT2)#ACPI(HS03)#USB(3)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2025-08-08T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "25.20.3.54",
+    "DEVPKEY_Device_DriverDesc": "MediaTek Bluetooth Adapter",
+    "DEVPKEY_Device_DriverInfPath": "oem13.inf",
+    "DEVPKEY_Device_DriverInfSection": "MTKBT_L1_2.NTamd64",
+    "DEVPKEY_Device_DriverProvider": "Mediatek Inc.",
+    "DEVPKEY_Device_DriverRank": 16711681
+  }
+}
+{
+  "InstanceId": "USB\\VID_0489&PID_E111\\000000000",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_0489&PID_E111&REV_0100",
+      "USB\\VID_0489&PID_E111"
+    ],
+    "DEVPKEY_Device_Service": "usbccgp",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0009",
+    "DEVPKEY_Device_Manufacturer": "(标准 USB 主控制器)",
+    "DEVPKEY_Device_LocationInfo": "Port_#0003.Hub_#0005",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\VID_05E3&PID_0610\\6&1cb538dd&0&2",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "Wireless_Device",
+    "DEVPKEY_Device_PhysicalDeviceLocation": [
+      130,
+      0,
+      0,
+      0,
+      8,
+      0,
+      14,
+      0,
+      80,
+      13,
+      128,
+      1,
+      0,
+      0,
+      16,
+      0,
+      255,
+      255,
+      255,
+      255
+    ],
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(2)#USB(3)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT2)#ACPI(HS03)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "USB Composite Device",
+    "DEVPKEY_Device_DriverInfPath": "usb.inf",
+    "DEVPKEY_Device_DriverInfSection": "Composite.Dev.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16719878
+  }
+}
+{
+  "InstanceId": "USB\\VID_05E3&PID_0610\\6&1cb538dd&0&2",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_05E3&PID_0610&REV_7651",
+      "USB\\VID_05E3&PID_0610"
+    ],
+    "DEVPKEY_Device_Service": "USBHUB3",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0007",
+    "DEVPKEY_Device_Manufacturer": "(标准 USB 集线器)",
+    "DEVPKEY_Device_LocationInfo": "Port_#0002.Hub_#0002",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\ROOT_HUB30\\5&21d782f4&0&0",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "USB2.1 Hub",
+    "DEVPKEY_Device_PhysicalDeviceLocation": [
+      130,
+      0,
+      0,
+      0,
+      8,
+      0,
+      14,
+      0,
+      80,
+      13,
+      0,
+      0,
+      1,
+      0,
+      16,
+      0,
+      255,
+      255,
+      255,
+      255
+    ],
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(2)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT2)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2026-09-03T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "Generic USB Hub",
+    "DEVPKEY_Device_DriverInfPath": "usbhub3.inf",
+    "DEVPKEY_Device_DriverInfSection": "Generic.Install.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 8396800
+  }
+}
+{
+  "InstanceId": "USB\\ROOT_HUB30\\5&21d782f4&0&0",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\ROOT_HUB30&VID1022&PID15B7&REV0000",
+      "USB\\ROOT_HUB30&VID1022&PID15B7",
+      "USB\\ROOT_HUB30"
+    ],
+    "DEVPKEY_Device_Service": "USBHUB3",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0003",
+    "DEVPKEY_Device_Manufacturer": "(标准 USB 集线器)",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "PCI\\VEN_1022&DEV_15B7&SUBSYS_382A17AA&REV_00\\4&6c4ad28&0&0441",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2026-09-03T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "USB Root Hub (USB 3.0)",
+    "DEVPKEY_Device_DriverInfPath": "usbhub3.inf",
+    "DEVPKEY_Device_DriverInfSection": "Generic.Install.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 8388610
+  }
+}
+{
+  "InstanceId": "PCI\\VEN_1022&DEV_15B7&SUBSYS_382A17AA&REV_00\\4&6c4ad28&0&0441",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "PCI\\VEN_1022&DEV_15B7&SUBSYS_382A17AA&REV_00",
+      "PCI\\VEN_1022&DEV_15B7&SUBSYS_382A17AA",
+      "PCI\\VEN_1022&DEV_15B7&CC_0C0330",
+      "PCI\\VEN_1022&DEV_15B7&CC_0C03"
+    ],
+    "DEVPKEY_Device_Service": "USBXHCI",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0001",
+    "DEVPKEY_Device_Manufacturer": "通用 USB xHCI 主机控制器",
+    "DEVPKEY_Device_FriendlyName": "AMD USB 3.10 可扩展主机控制器 - 1.20 (Microsoft)",
+    "DEVPKEY_Device_LocationInfo": "PCI 总线 5、设备 0、功能 4",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022&REV_00\\3&11583659&1&41",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "通用串行总线(USB)控制器",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2026-09-03T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "USB xHCI Compliant Host Controller",
+    "DEVPKEY_Device_DriverInfPath": "usbxhci.inf",
+    "DEVPKEY_Device_DriverInfSection": "Generic.Install.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 8396806
+  }
+}
+{
+  "InstanceId": "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022&REV_00\\3&11583659&1&41",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022&REV_00",
+      "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022",
+      "PCI\\VEN_1022&DEV_14DD&CC_060400",
+      "PCI\\VEN_1022&DEV_14DD&CC_0604"
+    ],
+    "DEVPKEY_Device_Service": "pci",
+    "DEVPKEY_Device_Driver": "{4d36e97d-e325-11ce-bfc1-08002be10318}\\0038",
+    "DEVPKEY_Device_Manufacturer": "(标准系统设备)",
+    "DEVPKEY_Device_LocationInfo": "PCI 总线 0、设备 8、功能 1",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "ACPI\\PNP0A08\\0",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "PCI 到 PCI 桥",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9278",
+    "DEVPKEY_Device_DriverDesc": "PCI Express Root Port",
+    "DEVPKEY_Device_DriverInfPath": "pci.inf",
+    "DEVPKEY_Device_DriverInfSection": "PCI_BRIDGE",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16719879
+  }
+}
+{
+  "InstanceId": "ACPI\\PNP0A08\\0",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "ACPI\\VEN_PNP&DEV_0A08",
+      "ACPI\\PNP0A08",
+      "*PNP0A08"
+    ],
+    "DEVPKEY_Device_Service": "pci",
+    "DEVPKEY_Device_Driver": "{4d36e97d-e325-11ce-bfc1-08002be10318}\\0010",
+    "DEVPKEY_Device_Manufacturer": "(标准系统设备)",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "ACPI_HAL\\PNP0C08\\0",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_LocationPaths": [
+      "ACPI(_SB_)#ACPI(PCI0)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9278",
+    "DEVPKEY_Device_DriverDesc": "PCI Express Root Complex",
+    "DEVPKEY_Device_DriverInfPath": "pci.inf",
+    "DEVPKEY_Device_DriverInfSection": "PCI_ROOT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16711682
+  }
+}
+{
+  "InstanceId": "ACPI_HAL\\PNP0C08\\0",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "ACPI_HAL\\PNP0C08",
+      "*PNP0C08"
+    ],
+    "DEVPKEY_Device_Service": "ACPI",
+    "DEVPKEY_Device_Driver": "{4d36e97d-e325-11ce-bfc1-08002be10318}\\0006",
+    "DEVPKEY_Device_Manufacturer": "Microsoft",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "ROOT\\ACPI_HAL\\0000",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9278",
+    "DEVPKEY_Device_DriverDesc": "Microsoft ACPI-Compliant System",
+    "DEVPKEY_Device_DriverInfPath": "acpi.inf",
+    "DEVPKEY_Device_DriverInfSection": "ACPI_Inst.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16711681
+  }
+}
+{
+  "InstanceId": "ROOT\\ACPI_HAL\\0000",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "acpiapic"
+    ],
+    "DEVPKEY_Device_Service": "\\Driver\\ACPI_HAL",
+    "DEVPKEY_Device_Driver": "{4d36e966-e325-11ce-bfc1-08002be10318}\\0000",
+    "DEVPKEY_Device_Manufacturer": "(标准计算机)",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "HTREE\\ROOT\\0",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.1",
+    "DEVPKEY_Device_DriverDesc": "ACPI x64-based PC",
+    "DEVPKEY_Device_DriverInfPath": "hal.inf",
+    "DEVPKEY_Device_DriverInfSection": "ACPI_AMD64_HAL",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16711680
+  }
+}
+{
+  "InstanceId": "HTREE\\ROOT\\0",
+  "Properties": {
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}"
+  }
+}
+{
+  "InstanceId": "USB\\VID_0403&PID_6014\\210299835073",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_0403&PID_6014&REV_0900",
+      "USB\\VID_0403&PID_6014"
+    ],
+    "DEVPKEY_Device_Service": "FTDIBUS",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0019",
+    "DEVPKEY_Device_Manufacturer": "FTDI",
+    "DEVPKEY_Device_LocationInfo": "Port_#0002.Hub_#0005",
+    "DEVPKEY_Device_BaseContainerId": "{A1C83D6C-4F7F-5349-A765-2EBD53AD5F90}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\VID_05E3&PID_0610\\6&1cb538dd&0&2",
+    "DEVPKEY_Device_ContainerId": "{A1C83D6C-4F7F-5349-A765-2EBD53AD5F90}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "Digilent USB Device",
+    "DEVPKEY_Device_PhysicalDeviceLocation": [
+      130,
+      0,
+      0,
+      0,
+      8,
+      0,
+      14,
+      0,
+      81,
+      13,
+      0,
+      1,
+      1,
+      0,
+      16,
+      0,
+      255,
+      255,
+      255,
+      255
+    ],
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(2)#USB(2)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT2)#ACPI(HS02)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2024-10-28T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "2.12.36.20",
+    "DEVPKEY_Device_DriverDesc": "USB Serial Converter",
+    "DEVPKEY_Device_DriverInfPath": "oem107.inf",
+    "DEVPKEY_Device_DriverInfSection": "FtdiBus.NTamd64",
+    "DEVPKEY_Device_DriverProvider": "FTDI",
+    "DEVPKEY_Device_DriverPropPageProvider": "ftbusui.dll,FTBUSUIPropPageProvider",
+    "DEVPKEY_Device_DriverRank": 16711681
+  }
+}
+{
+  "InstanceId": "USB\\VID_1A86&PID_7523\\8&148914A8&0&1",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_1A86&PID_7523&REV_8134",
+      "USB\\VID_1A86&PID_7523"
+    ],
+    "DEVPKEY_Device_Service": "CH341SER_A64",
+    "DEVPKEY_Device_Driver": "{4d36e978-e325-11ce-bfc1-08002be10318}\\0004",
+    "DEVPKEY_Device_Manufacturer": "wch.cn",
+    "DEVPKEY_Device_FriendlyName": "USB-SERIAL CH340 (COM7)",
+    "DEVPKEY_Device_LocationInfo": "Port_#0001.Hub_#0006",
+    "DEVPKEY_Device_BaseContainerId": "{BD66F220-BD7E-11F1-8BCC-4845E687415A}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\VID_1A86&PID_8095\\7&2e3fcb7b&0&1",
+    "DEVPKEY_Device_ContainerId": "{BD66F220-BD7E-11F1-8BCC-4845E687415A}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "USB Serial",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(2)#USB(1)#USB(1)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT2)#ACPI(HS01)#USB(1)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2024-09-16T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "3.9.2024.9",
+    "DEVPKEY_Device_DriverDesc": "USB-SERIAL CH340",
+    "DEVPKEY_Device_DriverInfPath": "oem64.inf",
+    "DEVPKEY_Device_DriverInfSection": "CH341SER_Inst.NTamd64",
+    "DEVPKEY_Device_DriverProvider": "wch.cn",
+    "DEVPKEY_Device_DriverPropPageProvider": "CH341PORTSA64.dll,SerialPortPropPageProvider",
+    "DEVPKEY_Device_DriverRank": 16711681
+  }
+}
+{
+  "InstanceId": "USB\\VID_1A86&PID_8095\\7&2e3fcb7b&0&1",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_1A86&PID_8095&REV_1310",
+      "USB\\VID_1A86&PID_8095"
+    ],
+    "DEVPKEY_Device_Service": "USBHUB3",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0017",
+    "DEVPKEY_Device_Manufacturer": "(标准 USB 集线器)",
+    "DEVPKEY_Device_LocationInfo": "Port_#0001.Hub_#0005",
+    "DEVPKEY_Device_BaseContainerId": "{BD66F1E7-BD7E-11F1-8BCC-4845E687415A}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\VID_05E3&PID_0610\\6&1cb538dd&0&2",
+    "DEVPKEY_Device_ContainerId": "{BD66F1E7-BD7E-11F1-8BCC-4845E687415A}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "USB Hub",
+    "DEVPKEY_Device_PhysicalDeviceLocation": [
+      130,
+      0,
+      0,
+      0,
+      8,
+      0,
+      14,
+      0,
+      81,
+      13,
+      128,
+      0,
+      1,
+      0,
+      16,
+      0,
+      255,
+      255,
+      255,
+      255
+    ],
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(2)#USB(1)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT2)#ACPI(HS01)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2026-09-03T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "Generic USB Hub",
+    "DEVPKEY_Device_DriverInfPath": "usbhub3.inf",
+    "DEVPKEY_Device_DriverInfSection": "Generic.Install.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 8396800
+  }
+}
+{
+  "InstanceId": "USB\\VID_174F&PID_246F&MI_02\\7&2C27EE68&1&0002",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_174F&PID_246F&REV_0009&MI_02",
+      "USB\\VID_174F&PID_246F&MI_02"
+    ],
+    "DEVPKEY_Device_Service": "WINUSB",
+    "DEVPKEY_Device_Driver": "{88bae032-5a81-49f0-bc3d-a4ff138216d6}\\0000",
+    "DEVPKEY_Device_Manufacturer": "WinUSB 设备",
+    "DEVPKEY_Device_FriendlyName": "Camera DFU Device",
+    "DEVPKEY_Device_LocationInfo": "0006.0000.0000.001.000.000.000.000.000",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\VID_174F&PID_246F\\0001",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "Camera DFU Device",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0803)#PCI(0000)#USBROOT(0)#USB(1)#USBMI(2)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP19)#ACPI(XHC2)#ACPI(RHUB)#ACPI(PRT1)#USBMI(2)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "WinUsb Device",
+    "DEVPKEY_Device_DriverInfPath": "winusb.inf",
+    "DEVPKEY_Device_DriverInfSection": "WINUSB.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16719872
+  }
+}
+{
+  "InstanceId": "USB\\VID_174F&PID_246F\\0001",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_174F&PID_246F&REV_0009",
+      "USB\\VID_174F&PID_246F"
+    ],
+    "DEVPKEY_Device_Service": "usbccgp",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0008",
+    "DEVPKEY_Device_Manufacturer": "(标准 USB 主控制器)",
+    "DEVPKEY_Device_LocationInfo": "Port_#0001.Hub_#0003",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\ROOT_HUB30\\5&17a63683&0&0",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "Integrated Camera",
+    "DEVPKEY_Device_PhysicalDeviceLocation": [
+      130,
+      0,
+      0,
+      0,
+      8,
+      0,
+      14,
+      0,
+      32,
+      13,
+      0,
+      4,
+      0,
+      0,
+      16,
+      0,
+      255,
+      255,
+      255,
+      255
+    ],
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0803)#PCI(0000)#USBROOT(0)#USB(1)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP19)#ACPI(XHC2)#ACPI(RHUB)#ACPI(PRT1)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "USB Composite Device",
+    "DEVPKEY_Device_DriverInfPath": "usb.inf",
+    "DEVPKEY_Device_DriverInfSection": "Composite.Dev.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16719878
+  }
+}
+{
+  "InstanceId": "USB\\ROOT_HUB30\\5&17a63683&0&0",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\ROOT_HUB30&VID1022&PID15B8&REV0000",
+      "USB\\ROOT_HUB30&VID1022&PID15B8",
+      "USB\\ROOT_HUB30"
+    ],
+    "DEVPKEY_Device_Service": "USBHUB3",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0004",
+    "DEVPKEY_Device_Manufacturer": "(标准 USB 集线器)",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "PCI\\VEN_1022&DEV_15B8&SUBSYS_382917AA&REV_00\\4&1cec15e5&0&0043",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0803)#PCI(0000)#USBROOT(0)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP19)#ACPI(XHC2)#ACPI(RHUB)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2026-09-03T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "USB Root Hub (USB 3.0)",
+    "DEVPKEY_Device_DriverInfPath": "usbhub3.inf",
+    "DEVPKEY_Device_DriverInfSection": "Generic.Install.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 8388610
+  }
+}
+{
+  "InstanceId": "PCI\\VEN_1022&DEV_15B8&SUBSYS_382917AA&REV_00\\4&1cec15e5&0&0043",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "PCI\\VEN_1022&DEV_15B8&SUBSYS_382917AA&REV_00",
+      "PCI\\VEN_1022&DEV_15B8&SUBSYS_382917AA",
+      "PCI\\VEN_1022&DEV_15B8&CC_0C0330",
+      "PCI\\VEN_1022&DEV_15B8&CC_0C03"
+    ],
+    "DEVPKEY_Device_Service": "USBXHCI",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0002",
+    "DEVPKEY_Device_Manufacturer": "通用 USB xHCI 主机控制器",
+    "DEVPKEY_Device_FriendlyName": "AMD USB 2.0 可扩展主机控制器 - 1.20 (Microsoft)",
+    "DEVPKEY_Device_LocationInfo": "PCI 总线 6、设备 0、功能 0",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022&REV_00\\3&11583659&1&43",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "通用串行总线(USB)控制器",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0803)#PCI(0000)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP19)#ACPI(XHC2)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2026-09-03T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "USB xHCI Compliant Host Controller",
+    "DEVPKEY_Device_DriverInfPath": "usbxhci.inf",
+    "DEVPKEY_Device_DriverInfSection": "Generic.Install.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 8396806
+  }
+}
+{
+  "InstanceId": "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022&REV_00\\3&11583659&1&43",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022&REV_00",
+      "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022",
+      "PCI\\VEN_1022&DEV_14DD&CC_060400",
+      "PCI\\VEN_1022&DEV_14DD&CC_0604"
+    ],
+    "DEVPKEY_Device_Service": "pci",
+    "DEVPKEY_Device_Driver": "{4d36e97d-e325-11ce-bfc1-08002be10318}\\0039",
+    "DEVPKEY_Device_Manufacturer": "(标准系统设备)",
+    "DEVPKEY_Device_LocationInfo": "PCI 总线 0、设备 8、功能 3",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "ACPI\\PNP0A08\\0",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "PCI 到 PCI 桥",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0803)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP19)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9278",
+    "DEVPKEY_Device_DriverDesc": "PCI Express Root Port",
+    "DEVPKEY_Device_DriverInfPath": "pci.inf",
+    "DEVPKEY_Device_DriverInfSection": "PCI_BRIDGE",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16719879
+  }
+}
+{
+  "InstanceId": "USB\\ROOT_HUB30\\5&D4A2187&0&0",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\ROOT_HUB30&VID1022&PID15B6&REV0000",
+      "USB\\ROOT_HUB30&VID1022&PID15B6",
+      "USB\\ROOT_HUB30"
+    ],
+    "DEVPKEY_Device_Service": "USBHUB3",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0005",
+    "DEVPKEY_Device_Manufacturer": "(标准 USB 集线器)",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "PCI\\VEN_1022&DEV_15B6&SUBSYS_382717AA&REV_00\\4&6c4ad28&0&0341",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0003)#USBROOT(0)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC0)#ACPI(RHUB)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2026-09-03T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "USB Root Hub (USB 3.0)",
+    "DEVPKEY_Device_DriverInfPath": "usbhub3.inf",
+    "DEVPKEY_Device_DriverInfSection": "Generic.Install.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 8388610
+  }
+}
+{
+  "InstanceId": "PCI\\VEN_1022&DEV_15B6&SUBSYS_382717AA&REV_00\\4&6c4ad28&0&0341",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "PCI\\VEN_1022&DEV_15B6&SUBSYS_382717AA&REV_00",
+      "PCI\\VEN_1022&DEV_15B6&SUBSYS_382717AA",
+      "PCI\\VEN_1022&DEV_15B6&CC_0C0330",
+      "PCI\\VEN_1022&DEV_15B6&CC_0C03"
+    ],
+    "DEVPKEY_Device_Service": "USBXHCI",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0000",
+    "DEVPKEY_Device_Manufacturer": "通用 USB xHCI 主机控制器",
+    "DEVPKEY_Device_FriendlyName": "AMD USB 3.10 可扩展主机控制器 - 1.20 (Microsoft)",
+    "DEVPKEY_Device_LocationInfo": "PCI 总线 5、设备 0、功能 3",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "PCI\\VEN_1022&DEV_14DD&SUBSYS_14DD1022&REV_00\\3&11583659&1&41",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "通用串行总线(USB)控制器",
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0003)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC0)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2026-09-03T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "USB xHCI Compliant Host Controller",
+    "DEVPKEY_Device_DriverInfPath": "usbxhci.inf",
+    "DEVPKEY_Device_DriverInfSection": "Generic.Install.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 8396806
+  }
+}
+{
+  "InstanceId": "USB\\VID_174F&PID_246F&MI_00\\7&2C27EE68&1&0000",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_174F&PID_246F&REV_0009&MI_00",
+      "USB\\VID_174F&PID_246F&MI_00"
+    ],
+    "DEVPKEY_Device_Service": "usbvideo",
+    "DEVPKEY_Device_Driver": "{ca3e7ab9-b4c3-4ae6-8251-579ef933890f}\\0000",
+    "DEVPKEY_Device_Manufacturer": "Realtek",
+    "DEVPKEY_Device_FriendlyName": "Integrated Camera",
+    "DEVPKEY_Device_LocationInfo": "0006.0000.0000.001.000.000.000.000.000",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\VID_174F&PID_246F\\0001",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "Integrated Camera",
+    "DEVPKEY_Device_PhysicalDeviceLocation": [
+      130,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      36,
+      29,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      140,
+      0,
+      44,
+      1
+    ],
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0803)#PCI(0000)#USBROOT(0)#USB(1)#USBMI(0)",
+      "PCIROOT(0)#PCI(0803)#PCI(0000)#USBROOT(0)#USB(1)#USB(1)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP19)#ACPI(XHC2)#ACPI(RHUB)#ACPI(PRT1)#ACPI(CAM0)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2025-08-11T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.22000.20384",
+    "DEVPKEY_Device_DriverDesc": "Integrated Camera",
+    "DEVPKEY_Device_DriverInfPath": "oem70.inf",
+    "DEVPKEY_Device_DriverInfSection": "RS_RGB_DMFT_CAMERA_26080.NT",
+    "DEVPKEY_Device_DriverProvider": "Realtek",
+    "DEVPKEY_Device_DriverRank": 16711681
+  }
+}
+{
+  "InstanceId": "USB\\VID_05E3&PID_0620\\6&1CB538DD&0&4",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_05E3&PID_0620&REV_7651",
+      "USB\\VID_05E3&PID_0620"
+    ],
+    "DEVPKEY_Device_Service": "USBHUB3",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0006",
+    "DEVPKEY_Device_Manufacturer": "(标准 USB 集线器)",
+    "DEVPKEY_Device_LocationInfo": "Port_#0004.Hub_#0002",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\ROOT_HUB30\\5&21d782f4&0&0",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "USB3.2 Hub",
+    "DEVPKEY_Device_PhysicalDeviceLocation": [
+      130,
+      0,
+      0,
+      0,
+      8,
+      0,
+      14,
+      0,
+      80,
+      13,
+      0,
+      0,
+      1,
+      0,
+      16,
+      0,
+      255,
+      255,
+      255,
+      255
+    ],
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(4)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT4)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2026-09-03T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "Generic SuperSpeed USB Hub",
+    "DEVPKEY_Device_DriverInfPath": "usbhub3.inf",
+    "DEVPKEY_Device_DriverInfSection": "Generic.Install.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 8396800
+  }
+}
+{
+  "InstanceId": "USB\\VID_048D&PID_C197\\7&2E3FCB7B&0&4",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_048D&PID_C197&REV_2000",
+      "USB\\VID_048D&PID_C197"
+    ],
+    "DEVPKEY_Device_Service": "HidUsb",
+    "DEVPKEY_Device_Driver": "{745a17a0-74d3-11d0-b6fe-00a0c90f57da}\\0008",
+    "DEVPKEY_Device_Manufacturer": "(标准系统设备)",
+    "DEVPKEY_Device_LocationInfo": "Port_#0004.Hub_#0005",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\VID_05E3&PID_0610\\6&1cb538dd&0&2",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "ITE Device(8258)",
+    "DEVPKEY_Device_PhysicalDeviceLocation": [
+      130,
+      0,
+      0,
+      0,
+      8,
+      0,
+      14,
+      0,
+      80,
+      13,
+      0,
+      2,
+      0,
+      0,
+      16,
+      0,
+      255,
+      255,
+      255,
+      255
+    ],
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(2)#USB(4)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT2)#ACPI(HS04)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9444",
+    "DEVPKEY_Device_DriverDesc": "USB Input Device",
+    "DEVPKEY_Device_DriverInfPath": "input.inf",
+    "DEVPKEY_Device_DriverInfSection": "HID_Inst.NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16724228,
+    "DEVPKEY_Device_GenericDriverInstalled": true
+  }
+}
+{
+  "InstanceId": "USB\\VID_0403&PID_6014\\210299245711",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "USB\\VID_0403&PID_6014&REV_0900",
+      "USB\\VID_0403&PID_6014"
+    ],
+    "DEVPKEY_Device_Service": "FTDIBUS",
+    "DEVPKEY_Device_Driver": "{36fc9e60-c465-11cf-8056-444553540000}\\0018",
+    "DEVPKEY_Device_Manufacturer": "FTDI",
+    "DEVPKEY_Device_LocationInfo": "Port_#0001.Hub_#0002",
+    "DEVPKEY_Device_BaseContainerId": "{86B4722E-30F3-5BEB-B8A5-EE1F6C1FC1D7}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\ROOT_HUB30\\5&21d782f4&0&0",
+    "DEVPKEY_Device_ContainerId": "{86B4722E-30F3-5BEB-B8A5-EE1F6C1FC1D7}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "Digilent USB Device",
+    "DEVPKEY_Device_PhysicalDeviceLocation": [
+      130,
+      0,
+      0,
+      0,
+      8,
+      0,
+      14,
+      0,
+      81,
+      13,
+      128,
+      1,
+      3,
+      0,
+      16,
+      0,
+      255,
+      255,
+      255,
+      255
+    ],
+    "DEVPKEY_Device_LocationPaths": [
+      "PCIROOT(0)#PCI(0801)#PCI(0004)#USBROOT(0)#USB(1)",
+      "ACPI(_SB_)#ACPI(PCI0)#ACPI(GP17)#ACPI(XHC1)#ACPI(RHUB)#ACPI(PRT1)"
+    ],
+    "DEVPKEY_Device_DriverDate": "2024-10-28T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "2.12.36.20",
+    "DEVPKEY_Device_DriverDesc": "USB Serial Converter",
+    "DEVPKEY_Device_DriverInfPath": "oem107.inf",
+    "DEVPKEY_Device_DriverInfSection": "FtdiBus.NTamd64",
+    "DEVPKEY_Device_DriverProvider": "FTDI",
+    "DEVPKEY_Device_DriverPropPageProvider": "ftbusui.dll,FTBUSUIPropPageProvider",
+    "DEVPKEY_Device_DriverRank": 16711681
+  }
+}
+{
+  "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0046\\A&2E6F9637&0&646876548E87_C00000000",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "BTHENUM\\{00001101-0000-1000-8000-00805f9b34fb}_LOCALMFG&0046"
+    ],
+    "DEVPKEY_Device_Service": "BTHMODEM",
+    "DEVPKEY_Device_Driver": "{4d36e978-e325-11ce-bfc1-08002be10318}\\0003",
+    "DEVPKEY_Device_Manufacturer": "Microsoft",
+    "DEVPKEY_Device_FriendlyName": "蓝牙链接上的标准串行 (COM6)",
+    "DEVPKEY_Device_BaseContainerId": "{83FBCA2B-A760-5CAF-BE94-11E7FE5AB191}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "BTH\\MS_RFCOMM\\9&3cef728&0&0",
+    "DEVPKEY_Device_ContainerId": "{83FBCA2B-A760-5CAF-BE94-11E7FE5AB191}",
+    "DEVPKEY_Bluetooth_ServiceGUID": "{00001101-0000-1000-8000-00805F9B34FB}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "Spp1",
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.2161",
+    "DEVPKEY_Device_DriverDesc": "蓝牙链接上的标准串行",
+    "DEVPKEY_Device_DriverInfPath": "bthspp.inf",
+    "DEVPKEY_Device_DriverInfSection": "GenericSerial",
+    "DEVPKEY_Device_DriverInfSectionExt": ".NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverPropPageProvider": "MsPorts.dll,SerialPortPropPageProvider",
+    "DEVPKEY_Device_DriverRank": 16719872
+  }
+}
+{
+  "InstanceId": "BTH\\MS_RFCOMM\\9&3cef728&0&0",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "BTH\\MS_RFCOMM"
+    ],
+    "DEVPKEY_Device_Service": "RFCOMM",
+    "DEVPKEY_Device_Driver": "{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}\\0001",
+    "DEVPKEY_Device_Manufacturer": "Microsoft",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "USB\\VID_0489&PID_E111&MI_00\\8&8944179&1&0000",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.9278",
+    "DEVPKEY_Device_DriverDesc": "Bluetooth Device (RFCOMM Protocol TDI)",
+    "DEVPKEY_Device_DriverInfPath": "tdibth.inf",
+    "DEVPKEY_Device_DriverInfSection": "RFCOMM.Install",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverRank": 16711680
+  }
+}
+{
+  "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\A&2E6F9637&0&000000000000_00000001",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "BTHENUM\\{00001101-0000-1000-8000-00805f9b34fb}_LOCALMFG&0000"
+    ],
+    "DEVPKEY_Device_Service": "BTHMODEM",
+    "DEVPKEY_Device_Driver": "{4d36e978-e325-11ce-bfc1-08002be10318}\\0002",
+    "DEVPKEY_Device_Manufacturer": "Microsoft",
+    "DEVPKEY_Device_FriendlyName": "蓝牙链接上的标准串行 (COM5)",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "BTH\\MS_RFCOMM\\9&3cef728&0&0",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Bluetooth_ServiceGUID": "{00001101-0000-1000-8000-00805F9B34FB}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "蓝牙外围设备",
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.2161",
+    "DEVPKEY_Device_DriverDesc": "蓝牙链接上的标准串行",
+    "DEVPKEY_Device_DriverInfPath": "bthspp.inf",
+    "DEVPKEY_Device_DriverInfSection": "GenericSerial",
+    "DEVPKEY_Device_DriverInfSectionExt": ".NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverPropPageProvider": "MsPorts.dll,SerialPortPropPageProvider",
+    "DEVPKEY_Device_DriverRank": 16719872
+  }
+}
+{
+  "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\A&2E6F9637&0&000000000000_0000000B",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "BTHENUM\\{00001101-0000-1000-8000-00805f9b34fb}_LOCALMFG&0000"
+    ],
+    "DEVPKEY_Device_Service": "BTHMODEM",
+    "DEVPKEY_Device_Driver": "{4d36e978-e325-11ce-bfc1-08002be10318}\\0001",
+    "DEVPKEY_Device_Manufacturer": "Microsoft",
+    "DEVPKEY_Device_FriendlyName": "蓝牙链接上的标准串行 (COM4)",
+    "DEVPKEY_Device_BaseContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "BTH\\MS_RFCOMM\\9&3cef728&0&0",
+    "DEVPKEY_Device_ContainerId": "{00000000-0000-0000-FFFF-FFFFFFFFFFFF}",
+    "DEVPKEY_Bluetooth_ServiceGUID": "{00001101-0000-1000-8000-00805F9B34FB}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "蓝牙外围设备",
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.2161",
+    "DEVPKEY_Device_DriverDesc": "蓝牙链接上的标准串行",
+    "DEVPKEY_Device_DriverInfPath": "bthspp.inf",
+    "DEVPKEY_Device_DriverInfSection": "GenericSerial",
+    "DEVPKEY_Device_DriverInfSectionExt": ".NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverPropPageProvider": "MsPorts.dll,SerialPortPropPageProvider",
+    "DEVPKEY_Device_DriverRank": 16719872
+  }
+}
+{
+  "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\\A&2E6F9637&0&081287122738_C00000000",
+  "Properties": {
+    "DEVPKEY_Device_HardwareIds": [
+      "BTHENUM\\{00001101-0000-1000-8000-00805f9b34fb}_VID&000102b0_PID&0000",
+      "BTHENUM\\{00001101-0000-1000-8000-00805f9b34fb}_LOCALMFG&0046"
+    ],
+    "DEVPKEY_Device_Service": "BTHMODEM",
+    "DEVPKEY_Device_Driver": "{4d36e978-e325-11ce-bfc1-08002be10318}\\0000",
+    "DEVPKEY_Device_Manufacturer": "Microsoft",
+    "DEVPKEY_Device_FriendlyName": "蓝牙链接上的标准串行 (COM3)",
+    "DEVPKEY_Device_BaseContainerId": "{7ECD7101-ECE4-5C5B-8908-0E8905B3BE2C}",
+    "DEVPKEY_Device_ProblemCode": 0,
+    "DEVPKEY_Device_Parent": "BTH\\MS_RFCOMM\\9&3cef728&0&0",
+    "DEVPKEY_Device_ContainerId": "{7ECD7101-ECE4-5C5B-8908-0E8905B3BE2C}",
+    "DEVPKEY_Bluetooth_ServiceGUID": "{00001101-0000-1000-8000-00805F9B34FB}",
+    "DEVPKEY_Device_BusReportedDeviceDesc": "Spp6",
+    "DEVPKEY_Device_DriverDate": "2006-06-21T08:00:00+08:00",
+    "DEVPKEY_Device_DriverVersion": "10.0.26100.2161",
+    "DEVPKEY_Device_DriverDesc": "蓝牙链接上的标准串行",
+    "DEVPKEY_Device_DriverInfPath": "bthspp.inf",
+    "DEVPKEY_Device_DriverInfSection": "GenericSerial",
+    "DEVPKEY_Device_DriverInfSectionExt": ".NT",
+    "DEVPKEY_Device_DriverProvider": "Microsoft",
+    "DEVPKEY_Device_DriverPropPageProvider": "MsPorts.dll,SerialPortPropPageProvider",
+    "DEVPKEY_Device_DriverRank": 16719872
+  }
+}
+
