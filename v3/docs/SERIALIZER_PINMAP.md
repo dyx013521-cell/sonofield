@@ -1,10 +1,10 @@
 # Serializer pin map — both Board1/Master and Board2/Slave
 
 19 outputs: 14 data on P1, 2 data plus 3 control outputs on P2; P3 unused,
-P5_ARRAY_GPIO_COUNT=0. All are Bank35, schematic nominal 3.3V, not measured.
+P5_ARRAY_GPIO_COUNT=0. All are Bank35; 3.3V measured voltage is USER_CONFIRMED on 2026-10-02.
 H20/J20/L19 replace three original LED outputs in the PRE-PCB wrappers only.
-Their LEDs/resistors remain electrically connected. Physical board revision,
-module absence and voltage confirmation are pending. Keep PCB disconnected.
+Their LEDs/resistors remain electrically connected. Board revision and actual
+component population remain unconfirmed; VGA/Camera are USER_CONFIRMED removed. Keep PCB disconnected.
 
 | Logical signal | Connector | Physical pin | FPGA ball | Bank | IOSTANDARD |
 |---|---|---:|---|---:|---|

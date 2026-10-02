@@ -2,6 +2,42 @@
 
 更新日期：2026-10-02。仓库：https://github.com/dyx013521-cell/sonofield。
 
+**当前阶段：TASK-001C / PHASE-A。状态：MINIMAL_PS7_NOT_READY；BLOCKED_PS_CLOCK_FACT；STOP_BEFORE_BITSTREAM。** Phase-B 未开始，READY_FOR_PCB_CONNECTION=false。
+
+本轮已完成原理图 PS 时钟/复位、MIO、NAND、DDR、启动选项审查，以及两板只读 JTAG 检测和现有已实现设计的引脚复核。问题是：PS_CLK 位于专用 E7/CLK，X8 标注 33.333 MHz 的候选路径通过 NC 的 R2340；当前资料未证明实际 PS 时钟的来源和频率。N18/X5=50 MHz 是单独的 PL 时钟，不能借用作为 PS7 配置参数。该任务的 A12 和停止规则要求对此停止放行。
+
+| 本轮结果 | 状态与依据 |
+|---|---|
+| 两板身份 | 210299245711→Master；210299835073→Slave；2 个 XC7Z010、4 个链设备、0 探测错误 |
+| 当前阵列引脚 | 重新读取两个 TASK-001B routed checkpoint；每板 19 根全部 Bank35 / LVCMOS33 / DRIVE4 / SLOW |
+| Bank35 电压 | 用户确认实测 3.3 V；BANK_VCCO_MEASURED=true，BANK_VCCO_PASS=true，限当前未改变的 19 根 Bank35 IO |
+| 共地 / 外设 | COMMON_GROUND_CONFIRMED=true；VGA_MODULE_ATTACHED=false；CAMERA_MODULE_ATTACHED=false；原 LED/电阻负载仍存在 |
+| N18 / P5 / P1/P2 | 映射全部未变；N18 50 MHz；P5 永久同步；每板 P1 14 + P2 5 GPIO |
+| 现有配置只读状态 | 两板 DONE/EOS=1、CRC_ERROR=0；并非本任务下载结果 |
+| 当前 PS Boot Mode | UNKNOWN；Hardware Manager 未暴露 PS BOOT_MODE 采样寄存器；PL MODE=111 不代替它 |
+| 当前固件 | UNKNOWN；可能初始化 MIO/DDR/SLCR，但未观察，不得标为 NONE 或 CONFIRMED |
+| PS7 实例 / ZPS7-1 | PS7 未创建；ZPS7-1 未关闭；无 preset、频率猜测或告警降级 |
+| 本轮仿真 / 综合 / 实现 | 未执行；已有 TASK-001B 结果只作为历史基线，不能顶替 Phase-A 的新结果 |
+| Phase-B | 未生成 .bit，未 Program，未采集 P5/Serializer ILA，未测 P1/P2 物理输出 |
+| PCB 实际连接 | 软件不可确认，PCB_CONNECTED=null；PCB_CONNECTION_REQUIRES_USER_CONFIRMATION |
+
+当前阅读入口：
+
+- [Phase-A 完整报告](v3/evidence/task001c_ps7/MINIMAL_PS7_CONFIGURATION_REPORT.md)、[Release JSON](v3/evidence/task001c_ps7/PS7_RELEASE_STATUS.json)、[当前硬件事实](v3/evidence/task001c_ps7/CONFIRMED_HARDWARE_FACTS.json)。
+- [EBAZ PS7 事实表](v3/docs/EBAZ4205_PS7_FACTS.md)、[启动模式](v3/evidence/task001c_ps7/BOOT_MODE_REPORT.md)、[PS/PL 边界](v3/evidence/task001c_ps7/PS_PL_BOUNDARY_REPORT.md)。
+- [Phase-B 未执行报告](v3/evidence/task001d_first_board/FIRST_VOLATILE_JTAG_REPORT.md)、[状态](v3/evidence/task001d_first_board/FIRST_VOLATILE_JTAG_STATUS.json)。
+- [本轮 38 行引脚审计](v3/evidence/task001c_ps7/current-pin-audit.tsv)、[两板只读状态](v3/evidence/task001c_ps7/board-read-only-status.json)、[交接说明](v3/docs/HANDOFF.md)。
+
+下一步先补实际两板 E7/CLK 的时钟来源、频率及 X8/R2340 或替代接法证据。随后创建可复现最小 PS7、审查专用接口/DDR/启动固件边界，重新执行四项仿真和双板综合/实现，检查新 DRC/STA/CDC/methodology；仅达到 READY_FOR_FIRST_VOLATILE_JTAG_BITSTREAM 才进入易失性 JTAG 和实板验收。用户已授权该条件下的 PL JTAG，无需再次请求同一下载授权。Board2 UART 不阻塞。
+
+以下为 TASK-001B 原构建历史快照。其“未确认 VCCO/外设”和当时的“禁止自动 Program”描述仅记录当时状态；本轮用户事实和条件授权由上方 TASK-001C 结果取代。旧状态 JSON 不作为当前电气事实来源。
+
+---
+
+# SonoField v3 TASK-001B 历史基线
+
+更新日期：2026-10-02。仓库：https://github.com/dyx013521-cell/sonofield。
+
 当前任务为 **TASK-001B / DUAL_BOARD_SERIALIZER_PRE_PCB_BRINGUP**。当前源码、四项仿真、两个独立顶层的综合/布局布线和完整 STA/CDC/DRC 证据见 [PRE_PCB_SERIALIZER_REPORT.md](v3/evidence/task001b/PRE_PCB_SERIALIZER_REPORT.md)；最终数值和各项门槛见 [PRE_PCB_SERIALIZER_STATUS.json](v3/evidence/task001b/PRE_PCB_SERIALIZER_STATUS.json) 与 [build-results.tsv](v3/evidence/task001b/build-results.tsv)。历史 TASK-001 报告用于追溯，不代表当前扩展设计的结果。
 
 **当前不具备 PCB 连接条件：READY_FOR_PCB_CONNECTION=false。** 本轮没有生成或下载 bitstream，没有实板 P5 同步/Serializer 波形验收，也没有写入任何启动介质。最新工程约束禁止自动 Program。只读 JTAG 检测成功与仿真通过均不等于 BOARD_TESTED / HARDWARE_VERIFIED。

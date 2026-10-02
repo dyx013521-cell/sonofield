@@ -106,3 +106,17 @@ it does not feed a half-cycle-wide CRC/header comparison. This preserves
 the existing frame_valid cycle and 146-cycle decoder compensation, while
 giving the registered CRC comparison a full system cycle. Raw sync_data
 still has the same source-synchronous input setup/hold budget.
+
+# TASK-001C preflight (2026-10-02)
+
+The latest two-phase user task authorizes volatile PL JTAG only after its
+minimal PS7 release gate. That gate is currently false: dedicated PS_CLK
+E7/CLK has no established live source/frequency; optional X8 33.333 MHz uses
+NC R2340. N18/X5 remains a separate confirmed 50 MHz PL clock. No PS7 wrapper,
+functional interface or RTL/XDC change is made before this fact is resolved.
+No new simulations or implementations are claimed. All existing 19 array
+balls are freshly rechecked as Bank35; user-confirmed measured 3.3 V,
+common ground and removed VGA/Camera apply to current unchanged mapping.
+The current state lives in evidence/task001c_ps7, with Phase-B explicitly
+NOT_STARTED in evidence/task001d_first_board. ARM/boot firmware behavior
+is unobserved and must not be inferred from PL JTAG configuration registers.

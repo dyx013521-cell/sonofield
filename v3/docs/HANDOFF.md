@@ -1,4 +1,31 @@
-# SonoField v3 · TASK-001B 交接说明
+# SonoField v3 · TASK-001C 当前交接
+
+当前停止：**MINIMAL_PS7_NOT_READY / BLOCKED_PS_CLOCK_FACT / STOP_BEFORE_BITSTREAM**。以 [Phase-A 报告](../evidence/task001c_ps7/MINIMAL_PS7_CONFIGURATION_REPORT.md) 和 [Release JSON](../evidence/task001c_ps7/PS7_RELEASE_STATUS.json) 为准。PS7 未创建，Phase-B 未开始，未生成 bitstream 或 Program。
+
+[PS7 事实表](EBAZ4205_PS7_FACTS.md) 记录 E7/CLK 专用 PS 时钟及 NC 的 R2340/X8 可选路径。需先确认实际两板 E7/CLK 来源/频率，再创建最小 PS7 配置；禁止把独立 N18/50 MHz 或常见 33.333 MHz 用作无依据默认值。当前 PS 采样启动模式未从 Hardware Manager 获取，现有固件 UNKNOWN；PL MODE/BOOT_STATUS/DONE 不能代替 PS boot evidence。
+
+用户已确认 Bank35 实测 3.3 V、共地、VGA/Camera 卸下。新审计确认现有 19 GPIO 全部 Bank35，N18/P5/P1/P2 均未改。当前事实见 [CONFIRMED_HARDWARE_FACTS.json](../evidence/task001c_ps7/CONFIRMED_HARDWARE_FACTS.json)；旧 TASK-001B STATUS JSON 保留构建时历史状态。LED 的 2 kohm 硬负载和实际 P5/1 接线检查仍需注意，Bank35 电压结论不延伸到未测量的 PS/MIO/其他 Bank。
+
+身份仍为 Master/210299245711/COM7 与 Slave/210299835073/UART OPTIONAL_DEBUG。本轮用户已明确授权严格 Phase-A 放行后的 volatile PL JTAG，取代旧交接的“另行授权”描述。该授权不包括 PS 初始化、FSBL、CPU 下载、永久启动介质写入或自动 PCB 测试。
+
+当前只读复现（PowerShell 7；不更改板卡）：
+
+```powershell
+# 不覆盖既有硬件扫描，使用新的输出目录保存新观测。
+& 'D:\amd2025_2\2025.2\Vivado\bin\vivado.bat' -mode batch -notrace -source v3/vivado/check_dual_hardware.tcl -tclargs D:/codex_project/sonofield/v3/build/prepcb_ps7/new_hardware_check
+# 审计现有 TASK-001B 实现，不是新的 PS7 综合/实现。
+& 'D:\amd2025_2\2025.2\Vivado\bin\vivado.bat' -mode batch -notrace -source v3/vivado/audit_ps7_preflight.tcl
+```
+
+本地已有两个 Vivado 窗口仍保留 TASK-001B routed checkpoint。Slave 当前显示 Design Timing Summary（setup 0.430 ns / hold 0.015 ns），它是旧实现页面，不是新 PS7 结果。新报告可以从上述入口阅读。[Phase-B 报告](../evidence/task001d_first_board/FIRST_VOLATILE_JTAG_REPORT.md) 明确记录所有未执行项目。
+
+恢复开发顺序：确认 PS_CLK → 明确 IP 属性/专用边界 → 更新架构和关联接口测试 → 四项新仿真 → 两板新实现 → 新 DRC/STA/CDC/methodology 和 boot interference 审查 → Release Gate → 新 bit/ltx 和哈希 → serial/part 身份复核 → Slave/Master 易失性 PL JTAG → MMCM/P5 → 人工前三帧 ILA → P1/P2 示波器测量 → PCB 前停止。物理示波器数据不存在时不得宣布 FPGA_PRE_PCB_HARDWARE_VERIFIED 或 READY_FOR_PCB_CONNECTION。
+
+下面保留 TASK-001B 历史接口、复现和诊断说明。其旧未确认事实/授权描述均以上方当前状态为准。
+
+---
+
+# TASK-001B 历史交接
 
 当前任务是双板 Serializer 的 PCB 连接前准备；只允许诊断接口和共享时间基准的扩展。器件 `xc7z010clg400-1`、Master N18/X5=50 MHz / 20 ns、Vivado 2025.2、PowerShell 7 固定。当前门槛和最终数值见 [报告](../evidence/task001b/PRE_PCB_SERIALIZER_REPORT.md)、[状态 JSON](../evidence/task001b/PRE_PCB_SERIALIZER_STATUS.json)；准备度 false。无真实 P5/Serializer 验收，无声学或悬浮结论。
 

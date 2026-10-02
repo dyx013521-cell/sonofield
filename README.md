@@ -1,8 +1,10 @@
 # SonoField v3 — 双 EBAZ4205 同步与 PRE-PCB Serializer
 
-本仓库为 SonoField v3 当前开发交付。**当前任务为 TASK-001B：双板 Serializer 的 PCB 连接前准备。** 每板 64 个逻辑通道、16 个串行 lane、每 lane 4 bit，使用 19 根阵列 GPIO；两板合计 128 通道。当前源码和验证结果以 [最新报告](v3/evidence/task001b/PRE_PCB_SERIALIZER_REPORT.md) 和 [机器状态](v3/evidence/task001b/PRE_PCB_SERIALIZER_STATUS.json) 为准。**尚未完成 BOARD_TESTED / HARDWARE_VERIFIED；READY_FOR_PCB_CONNECTION=false。**
+本仓库为 SonoField v3 当前开发交付。**当前任务为 TASK-001C / PHASE-A：最小安全 PS7 配置前置核查。当前停在 `MINIMAL_PS7_NOT_READY / BLOCKED_PS_CLOCK_FACT / STOP_BEFORE_BITSTREAM`。** 原理图的 PS_CLK 是 E7/CLK，X8 的 33.333 MHz 候选路径经过标为 NC 的 R2340；实际两板 PS 时钟来源及频率未确立。N18/X5 的 50 MHz 是独立 PL 时钟，不能替代 PS_CLK。当前结果以 [Phase-A 报告](v3/evidence/task001c_ps7/MINIMAL_PS7_CONFIGURATION_REPORT.md)、[Release 状态](v3/evidence/task001c_ps7/PS7_RELEASE_STATUS.json) 和 [PS 硬件事实表](v3/docs/EBAZ4205_PS7_FACTS.md) 为准。
 
-身份固定：Board1/A 为 Master（JTAG `210299245711`，COM7），Board2/B 为 Slave（JTAG `210299835073`）。Board2 UART 缺失是 OPTIONAL_DEBUG / NOT_BLOCKING。P5 保留同步及原示波器输出；P1 是阵列主接口，P2/P3 仅在需要时补足 GPIO。本方案使用 P1 的 14 根和 P2 的 5 根，P5 阵列占用为 0。Zynq 默认配置审查、实际 VCCO/外设占用及 P5 实板同步仍待关闭。未生成或下载本任务 bitstream；最新工程约束禁止自动 Program。
+本轮只读打开两条 JTAG 目标并重新读取两个已有 routed checkpoint，核对每板 19 根阵列 IO 仍全部 Bank35 / LVCMOS33 / DRIVE4 / SLOW；N18、P5 和 P1/P2 引脚未变。用户已确认 Bank35 VCCO 实测 3.3 V、共地、VGA/Camera 已卸下，见 [当前硬件事实](v3/evidence/task001c_ps7/CONFIRMED_HARDWARE_FACTS.json)。原 LED 的 2 kohm 硬连线仍保留。Board1/Master JTAG `210299245711`、COM7；Board2/Slave JTAG `210299835073`，缺少 UART 是 OPTIONAL_DEBUG / NOT_BLOCKING。
+
+用户本轮已授权在 Phase-A 严格放行后进行易失性 PL JTAG；目前门槛未通过，**PS7 未创建，Phase-B 未开始，没有新 bitstream、下载或实板 P5/Serializer 验收，READY_FOR_PCB_CONNECTION=false**。[Phase-B 未执行报告](v3/evidence/task001d_first_board/FIRST_VOLATILE_JTAG_REPORT.md)。未运行 PS init/FSBL，未修改任何启动介质。旧 [TASK-001B 报告](v3/evidence/task001b/PRE_PCB_SERIALIZER_REPORT.md) 和 STATUS JSON 保留原构建时快照，不能当作本轮 PS7 仿真/实现结果。每板 64 逻辑通道、16 lane、每 lane 4 bit、19 GPIO 的架构保持不变。
 
 ## 项目进展与阅读入口
 

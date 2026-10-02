@@ -30,5 +30,14 @@
   ],
   "reserved_base": ["N18","G19","J19","K19","L16","K18","F9","G6","F6","J6"],
   "nominal_supply": {"35":"VCCB <- R2460 0R <- VCC; U22/L7 TP1 3V3","34":"VCCE <- FB16 <- VCC; U22/L7 TP1 3V3"},
-  "hardware_confirmation": "PENDING_USER_BOARD_REVISION_AND_PERIPHERAL_CONFIRMATION"
+  "hardware_confirmation": "USER_CONFIRMED_BANK35_3V3_GROUND_VGA_CAMERA_REMOVED; ACTUAL_REVISION_OTHER_POPULATION_NOT_ESTABLISHED",
+  "confirmed_hardware": {
+    "source": "USER_CONFIRMED_TWO_PHASE_TASK_2026-10-02",
+    "bank35_vcco_measured_volts": 3.3,
+    "common_ground": true,
+    "vga_module_attached": false,
+    "camera_module_attached": false,
+    "n18_frequency_hz": 50000000,
+    "scope": "Unchanged 19 Bank35 array GPIO; not PS_CLK or Bank34 measurement"
+  }
 }

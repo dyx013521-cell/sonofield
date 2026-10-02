@@ -6,6 +6,18 @@ root=pathlib.Path(__file__).resolve().parents[1]
 mapping=json.loads((root/'docs/array_gpio_mapping.json').read_text(encoding='utf-8'))
 db={r['ball']:r for r in csv.DictReader((root/'evidence/task001b/gpio_audit/package-pins.tsv').open(),delimiter='\t')}
 selected=mapping['selected'];by_ball={r[3]:r[0] for r in selected}
+confirmed=mapping.get('confirmed_hardware',{})
+bank35_measured=confirmed.get('bank35_vcco_measured_volts')==3.3
+def current_facts(text):
+ if not bank35_measured:return text
+ text=text.replace('All are Bank35, schematic nominal 3.3V, not measured.','All are Bank35; 3.3V measured voltage is USER_CONFIRMED on 2026-10-02.')
+ text=text.replace('module absence and voltage confirmation are pending.','actual optional component population remains unconfirmed; VGA/Camera are USER_CONFIRMED removed.')
+ text=text.replace('Camera/VGA/header nets have parallel connectors; absence of attached modules\nrequires physical confirmation.','Camera/VGA/header nets have parallel connectors; VGA/Camera modules are\nUSER_CONFIRMED removed on 2026-10-02. Hardwired branches remain.')
+ text=text.replace('State: SCHEMATIC_NOMINAL_COMPATIBLE; physical rails NOT_MEASURED.','State: BANK35_USER_CONFIRMED_MEASURED_3V3. BANK_VCCO_MEASURED=true;\nBANK_VCCO_PASS=true for the unchanged 19 Bank35 array GPIO.\nSource: user two-phase task 2026-10-02; fresh pin audit in task001c_ps7.\nThe earlier TASK-001B STATUS JSON is the historical build-time snapshot.\nCurrent machine hardware facts are task001c_ps7/CONFIRMED_HARDWARE_FACTS.json.')
+ text=text.replace('3.3V nominal, unmeasured','3.3V USER_CONFIRMED_MEASURED')
+ text=text.replace('Their LEDs/resistors remain electrically connected. Physical board revision,\nactual optional component population remains unconfirmed; VGA/Camera are USER_CONFIRMED removed.','Their LEDs/resistors remain electrically connected. Board revision and actual\ncomponent population remain unconfirmed; VGA/Camera are USER_CONFIRMED removed.')
+ text=text.replace('BANK_VCCO_PASS is false until the actual\nboard/header conditions are confirmed.','BANK_VCCO_PASS is true for the unchanged Bank35 GPIO after user voltage\nconfirmation and a fresh exact-part pin audit. Other electrical gates remain.')
+ return text
 p5={b for b in mapping['connector_pins']['P5'] if b in db}
 reserved=set(mapping['reserved_base'])|p5
 assert len(selected)==19 and len(by_ball)==19
@@ -24,7 +36,7 @@ rows=[]
 for connector,pins in mapping['connector_pins'].items():
  for pin,ball in enumerate(pins,1):
   bank=db[ball]['bank'] if ball in db else '-'
-  vcco='3.3V schematic nominal / NOT_MEASURED' if bank in ('34','35') else '-'
+  vcco=('3.3V USER_CONFIRMED_MEASURED' if bank=='35' and bank35_measured else '3.3V schematic nominal / NOT_MEASURED') if bank in ('34','35') else '-'
   use=leds.get(ball,keys.get(ball,'Camera header parallel net' if ball in camera and ball in db else 'VGA/header parallel net' if ball in p5 else ball))
   available='RESERVED_SYNC' if connector=='P5' or ball in p5 else 'HARD_CONFLICT' if ball in reserved else 'REUSABLE_PERIPHERAL_PIN' if ball in db else 'NO_GPIO'
   rows.append(f'| {connector} | {pin} | {ball} | {bank} | {vcco} | {use} | {available} | {by_ball.get(ball,"-") if connector!="P5" else "RESERVED_SYNC"} |')
@@ -49,7 +61,7 @@ checked separately and are zero. This table is not permission to wire a PCB.
 | Connector | Pin | FPGA Ball/net | Bank | VCCO | Current use | Available | Selected role |
 |---|---:|---|---|---|---|---|---|
 '''
-(root/'docs/ARRAY_GPIO_POOL.md').write_text(header+'\n'.join(rows)+'\n',encoding='utf-8')
+(root/'docs/ARRAY_GPIO_POOL.md').write_text(current_facts(header)+'\n'.join(rows)+'\n',encoding='utf-8')
 pinmap='''# Serializer pin map — both Board1/Master and Board2/Slave
 
 19 outputs: 14 data on P1, 2 data plus 3 control outputs on P2; P3 unused,
@@ -72,7 +84,7 @@ four-bit frame replaces Q0..Q3 even from an unknown prior shift register.
 Pin numbers are schematic numbers; connector viewing orientation requires
 silkscreen/continuity confirmation before physical wiring.
 '''
-(root/'docs/SERIALIZER_PINMAP.md').write_text(pinmap,encoding='utf-8')
+(root/'docs/SERIALIZER_PINMAP.md').write_text(current_facts(pinmap),encoding='utf-8')
 bank='''# Bank / VCCO audit — TASK-001B
 
 State: SCHEMATIC_NOMINAL_COMPATIBLE; physical rails NOT_MEASURED.
@@ -100,7 +112,7 @@ required physical checks and the Zynq default configuration review.
 
 TI source: https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf (SCES875C).
 '''
-(root/'evidence/task001b/BANK_VCCO_REPORT.md').write_text(bank,encoding='utf-8')
-audit={'selected_array_gpio_count':19,'p1_count':14,'p2_count':5,'p3_count':0,'p5_count':0,'selected_duplicate_ball_count':0,'selected_duplicate_connector_pin_count':0,'array_sync_pin_conflict_count':0,'bank_mismatch_count':0,'schematic_nominal_vcco_conflict_count':0,'physical_confirmation':'PENDING','pinmap_complete':True}
+(root/'evidence/task001b/BANK_VCCO_REPORT.md').write_text(current_facts(bank),encoding='utf-8')
+audit={'selected_array_gpio_count':19,'p1_count':14,'p2_count':5,'p3_count':0,'p5_count':0,'selected_duplicate_ball_count':0,'selected_duplicate_connector_pin_count':0,'array_sync_pin_conflict_count':0,'bank_mismatch_count':0,'schematic_nominal_vcco_conflict_count':0,'physical_confirmation':'USER_CONFIRMED_BANK35_VCCO_MODULE_REMOVAL' if bank35_measured else 'PENDING','pinmap_complete':True}
 (root/'evidence/task001b/gpio_audit/mapping-audit.json').write_text(json.dumps(audit,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(audit))

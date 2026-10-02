@@ -9,6 +9,6 @@
   "array_sync_pin_conflict_count": 0,
   "bank_mismatch_count": 0,
   "schematic_nominal_vcco_conflict_count": 0,
-  "physical_confirmation": "PENDING",
+  "physical_confirmation": "USER_CONFIRMED_BANK35_VCCO_MODULE_REMOVAL",
   "pinmap_complete": true
 }

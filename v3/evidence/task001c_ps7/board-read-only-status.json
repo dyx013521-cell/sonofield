@@ -1,0 +1,40 @@
+{
+  "CAPTURED_AT": "2026-10-02T21:53:40+0800",
+  "PROGRAMMED": false,
+  "DEVICE_REFRESH": false,
+  "BOARD_RESET": false,
+  "BOARDS": [
+    {
+      "role": "MASTER",
+      "jtag": "210299245711",
+      "device": "xc7z010_1",
+      "part": "xc7z010",
+      "idcode_hex": "13722093",
+      "config_status_binary": "01000110000100000111111111111100",
+      "boot_status_binary": "00000000000000000000000000000001",
+      "done": 1,
+      "eos": 1,
+      "crc_error": 0,
+      "pl_mode_m2_m1_m0": "111",
+      "ps_boot_mode": "UNKNOWN",
+      "ps_boot_mode_register_available": false,
+      "observation_scope": "EXISTING_CONFIGURATION_NOT_SONOFIELD_PROGRAM_RESULT"
+    },
+    {
+      "role": "SLAVE",
+      "jtag": "210299835073",
+      "device": "xc7z010_1_1",
+      "part": "xc7z010",
+      "idcode_hex": "13722093",
+      "config_status_binary": "01000110000100000111111111111100",
+      "boot_status_binary": "00000000000000000000000000000001",
+      "done": 1,
+      "eos": 1,
+      "crc_error": 0,
+      "pl_mode_m2_m1_m0": "111",
+      "ps_boot_mode": "UNKNOWN",
+      "ps_boot_mode_register_available": false,
+      "observation_scope": "EXISTING_CONFIGURATION_NOT_SONOFIELD_PROGRAM_RESULT"
+    }
+  ]
+}

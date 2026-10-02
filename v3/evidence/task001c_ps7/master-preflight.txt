@@ -1,0 +1,13 @@
+SOURCE=EXISTING_TASK001B_ROUTED_CHECKPOINT_NOT_NEW_IMPLEMENTATION
+PART=xc7z010clg400-1
+PS7_CELL_COUNT=0
+OUTPUT_DISABLE_NET=output_disable
+N18=N18
+PIN_sync_clk=N20
+PIN_sync_data=M18
+PIN_sync_valid=M20
+PIN_sync_reset=L17
+PIN_sync_lock=M17
+PIN_sync_echo=M19
+PIN_trigger_out=P20
+PIN_waveform_out=R19

@@ -23,3 +23,5 @@ v3/evidence/task001b/hardware_check/matching-pnp-entities.txt
 v3/evidence/task001b/hardware_check/hardware-check-summary.json
 v3/evidence/task001b/hardware_check/hw-server-*.txt
 clockInfo.txt
+v3/evidence/task001c_ps7/**/*.dcp
+v3/evidence/task001d_first_board/**/*.dcp
