@@ -1,0 +1,12 @@
+v3/vivado/build/
+v3/simulation/build/
+.Xil/
+*.jou
+*.wdb
+*.pb
+*.str
+__pycache__/
+*.backup.log
+v3/evidence/task001/clockInfo.txt
+v3/evidence/task001/dfx_runtime.txt
+v3/evidence/task001/tight_setup_hold_pins.txt

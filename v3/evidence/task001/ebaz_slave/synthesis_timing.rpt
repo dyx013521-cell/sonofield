@@ -1,0 +1,1684 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Sep 30 22:54:30 2026
+| Host         : LAPTOP-V3PP2F49 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -file C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/evidence/task001/ebaz_slave/synthesis_timing.rpt
+| Design       : ebaz_slave
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -0.891      -12.479                     40                 1736       -4.911      -23.100                    449                 1736        7.000        0.000                       0                   622  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock            Waveform(ns)       Period(ns)      Frequency(MHz)
+-----            ------------       ----------      --------------
+local50          {0.000 10.000}     20.000          50.000          
+received50       {0.000 10.000}     20.000          50.000          
+  g_hw.feedback  {0.000 10.000}     20.000          50.000          
+  g_hw.mmcm_clk  {0.000 10.000}     20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+local50               13.687        0.000                      0                   36       -0.155       -0.515                      8                   36        9.500        0.000                       0                    15  
+received50                                                                                                                                                         7.000        0.000                       0                     1  
+  g_hw.feedback                                                                                                                                                   17.845        0.000                       0                     3  
+  g_hw.mmcm_clk       11.600        0.000                      0                 1682       -0.155      -17.674                    440                 1682        9.500        0.000                       0                   603  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock     To Clock           WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------     --------           -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+g_hw.mmcm_clk  local50             20.789        0.000                      0                    1       -4.911       -4.911                      1                    1  
+local50        received50           5.515        0.000                      0                    4        3.670        0.000                      0                    4  
+g_hw.mmcm_clk  received50           8.136        0.000                      0                    8        1.756        0.000                      0                    8  
+local50        g_hw.mmcm_clk       13.429        0.000                      0                    1        1.540        0.000                      0                    1  
+received50     g_hw.mmcm_clk       -0.891      -12.479                     40                  281       11.562        0.000                      0                  281  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  local50            g_hw.mmcm_clk            8.890        0.000                      0                    3        2.048        0.000                      0                    3  
+**async_default**  received50         g_hw.mmcm_clk            9.884        0.000                      0                    3        2.065        0.000                      0                    3  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group     From Clock     To Clock     
+----------     ----------     --------     
+(none)                        g_hw.mmcm_clk  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  local50
+  To Clock:  local50
+
+Setup :            0  Failing Endpoints,  Worst Slack       13.687ns,  Total Violation        0.000ns
+Hold  :            8  Failing Endpoints,  Worst Slack       -0.155ns,  Total Violation       -0.515ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             13.687ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.heartbeat_pipe_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             local50
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (local50 rise@20.000ns - local50 rise@0.000ns)
+  Data Path Delay:        3.206ns  (logic 1.592ns (49.665%)  route 1.614ns (50.335%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            5.000ns
+  Clock Path Skew:        2.711ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.711ns = ( 22.711 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.261ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock local50 rise edge)    0.000     0.000 r  
+                         input delay                  5.000     5.000    
+    G19                                               0.000     5.000 f  rst_n (IN)
+                         net (fo=0)                   0.000     5.000    rst_n
+    G19                  IBUF (Prop_ibuf_I_O)         1.468     6.468 f  rst_n_IBUF_inst/O
+                         net (fo=2, unplaced)         0.800     7.268    core/clocks/rst_n_IBUF
+                         LUT1 (Prop_lut1_I0_O)        0.124     7.392 r  core/clocks/g_hw.mmcm_i_1/O
+                         net (fo=8, unplaced)         0.814     8.206    core/clocks_n_1
+                         FDRE                                         r  core/g_slave.heartbeat_pipe_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock local50 rise edge)   20.000    20.000 r  
+    N18                                               0.000    20.000 r  clk50 (IN)
+                         net (fo=0)                   0.000    20.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  clk50_IBUF_inst/O
+                         net (fo=1, unplaced)         0.760    22.181    clk50_IBUF
+                         BUFG (Prop_bufg_I_O)         0.091    22.272 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, unplaced)        0.439    22.711    core/CLK
+                         FDRE                                         r  core/g_slave.heartbeat_pipe_reg[0]/C
+                         clock pessimism              0.000    22.711    
+                         clock uncertainty           -0.261    22.450    
+                         FDRE (Setup_fdre_C_R)       -0.557    21.893    core/g_slave.heartbeat_pipe_reg[0]
+  -------------------------------------------------------------------
+                         required time                         21.893    
+                         arrival time                          -8.206    
+  -------------------------------------------------------------------
+                         slack                                 13.687    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.155ns  (arrival time - required time)
+  Source:                 core/g_slave.heartbeat_pipe_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.heartbeat_pipe_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             local50
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (local50 rise@0.000ns - local50 rise@0.000ns)
+  Data Path Delay:        0.228ns  (logic 0.147ns (64.493%)  route 0.081ns (35.507%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.091ns
+    Source Clock Delay      (SCD):    0.737ns
+    Clock Pessimism Removal (CPR):    0.209ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock local50 rise edge)    0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260     0.260 r  clk50_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.597    clk50_IBUF
+                         BUFG (Prop_bufg_I_O)         0.026     0.623 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, unplaced)        0.114     0.737    core/CLK
+                         FDRE                                         r  core/g_slave.heartbeat_pipe_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.884 r  core/g_slave.heartbeat_pipe_reg[0]/Q
+                         net (fo=1, unplaced)         0.081     0.965    core/g_slave.heartbeat_pipe[0]
+                         FDRE                                         r  core/g_slave.heartbeat_pipe_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock local50 rise edge)    0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448     0.448 r  clk50_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.803    clk50_IBUF
+                         BUFG (Prop_bufg_I_O)         0.029     0.832 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, unplaced)        0.259     1.091    core/CLK
+                         FDRE                                         r  core/g_slave.heartbeat_pipe_reg[1]/C
+                         clock pessimism             -0.209     0.882    
+                         clock uncertainty            0.200     1.082    
+                         FDRE (Hold_fdre_C_D)         0.038     1.120    core/g_slave.heartbeat_pipe_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.120    
+                         arrival time                           0.965    
+  -------------------------------------------------------------------
+                         slack                                 -0.155    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         local50
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { clk50 }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     BUFG/I   n/a            2.155         20.000      17.845               clk50_IBUF_BUFG_inst/I
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500                core/g_slave.alive_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500                core/g_slave.alive_reg/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  received50
+  To Clock:  received50
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         received50
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { sync_clk }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         20.000      18.751               core/clocks/g_hw.mmcm/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       20.000      80.000               core/clocks/g_hw.mmcm/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000                core/clocks/g_hw.mmcm/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000                core/clocks/g_hw.mmcm/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  g_hw.feedback
+  To Clock:  g_hw.feedback
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       17.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         g_hw.feedback
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { core/clocks/g_hw.mmcm/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period  n/a     BUFG/I              n/a            2.155         20.000      17.845               core/clocks/g_hw.feedback_buffer/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       20.000      80.000               core/clocks/g_hw.mmcm/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  g_hw.mmcm_clk
+  To Clock:  g_hw.mmcm_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack       11.600ns,  Total Violation        0.000ns
+Hold  :          440  Failing Endpoints,  Worst Slack       -0.155ns,  Total Violation      -17.674ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             11.600ns  (required time - arrival time)
+  Source:                 core/g_slave.receiver/decoder/payload_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/good_frames_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (g_hw.mmcm_clk rise@20.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        7.988ns  (logic 4.546ns (56.910%)  route 3.442ns (43.090%))
+  Logic Levels:           22  (CARRY4=16 LUT2=2 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -2.079ns = ( 17.921 - 20.000 ) 
+    Source Clock Delay      (SCD):    -1.394ns
+    Clock Pessimism Removal (CPR):    0.540ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         1.494     1.494 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.584     2.078    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.957    -2.879 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.800    -2.079    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.101    -1.978 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.584    -1.394    core/g_slave.receiver/decoder/clk
+                         FDRE                                         r  core/g_slave.receiver/decoder/payload_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.456    -0.938 r  core/g_slave.receiver/decoder/payload_reg[1]/Q
+                         net (fo=7, unplaced)         0.505    -0.433    core/g_slave.receiver/decoder/Q[1]
+                         LUT2 (Prop_lut2_I0_O)        0.295    -0.138 r  core/g_slave.receiver/decoder/sync_locked5_carry_i_17/O
+                         net (fo=1, unplaced)         0.000    -0.138    core/g_slave.receiver/decoder/sync_locked5_carry_i_17_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     0.395 r  core/g_slave.receiver/decoder/sync_locked5_carry_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     0.395    core/g_slave.receiver/decoder/sync_locked5_carry_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     0.512 r  core/g_slave.receiver/decoder/sync_locked5_carry_i_9/CO[3]
+                         net (fo=1, unplaced)         0.000     0.512    core/g_slave.receiver/decoder/sync_locked5_carry_i_9_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     0.629 r  core/g_slave.receiver/decoder/sync_locked5_carry__0_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     0.629    core/g_slave.receiver/decoder/sync_locked5_carry__0_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     0.746 r  core/g_slave.receiver/decoder/sync_locked5_carry__0_i_9/CO[3]
+                         net (fo=1, unplaced)         0.000     0.746    core/g_slave.receiver/decoder/sync_locked5_carry__0_i_9_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     0.863 r  core/g_slave.receiver/decoder/sync_locked5_carry__1_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     0.863    core/g_slave.receiver/decoder/sync_locked5_carry__1_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     0.980 r  core/g_slave.receiver/decoder/sync_locked5_carry__1_i_9/CO[3]
+                         net (fo=1, unplaced)         0.000     0.980    core/g_slave.receiver/decoder/sync_locked5_carry__1_i_9_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.097 r  core/g_slave.receiver/decoder/sync_locked5_carry__2_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     1.097    core/g_slave.receiver/decoder/sync_locked5_carry__2_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.214 r  core/g_slave.receiver/decoder/sync_locked5_carry__2_i_9/CO[3]
+                         net (fo=1, unplaced)         0.000     1.214    core/g_slave.receiver/decoder/sync_locked5_carry__2_i_9_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.331 r  core/g_slave.receiver/decoder/sync_locked5_carry__3_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     1.331    core/g_slave.receiver/decoder/sync_locked5_carry__3_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.448 r  core/g_slave.receiver/decoder/sync_locked5_carry__3_i_9/CO[3]
+                         net (fo=1, unplaced)         0.000     1.448    core/g_slave.receiver/decoder/sync_locked5_carry__3_i_9_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.565 r  core/g_slave.receiver/decoder/sync_locked5_carry__4_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     1.565    core/g_slave.receiver/decoder/sync_locked5_carry__4_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.682 r  core/g_slave.receiver/decoder/sync_locked5_carry__4_i_9/CO[3]
+                         net (fo=1, unplaced)         0.000     1.682    core/g_slave.receiver/decoder/sync_locked5_carry__4_i_9_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.799 r  core/g_slave.receiver/decoder/sync_locked5_carry__5_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     1.799    core/g_slave.receiver/decoder/sync_locked5_carry__5_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.916 r  core/g_slave.receiver/decoder/sync_locked5_carry__5_i_9/CO[3]
+                         net (fo=1, unplaced)         0.000     1.916    core/g_slave.receiver/decoder/sync_locked5_carry__5_i_9_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     2.253 r  core/g_slave.receiver/decoder/sync_locked5_carry__6_i_10/O[1]
+                         net (fo=2, unplaced)         0.622     2.875    core/g_slave.receiver/decoder/sync_locked5_carry__6_i_10_n_6
+                         LUT2 (Prop_lut2_I0_O)        0.332     3.207 r  core/g_slave.receiver/decoder/sync_locked5_carry__6_i_4/O
+                         net (fo=1, unplaced)         0.000     3.207    core/g_slave.receiver/decoder_n_220
+                         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.576     3.783 f  core/g_slave.receiver/sync_locked5_carry__6/CO[3]
+                         net (fo=2, unplaced)         0.929     4.712    core/g_slave.receiver/decoder/trigger_at_reg[0]_0[0]
+                         LUT5 (Prop_lut5_I0_O)        0.124     4.836 r  core/g_slave.receiver/decoder/sequence_errors[0]_i_3/O
+                         net (fo=5, unplaced)         0.477     5.313    core/g_slave.receiver/decoder/sequence_errors[0]_i_3_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.124     5.437 r  core/g_slave.receiver/decoder/good_frames[1]_i_3/O
+                         net (fo=1, unplaced)         0.449     5.886    core/g_slave.receiver/decoder/good_frames[1]_i_3_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     6.010 r  core/g_slave.receiver/decoder/good_frames[1]_i_2/O
+                         net (fo=2, unplaced)         0.460     6.470    core/g_slave.receiver/decoder_n_167
+                         LUT5 (Prop_lut5_I3_O)        0.124     6.594 r  core/g_slave.receiver/good_frames[0]_i_1/O
+                         net (fo=1, unplaced)         0.000     6.594    core/g_slave.receiver/good_frames[0]_i_1_n_0
+                         FDRE                                         r  core/g_slave.receiver/good_frames_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                     20.000    20.000 r  
+    N20                                               0.000    20.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000    20.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         1.423    21.423 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.439    21.862    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.231    16.632 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.760    17.391    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.091    17.482 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.439    17.921    core/g_slave.receiver/clk
+                         FDRE                                         r  core/g_slave.receiver/good_frames_reg[0]/C
+                         clock pessimism              0.540    18.461    
+                         clock uncertainty           -0.296    18.165    
+                         FDRE (Setup_fdre_C_D)        0.029    18.194    core/g_slave.receiver/good_frames_reg[0]
+  -------------------------------------------------------------------
+                         required time                         18.194    
+                         arrival time                          -6.594    
+  -------------------------------------------------------------------
+                         slack                                 11.600    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.155ns  (arrival time - required time)
+  Source:                 core/g_link_reset.release_pipe_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_link_reset.release_pipe_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.228ns  (logic 0.147ns (64.493%)  route 0.081ns (35.507%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.972ns
+    Source Clock Delay      (SCD):    -0.842ns
+    Clock Pessimism Removal (CPR):    -0.275ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.114     0.376    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.695    -1.319 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.337    -0.982    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.026    -0.956 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.114    -0.842    core/clk
+                         FDCE                                         r  core/g_link_reset.release_pipe_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147    -0.695 r  core/g_link_reset.release_pipe_reg[0]/Q
+                         net (fo=1, unplaced)         0.081    -0.614    core/g_link_reset.release_pipe[0]
+                         FDCE                                         r  core/g_link_reset.release_pipe_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.259     0.709    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.324    -1.615 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.355    -1.260    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.029    -1.231 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.259    -0.972    core/clk
+                         FDCE                                         r  core/g_link_reset.release_pipe_reg[1]/C
+                         clock pessimism              0.275    -0.697    
+                         clock uncertainty            0.200    -0.497    
+                         FDCE (Hold_fdce_C_D)         0.038    -0.459    core/g_link_reset.release_pipe_reg[1]
+  -------------------------------------------------------------------
+                         required time                          0.459    
+                         arrival time                          -0.614    
+  -------------------------------------------------------------------
+                         slack                                 -0.155    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         g_hw.mmcm_clk
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { core/clocks/g_hw.mmcm/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     BUFG/I              n/a            2.155         20.000      17.845               core/clocks/g_hw.output_buffer/I
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       20.000      193.360              core/clocks/g_hw.mmcm/CLKOUT0
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         10.000      9.500                core/g_link_reset.release_pipe_reg[0]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         10.000      9.500                core/g_link_reset.release_pipe_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  g_hw.mmcm_clk
+  To Clock:  local50
+
+Setup :            0  Failing Endpoints,  Worst Slack       20.789ns,  Total Violation        0.000ns
+Hold  :            1  Failing Endpoint ,  Worst Slack       -4.911ns,  Total Violation       -4.911ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             20.789ns  (required time - arrival time)
+  Source:                 core/g_slave.clock_heartbeat_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.heartbeat_pipe_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             local50
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            20.000ns  (local50 rise@20.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.328ns  (logic 0.175ns (53.341%)  route 0.153ns (46.659%))
+  Logic Levels:           0  
+  Clock Path Skew:        1.709ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.737ns = ( 20.737 - 20.000 ) 
+    Source Clock Delay      (SCD):    -0.972ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.259     0.709    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.324    -1.615 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.355    -1.260    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.029    -1.231 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.259    -0.972    core/clk
+                         FDRE                                         r  core/g_slave.clock_heartbeat_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.175    -0.797 r  core/g_slave.clock_heartbeat_reg[4]/Q
+                         net (fo=2, unplaced)         0.153    -0.644    core/g_slave.clock_heartbeat_reg[4]
+                         FDRE                                         r  core/g_slave.heartbeat_pipe_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock local50 rise edge)   20.000    20.000 r  
+    N18                                               0.000    20.000 r  clk50 (IN)
+                         net (fo=0)                   0.000    20.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260    20.260 r  clk50_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337    20.597    clk50_IBUF
+                         BUFG (Prop_bufg_I_O)         0.026    20.623 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, unplaced)        0.114    20.737    core/CLK
+                         FDRE                                         r  core/g_slave.heartbeat_pipe_reg[0]/C
+                         clock pessimism              0.000    20.737    
+                         clock uncertainty           -0.474    20.263    
+                         FDRE (Setup_fdre_C_D)       -0.119    20.144    core/g_slave.heartbeat_pipe_reg[0]
+  -------------------------------------------------------------------
+                         required time                         20.144    
+                         arrival time                           0.644    
+  -------------------------------------------------------------------
+                         slack                                 20.789    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -4.911ns  (arrival time - required time)
+  Source:                 core/g_slave.clock_heartbeat_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.heartbeat_pipe_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             local50
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (local50 rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.695ns  (logic 0.367ns (52.825%)  route 0.328ns (47.175%))
+  Logic Levels:           0  
+  Clock Path Skew:        5.055ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.977ns
+    Source Clock Delay      (SCD):    -2.079ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         1.423     1.423 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.439     1.862    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.231    -3.368 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.760    -2.609    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.091    -2.518 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.439    -2.079    core/clk
+                         FDRE                                         r  core/g_slave.clock_heartbeat_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.367    -1.712 r  core/g_slave.clock_heartbeat_reg[4]/Q
+                         net (fo=2, unplaced)         0.328    -1.384    core/g_slave.clock_heartbeat_reg[4]
+                         FDRE                                         r  core/g_slave.heartbeat_pipe_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock local50 rise edge)    0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk50_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     2.292    clk50_IBUF
+                         BUFG (Prop_bufg_I_O)         0.101     2.393 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, unplaced)        0.584     2.977    core/CLK
+                         FDRE                                         r  core/g_slave.heartbeat_pipe_reg[0]/C
+                         clock pessimism              0.000     2.977    
+                         clock uncertainty            0.474     3.450    
+                         FDRE (Hold_fdre_C_D)         0.077     3.527    core/g_slave.heartbeat_pipe_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -3.527    
+                         arrival time                          -1.384    
+  -------------------------------------------------------------------
+                         slack                                 -4.911    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  local50
+  To Clock:  received50
+
+Setup :            0  Failing Endpoints,  Worst Slack        5.515ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        3.670ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             5.515ns  (required time - arrival time)
+  Source:                 core/g_slave.alive_reg/C
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            led_n[1]
+                            (output port clocked by received50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             received50
+  Path Type:              Max at Slow Process Corner
+  Requirement:            20.000ns  (received50 rise@20.000ns - local50 rise@0.000ns)
+  Data Path Delay:        6.229ns  (logic 4.732ns (75.957%)  route 1.498ns (24.043%))
+  Logic Levels:           2  (LUT4=1 OBUF=1)
+  Output Delay:           5.000ns
+  Clock Path Skew:        -2.977ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 20.000 - 20.000 ) 
+    Source Clock Delay      (SCD):    2.977ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.279ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.141ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock local50 rise edge)    0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk50_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     2.292    clk50_IBUF
+                         BUFG (Prop_bufg_I_O)         0.101     2.393 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, unplaced)        0.584     2.977    core/CLK
+                         FDRE                                         r  core/g_slave.alive_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.456     3.433 f  core/g_slave.alive_reg/Q
+                         net (fo=6, unplaced)         0.698     4.131    core/clocks/g_slave.alive
+                         LUT4 (Prop_lut4_I0_O)        0.295     4.426 r  core/clocks/led_n_OBUF[1]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     5.226    led_n_OBUF[1]
+    K18                  OBUF (Prop_obuf_I_O)         3.981     9.206 r  led_n_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     9.206    led_n[1]
+    K18                                                               r  led_n[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock received50 rise edge)
+                                                     20.000    20.000 r  
+                         clock pessimism              0.000    20.000    
+                         clock uncertainty           -0.279    19.721    
+                         output delay                -5.000    14.721    
+  -------------------------------------------------------------------
+                         required time                         14.721    
+                         arrival time                          -9.206    
+  -------------------------------------------------------------------
+                         slack                                  5.515    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.670ns  (arrival time - required time)
+  Source:                 core/g_slave.alive_reg/C
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            trigger_out
+                            (output port clocked by received50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             received50
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (received50 rise@0.000ns - local50 rise@0.000ns)
+  Data Path Delay:        2.712ns  (logic 2.231ns (82.241%)  route 0.482ns (17.759%))
+  Logic Levels:           2  (LUT5=1 OBUF=1)
+  Output Delay:           0.500ns
+  Clock Path Skew:        -0.737ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.000ns
+    Source Clock Delay      (SCD):    0.737ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.279ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.141ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock local50 rise edge)    0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260     0.260 r  clk50_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.597    clk50_IBUF
+                         BUFG (Prop_bufg_I_O)         0.026     0.623 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, unplaced)        0.114     0.737    core/CLK
+                         FDRE                                         r  core/g_slave.alive_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.141     0.878 r  core/g_slave.alive_reg/Q
+                         net (fo=6, unplaced)         0.145     1.022    core/g_slave.receiver/g_slave.alive
+                         LUT5 (Prop_lut5_I4_O)        0.101     1.123 r  core/g_slave.receiver/trigger_out_OBUF_inst_i_1/O
+                         net (fo=1, unplaced)         0.337     1.461    trigger_out_OBUF
+    P20                  OBUF (Prop_obuf_I_O)         1.989     3.449 r  trigger_out_OBUF_inst/O
+                         net (fo=0)                   0.000     3.449    trigger_out
+    P20                                                               r  trigger_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock received50 rise edge)
+                                                      0.000     0.000 r  
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.279     0.279    
+                         output delay                -0.500    -0.221    
+  -------------------------------------------------------------------
+                         required time                          0.221    
+                         arrival time                           3.449    
+  -------------------------------------------------------------------
+                         slack                                  3.670    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  g_hw.mmcm_clk
+  To Clock:  received50
+
+Setup :            0  Failing Endpoints,  Worst Slack        8.136ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        1.756ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             8.136ns  (required time - arrival time)
+  Source:                 core/g_slave.receiver/crc_errors_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            led_n[3]
+                            (output port clocked by received50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             received50
+  Path Type:              Max at Slow Process Corner
+  Requirement:            20.000ns  (received50 rise@20.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        7.785ns  (logic 4.898ns (62.919%)  route 2.887ns (37.081%))
+  Logic Levels:           3  (LUT6=2 OBUF=1)
+  Output Delay:           5.000ns
+  Clock Path Skew:        1.394ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.000ns = ( 20.000 - 20.000 ) 
+    Source Clock Delay      (SCD):    -1.394ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         1.494     1.494 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.584     2.078    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.957    -2.879 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.800    -2.079    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.101    -1.978 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.584    -1.394    core/g_slave.receiver/clk
+                         FDRE                                         r  core/g_slave.receiver/crc_errors_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478    -0.916 f  core/g_slave.receiver/crc_errors_reg[4]/Q
+                         net (fo=2, unplaced)         0.976     0.060    core/g_slave.receiver/crc_errors_reg[4]
+                         LUT6 (Prop_lut6_I0_O)        0.295     0.355 r  core/g_slave.receiver/led_n_OBUF[3]_inst_i_3/O
+                         net (fo=1, unplaced)         1.111     1.466    core/g_slave.receiver/led_n_OBUF[3]_inst_i_3_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.124     1.590 r  core/g_slave.receiver/led_n_OBUF[3]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     2.390    led_n_OBUF[3]
+    L19                  OBUF (Prop_obuf_I_O)         4.001     6.391 r  led_n_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     6.391    led_n[3]
+    L19                                                               r  led_n[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock received50 rise edge)
+                                                     20.000    20.000 r  
+                         clock pessimism              0.000    20.000    
+                         clock uncertainty           -0.474    19.526    
+                         output delay                -5.000    14.526    
+  -------------------------------------------------------------------
+                         required time                         14.526    
+                         arrival time                          -6.391    
+  -------------------------------------------------------------------
+                         slack                                  8.136    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.756ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/echo_toggle_reg/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            sync_echo
+                            (output port clocked by received50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             received50
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (received50 rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        2.572ns  (logic 2.235ns (86.894%)  route 0.337ns (13.106%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.500ns
+  Clock Path Skew:        0.842ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.000ns
+    Source Clock Delay      (SCD):    -0.842ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.114     0.376    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.695    -1.319 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.337    -0.982    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.026    -0.956 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.114    -0.842    core/g_slave.receiver/clk
+                         FDRE                                         r  core/g_slave.receiver/echo_toggle_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.141    -0.701 r  core/g_slave.receiver/echo_toggle_reg/Q
+                         net (fo=2, unplaced)         0.337    -0.364    sync_echo_OBUF
+    M19                  OBUF (Prop_obuf_I_O)         2.094     1.730 r  sync_echo_OBUF_inst/O
+                         net (fo=0)                   0.000     1.730    sync_echo
+    M19                                                               r  sync_echo (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock received50 rise edge)
+                                                      0.000     0.000 r  
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.474     0.474    
+                         output delay                -0.500    -0.026    
+  -------------------------------------------------------------------
+                         required time                          0.026    
+                         arrival time                           1.730    
+  -------------------------------------------------------------------
+                         slack                                  1.756    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  local50
+  To Clock:  g_hw.mmcm_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack       13.429ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        1.540ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             13.429ns  (required time - arrival time)
+  Source:                 core/g_slave.alive_reg/C
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.alive_pipe_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (g_hw.mmcm_clk rise@20.000ns - local50 rise@0.000ns)
+  Data Path Delay:        0.822ns  (logic 0.456ns (55.474%)  route 0.366ns (44.526%))
+  Logic Levels:           0  
+  Clock Path Skew:        -5.055ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -2.079ns = ( 17.921 - 20.000 ) 
+    Source Clock Delay      (SCD):    2.977ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock local50 rise edge)    0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk50_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     2.292    clk50_IBUF
+                         BUFG (Prop_bufg_I_O)         0.101     2.393 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, unplaced)        0.584     2.977    core/CLK
+                         FDRE                                         r  core/g_slave.alive_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.456     3.433 r  core/g_slave.alive_reg/Q
+                         net (fo=6, unplaced)         0.366     3.799    core/g_slave.alive
+                         FDRE                                         r  core/g_slave.alive_pipe_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                     20.000    20.000 r  
+    N20                                               0.000    20.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000    20.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         1.423    21.423 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.439    21.862    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.231    16.632 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.760    17.391    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.091    17.482 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.439    17.921    core/clk
+                         FDRE                                         r  core/g_slave.alive_pipe_reg[0]/C
+                         clock pessimism              0.000    17.921    
+                         clock uncertainty           -0.474    17.448    
+                         FDRE (Setup_fdre_C_D)       -0.220    17.228    core/g_slave.alive_pipe_reg[0]
+  -------------------------------------------------------------------
+                         required time                         17.228    
+                         arrival time                          -3.799    
+  -------------------------------------------------------------------
+                         slack                                 13.429    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.540ns  (arrival time - required time)
+  Source:                 core/g_slave.alive_reg/C
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.alive_pipe_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - local50 rise@0.000ns)
+  Data Path Delay:        0.295ns  (logic 0.141ns (47.752%)  route 0.154ns (52.248%))
+  Logic Levels:           0  
+  Clock Path Skew:        -1.709ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.972ns
+    Source Clock Delay      (SCD):    0.737ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock local50 rise edge)    0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260     0.260 r  clk50_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.597    clk50_IBUF
+                         BUFG (Prop_bufg_I_O)         0.026     0.623 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, unplaced)        0.114     0.737    core/CLK
+                         FDRE                                         r  core/g_slave.alive_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.141     0.878 r  core/g_slave.alive_reg/Q
+                         net (fo=6, unplaced)         0.154     1.032    core/g_slave.alive
+                         FDRE                                         r  core/g_slave.alive_pipe_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.259     0.709    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.324    -1.615 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.355    -1.260    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.029    -1.231 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.259    -0.972    core/clk
+                         FDRE                                         r  core/g_slave.alive_pipe_reg[0]/C
+                         clock pessimism              0.000    -0.972    
+                         clock uncertainty            0.474    -0.499    
+                         FDRE (Hold_fdre_C_D)        -0.009    -0.508    core/g_slave.alive_pipe_reg[0]
+  -------------------------------------------------------------------
+                         required time                          0.508    
+                         arrival time                           1.032    
+  -------------------------------------------------------------------
+                         slack                                  1.540    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  received50
+  To Clock:  g_hw.mmcm_clk
+
+Setup :           40  Failing Endpoints,  Worst Slack       -0.891ns,  Total Violation      -12.479ns
+Hold  :            0  Failing Endpoints,  Worst Slack       11.562ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.891ns  (required time - arrival time)
+  Source:                 sync_data
+                            (input port clocked by received50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/decoder/good_crc_reg/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk rise@20.000ns - received50 fall@10.000ns)
+  Data Path Delay:        4.367ns  (logic 2.807ns (64.264%)  route 1.561ns (35.736%))
+  Logic Levels:           6  (CARRY4=2 IBUF=1 LUT5=2 LUT6=1)
+  Input Delay:            4.000ns
+  Clock Path Skew:        -2.079ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -2.079ns = ( 17.921 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock received50 fall edge)
+                                                     10.000    10.000 f  
+                         input delay                  4.000    14.000    
+    M18                                               0.000    14.000 r  sync_data (IN)
+                         net (fo=0)                   0.000    14.000    sync_data
+    M18                  IBUF (Prop_ibuf_I_O)         1.535    15.535 r  sync_data_IBUF_inst/O
+                         net (fo=6, unplaced)         0.800    16.334    core/g_slave.receiver/decoder/sync_data_IBUF
+                         LUT6 (Prop_lut6_I5_O)        0.124    16.458 r  core/g_slave.receiver/decoder/good_crc2_carry_i_4/O
+                         net (fo=1, unplaced)         0.000    16.458    core/g_slave.receiver/decoder/good_crc2_carry_i_4_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    16.971 r  core/g_slave.receiver/decoder/good_crc2_carry/CO[3]
+                         net (fo=1, unplaced)         0.000    16.971    core/g_slave.receiver/decoder/good_crc2_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.179    17.150 r  core/g_slave.receiver/decoder/good_crc2_carry__0/CO[1]
+                         net (fo=1, unplaced)         0.312    17.462    core/g_slave.receiver/decoder/good_crc28_in
+                         LUT5 (Prop_lut5_I3_O)        0.332    17.794 r  core/g_slave.receiver/decoder/good_crc_i_3/O
+                         net (fo=1, unplaced)         0.449    18.243    core/g_slave.receiver/decoder/good_crc0
+                         LUT5 (Prop_lut5_I2_O)        0.124    18.367 r  core/g_slave.receiver/decoder/good_crc_i_1/O
+                         net (fo=1, unplaced)         0.000    18.367    core/g_slave.receiver/decoder/good_crc_i_1_n_0
+                         FDRE                                         r  core/g_slave.receiver/decoder/good_crc_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                     20.000    20.000 r  
+    N20                                               0.000    20.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000    20.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         1.423    21.423 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.439    21.862    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.231    16.632 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.760    17.391    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.091    17.482 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.439    17.921    core/g_slave.receiver/decoder/clk
+                         FDRE                                         r  core/g_slave.receiver/decoder/good_crc_reg/C
+                         clock pessimism              0.000    17.921    
+                         clock uncertainty           -0.474    17.448    
+                         FDRE (Setup_fdre_C_D)        0.029    17.477    core/g_slave.receiver/decoder/good_crc_reg
+  -------------------------------------------------------------------
+                         required time                         17.477    
+                         arrival time                         -18.367    
+  -------------------------------------------------------------------
+                         slack                                 -0.891    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             11.562ns  (arrival time - required time)
+  Source:                 sync_data
+                            (input port clocked by received50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/decoder/rx_crc_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            -10.000ns  (g_hw.mmcm_clk rise@0.000ns - received50 fall@10.000ns)
+  Data Path Delay:        0.639ns  (logic 0.302ns (47.246%)  route 0.337ns (52.754%))
+  Logic Levels:           1  (IBUF=1)
+  Input Delay:            0.500ns
+  Clock Path Skew:        -0.972ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.972ns
+    Source Clock Delay      (SCD):    0.000ns = ( 10.000 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock received50 fall edge)
+                                                     10.000    10.000 f  
+                         input delay                  0.500    10.500    
+    M18                                               0.000    10.500 r  sync_data (IN)
+                         net (fo=0)                   0.000    10.500    sync_data
+    M18                  IBUF (Prop_ibuf_I_O)         0.302    10.802 r  sync_data_IBUF_inst/O
+                         net (fo=6, unplaced)         0.337    11.139    core/g_slave.receiver/decoder/sync_data_IBUF
+                         FDRE                                         r  core/g_slave.receiver/decoder/rx_crc_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.259     0.709    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.324    -1.615 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.355    -1.260    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.029    -1.231 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.259    -0.972    core/g_slave.receiver/decoder/clk
+                         FDRE                                         r  core/g_slave.receiver/decoder/rx_crc_reg[0]/C
+                         clock pessimism              0.000    -0.972    
+                         clock uncertainty            0.474    -0.499    
+                         FDRE (Hold_fdre_C_D)         0.076    -0.423    core/g_slave.receiver/decoder/rx_crc_reg[0]
+  -------------------------------------------------------------------
+                         required time                          0.423    
+                         arrival time                          11.139    
+  -------------------------------------------------------------------
+                         slack                                 11.562    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  local50
+  To Clock:  g_hw.mmcm_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        8.890ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        2.048ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             8.890ns  (required time - arrival time)
+  Source:                 rst_n
+                            (input port clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/reset_release_reg[0]/CLR
+                            (recovery check against rising-edge clock g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            20.000ns  (g_hw.mmcm_clk rise@20.000ns - local50 rise@0.000ns)
+  Data Path Delay:        3.206ns  (logic 1.592ns (49.665%)  route 1.614ns (50.335%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            5.000ns
+  Clock Path Skew:        -2.079ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -2.079ns = ( 17.921 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock local50 rise edge)    0.000     0.000 r  
+                         input delay                  5.000     5.000    
+    G19                                               0.000     5.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     5.000    rst_n
+    G19                  IBUF (Prop_ibuf_I_O)         1.468     6.468 r  rst_n_IBUF_inst/O
+                         net (fo=2, unplaced)         0.800     7.268    core/clocks/rst_n_IBUF
+                         LUT1 (Prop_lut1_I0_O)        0.124     7.392 f  core/clocks/g_hw.mmcm_i_1/O
+                         net (fo=8, unplaced)         0.814     8.206    core/clocks_n_1
+                         FDCE                                         f  core/reset_release_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                     20.000    20.000 r  
+    N20                                               0.000    20.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000    20.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         1.423    21.423 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.439    21.862    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.231    16.632 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.760    17.391    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.091    17.482 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.439    17.921    core/clk
+                         FDCE                                         r  core/reset_release_reg[0]/C
+                         clock pessimism              0.000    17.921    
+                         clock uncertainty           -0.474    17.448    
+                         FDCE (Recov_fdce_C_CLR)     -0.352    17.096    core/reset_release_reg[0]
+  -------------------------------------------------------------------
+                         required time                         17.096    
+                         arrival time                          -8.206    
+  -------------------------------------------------------------------
+                         slack                                  8.890    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             2.048ns  (arrival time - required time)
+  Source:                 rst_n
+                            (input port clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/reset_release_reg[0]/CLR
+                            (removal check against rising-edge clock g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - local50 rise@0.000ns)
+  Data Path Delay:        0.961ns  (logic 0.281ns (29.246%)  route 0.680ns (70.754%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.500ns
+  Clock Path Skew:        -0.972ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.972ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock local50 rise edge)    0.000     0.000 r  
+                         input delay                  0.500     0.500    
+    G19                                               0.000     0.500 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.500    rst_n
+    G19                  IBUF (Prop_ibuf_I_O)         0.236     0.736 r  rst_n_IBUF_inst/O
+                         net (fo=2, unplaced)         0.337     1.073    core/clocks/rst_n_IBUF
+                         LUT1 (Prop_lut1_I0_O)        0.045     1.118 f  core/clocks/g_hw.mmcm_i_1/O
+                         net (fo=8, unplaced)         0.343     1.461    core/clocks_n_1
+                         FDCE                                         f  core/reset_release_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.259     0.709    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.324    -1.615 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.355    -1.260    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.029    -1.231 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.259    -0.972    core/clk
+                         FDCE                                         r  core/reset_release_reg[0]/C
+                         clock pessimism              0.000    -0.972    
+                         clock uncertainty            0.474    -0.499    
+                         FDCE (Remov_fdce_C_CLR)     -0.088    -0.587    core/reset_release_reg[0]
+  -------------------------------------------------------------------
+                         required time                          0.587    
+                         arrival time                           1.461    
+  -------------------------------------------------------------------
+                         slack                                  2.048    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  received50
+  To Clock:  g_hw.mmcm_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        9.884ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        2.065ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             9.884ns  (required time - arrival time)
+  Source:                 sync_reset
+                            (input port clocked by received50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_link_reset.release_pipe_reg[0]/CLR
+                            (recovery check against rising-edge clock g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            20.000ns  (g_hw.mmcm_clk rise@20.000ns - received50 rise@0.000ns)
+  Data Path Delay:        3.212ns  (logic 1.618ns (50.382%)  route 1.594ns (49.618%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            4.000ns
+  Clock Path Skew:        -2.079ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -2.079ns = ( 17.921 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock received50 rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  4.000     4.000    
+    L17                                               0.000     4.000 r  sync_reset (IN)
+                         net (fo=0)                   0.000     4.000    sync_reset
+    L17                  IBUF (Prop_ibuf_I_O)         1.494     5.494 r  sync_reset_IBUF_inst/O
+                         net (fo=1, unplaced)         0.800     6.294    core/sync_reset_IBUF
+                         LUT1 (Prop_lut1_I0_O)        0.124     6.418 f  core/g_link_reset.release_pipe[2]_i_1/O
+                         net (fo=3, unplaced)         0.794     7.212    core/g_link_reset.release_pipe[2]_i_1_n_0
+                         FDCE                                         f  core/g_link_reset.release_pipe_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                     20.000    20.000 r  
+    N20                                               0.000    20.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000    20.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         1.423    21.423 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.439    21.862    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.231    16.632 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.760    17.391    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.091    17.482 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.439    17.921    core/clk
+                         FDCE                                         r  core/g_link_reset.release_pipe_reg[0]/C
+                         clock pessimism              0.000    17.921    
+                         clock uncertainty           -0.474    17.448    
+                         FDCE (Recov_fdce_C_CLR)     -0.352    17.096    core/g_link_reset.release_pipe_reg[0]
+  -------------------------------------------------------------------
+                         required time                         17.096    
+                         arrival time                          -7.212    
+  -------------------------------------------------------------------
+                         slack                                  9.884    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             2.065ns  (arrival time - required time)
+  Source:                 sync_reset
+                            (input port clocked by received50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_link_reset.release_pipe_reg[0]/CLR
+                            (removal check against rising-edge clock g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - received50 rise@0.000ns)
+  Data Path Delay:        0.979ns  (logic 0.307ns (31.360%)  route 0.672ns (68.640%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            0.500ns
+  Clock Path Skew:        -0.972ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.972ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.474ns  ((TSJ^2 + TIJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.100ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock received50 rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  0.500     0.500    
+    L17                                               0.000     0.500 r  sync_reset (IN)
+                         net (fo=0)                   0.000     0.500    sync_reset
+    L17                  IBUF (Prop_ibuf_I_O)         0.262     0.762 r  sync_reset_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     1.099    core/sync_reset_IBUF
+                         LUT1 (Prop_lut1_I0_O)        0.045     1.144 f  core/g_link_reset.release_pipe[2]_i_1/O
+                         net (fo=3, unplaced)         0.335     1.479    core/g_link_reset.release_pipe[2]_i_1_n_0
+                         FDCE                                         f  core/g_link_reset.release_pipe_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.259     0.709    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.324    -1.615 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.355    -1.260    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.029    -1.231 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.259    -0.972    core/clk
+                         FDCE                                         r  core/g_link_reset.release_pipe_reg[0]/C
+                         clock pessimism              0.000    -0.972    
+                         clock uncertainty            0.474    -0.499    
+                         FDCE (Remov_fdce_C_CLR)     -0.088    -0.587    core/g_link_reset.release_pipe_reg[0]
+  -------------------------------------------------------------------
+                         required time                          0.587    
+                         arrival time                           1.479    
+  -------------------------------------------------------------------
+                         slack                                  2.065    
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  g_hw.mmcm_clk
+
+Max Delay             3 Endpoints
+Min Delay             3 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 core/clocks/g_hw.mmcm/LOCKED
+                            (internal pin)
+  Destination:            core/mmcm_release_reg[0]/CLR
+                            (recovery check against rising-edge clock g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Data Path Delay:        1.718ns  (logic 0.124ns (7.219%)  route 1.594ns (92.781%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Uncertainty:      0.458ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         MMCME2_ADV                   0.000     0.000 r  core/clocks/g_hw.mmcm/LOCKED
+                         net (fo=5, unplaced)         0.800     0.800    core/locked
+                         LUT1 (Prop_lut1_I0_O)        0.124     0.924 f  core/mmcm_release[2]_i_1/O
+                         net (fo=3, unplaced)         0.794     1.718    core/mmcm_release[2]_i_1_n_0
+                         FDCE                                         f  core/mmcm_release_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         1.423     1.423 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.439     1.862    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.231    -3.368 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.760    -2.609    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.091    -2.518 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.439    -2.079    core/clk
+                         FDCE                                         r  core/mmcm_release_reg[0]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 core/clocks/g_hw.mmcm/LOCKED
+                            (internal pin)
+  Destination:            core/mmcm_release_reg[0]/CLR
+                            (removal check against rising-edge clock g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             (none)
+  Path Type:              Removal (Min at Fast Process Corner)
+  Data Path Delay:        0.717ns  (logic 0.045ns (6.278%)  route 0.672ns (93.722%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Uncertainty:      0.458ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.165ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         MMCME2_ADV                   0.000     0.000 r  core/clocks/g_hw.mmcm/LOCKED
+                         net (fo=5, unplaced)         0.337     0.337    core/locked
+                         LUT1 (Prop_lut1_I0_O)        0.045     0.382 f  core/mmcm_release[2]_i_1/O
+                         net (fo=3, unplaced)         0.335     0.717    core/mmcm_release[2]_i_1_n_0
+                         FDCE                                         f  core/mmcm_release_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, unplaced)         0.259     0.709    core/clocks/g_hw.ibuf_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.324    -1.615 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, unplaced)         0.355    -1.260    core/clocks/g_hw.mmcm_clk
+                         BUFG (Prop_bufg_I_O)         0.029    -1.231 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, unplaced)       0.259    -0.972    core/clk
+                         FDCE                                         r  core/mmcm_release_reg[0]/C
+
+
+
+
+

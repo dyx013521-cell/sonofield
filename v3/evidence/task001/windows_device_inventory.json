@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-09-30T22:45:18.5060510+08:00",
+  "powershell": "7.6.5",
+  "devices": [
+    {
+      "Status": "OK",
+      "Class": "Ports",
+      "FriendlyName": "蓝牙链接上的标准串行 (COM6)",
+      "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0046\\A&2E6F9637&0&646876548E87_C00000000"
+    },
+    {
+      "Status": "OK",
+      "Class": "Ports",
+      "FriendlyName": "蓝牙链接上的标准串行 (COM5)",
+      "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\A&2E6F9637&0&000000000000_00000001"
+    },
+    {
+      "Status": "OK",
+      "Class": "Ports",
+      "FriendlyName": "蓝牙链接上的标准串行 (COM4)",
+      "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\A&2E6F9637&0&000000000000_0000000B"
+    },
+    {
+      "Status": "OK",
+      "Class": "Ports",
+      "FriendlyName": "蓝牙链接上的标准串行 (COM3)",
+      "InstanceId": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_VID&000102B0_PID&0000\\A&2E6F9637&0&081287122738_C00000000"
+    }
+  ]
+}

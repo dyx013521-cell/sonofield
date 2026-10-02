@@ -1,0 +1,139 @@
+{
+  "name": "SYNC_MODULE_BASELINE",
+  "task": "TASK-001",
+  "version": "v3",
+  "stage": "DUAL_BOARD_TIMING_SYNCHRONIZATION",
+  "created_at": "2026-09-30T22:56:51+08:00",
+  "repository": "https://github.com/dyx013521-cell/sonofield.git",
+  "source_commit": "e0cc3a6412ea2559e698ffe13aa403de790279f1",
+  "source_commit_note": "Validated source commit; evidence is committed separately to avoid a self-referential hash.",
+  "vivado_version": "2025.2",
+  "vivado_build": "6299465",
+  "powershell_version": "7.6.5",
+  "part": "xc7z010clg400-1",
+  "clock_hz": 50000000,
+  "period_ns": 20.0,
+  "states": [
+    "SIMULATED",
+    "SYNTHESIZED",
+    "IMPLEMENTED"
+  ],
+  "simulation": {
+    "dual_sync_tb": "PASS",
+    "checks": 34,
+    "aligned_samples": 264138,
+    "top_clock_tb": "PASS",
+    "top_checks": 6,
+    "top_aligned_samples": 9405,
+    "hour_endurance": "NOT_RUN",
+    "hour_counter_test": "ACCELERATED_BOUNDARY_ONLY"
+  },
+  "build": [
+    {
+      "role": "master",
+      "synthesis": "SYNTHESIZED",
+      "implementation": "IMPLEMENTED",
+      "setup_slack_ns": "0.936",
+      "hold_slack_ns": "0.006",
+      "cdc_critical_count": "0",
+      "status": "TIMING_BUDGET_MET_NOT_HARDWARE_VERIFIED"
+    },
+    {
+      "role": "slave",
+      "synthesis": "SYNTHESIZED",
+      "implementation": "IMPLEMENTED",
+      "setup_slack_ns": "0.199",
+      "hold_slack_ns": "0.052",
+      "cdc_critical_count": "0",
+      "status": "TIMING_BUDGET_MET_NOT_HARDWARE_VERIFIED"
+    }
+  ],
+  "resources": {
+    "master": {
+      "Slice LUTs": 635,
+      "Slice Registers": 616,
+      "Block RAM Tile": 0,
+      "DSPs": 0,
+      "Bonded IOB": 16,
+      "BUFGCTRL": 2,
+      "MMCME2_ADV": 1
+    },
+    "slave": {
+      "Slice LUTs": 562,
+      "Slice Registers": 615,
+      "Block RAM Tile": 0,
+      "DSPs": 0,
+      "Bonded IOB": 14,
+      "BUFGCTRL": 3,
+      "MMCME2_ADV": 1
+    }
+  },
+  "methodology_review_items": {
+    "master": [
+      {
+        "rule": "TIMING-18",
+        "severity": "Warning",
+        "description": "Missing input or output delay",
+        "count": 2
+      },
+      {
+        "rule": "TIMING-28",
+        "severity": "Warning",
+        "description": "Auto-derived clock referenced by a timing constraint",
+        "count": 4
+      }
+    ],
+    "slave": [
+      {
+        "rule": "TIMING-6",
+        "severity": "Critical Warning",
+        "description": "No common primary clock between related clocks",
+        "count": 3
+      },
+      {
+        "rule": "TIMING-7",
+        "severity": "Critical Warning",
+        "description": "No common node between related clocks",
+        "count": 3
+      },
+      {
+        "rule": "TIMING-18",
+        "severity": "Warning",
+        "description": "Missing input or output delay",
+        "count": 7
+      },
+      {
+        "rule": "TIMING-28",
+        "severity": "Warning",
+        "description": "Auto-derived clock referenced by a timing constraint",
+        "count": 4
+      }
+    ]
+  },
+  "hardware": {
+    "jtag_targets": 0,
+    "programmed": false,
+    "board_tested": false,
+    "hardware_verified": false,
+    "scope_skew_ns": null
+  },
+  "completion": "SOFTWARE_BASELINE_WITH_REVIEW_ITEMS; PHYSICAL_ACCEPTANCE_PENDING",
+  "source_sha256": {
+    "v3/rtl/clock/clk_manager.sv": "0c5aef08d30b5210f8f35fff76ad3c1995eeeeb078b72174f7c881f706b8130c",
+    "v3/rtl/sync/delay_measure.sv": "971375b67472e30877e7bfaf3d90ed77b3afd5dfcaaad547137b2f42eb29ff5c",
+    "v3/rtl/sync/sync_button.sv": "4fa44f44ca514ee1da38ddc96a35f21517812652cde5e9562d630625800ffab5",
+    "v3/rtl/sync/sync_master.sv": "b13b2d519a6c82a7603c5b957360e3be0347b79d802aa3f156d76bb33c130096",
+    "v3/rtl/sync/sync_protocol.sv": "7547d661f02d99ff0017771066bdf4e34187961bde62d965b47b341413c4858a",
+    "v3/rtl/sync/sync_slave.sv": "6f4f1504f97b50b602d9f9d2b7a8153405e2f5ce9850b2b5264b7712652b69a9",
+    "v3/rtl/sync/timestamp_counter.sv": "a81371877c107d660ee96657cfaadb160d97acc98f258e83289cb26d2a9d8ff6",
+    "v3/rtl/top/dual_sync_top.sv": "880a017b2bbe875a420498a9f90906d3813078b649d16d1ef39771f07bf90050",
+    "v3/tb/dual_sync_tb.sv": "27b68a54ada8e5f29d95805b28a45569232b31cd818c74ebe3fc9dd03c3101a8",
+    "v3/tb/top_clock_tb.sv": "4a5d4bace683a8ced856e024498c14378a107d50f8fbe962259176c472ecb49d",
+    "v3/constraints/ebaz_master.xdc": "ba266d0354243871c087b70d64b45a2b9b9fc8a14981457daa5b8e30e2a6cef8",
+    "v3/constraints/ebaz_slave.xdc": "e6fd1a9deba9021bdc7cbbacc4f29366a5b0611691ea818b8cd46d526fa0f85c",
+    "v3/vivado/build.tcl": "477d76672e7ef6f8cfeb104218fc047fc74d596dc5bb3c89a3c74740892b6212",
+    "v3/vivado/probe_hardware.tcl": "20e26590bb4c743f611f550a895ee6ae7b5fb8374073c7178fb2abbd0e361626",
+    "v3/vivado/run_task001.ps1": "c8075f6863d2211dd426662a09c2fe6680b61617ecfd7b49dd916571a8446583",
+    "v3/simulation/run_xsim.ps1": "719814dd3ae309fe133fa399be8d8e5781b1b26a981f353d35dea5ae3e91a417"
+  }
+}

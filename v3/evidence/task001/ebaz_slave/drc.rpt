@@ -1,0 +1,48 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Sep 30 22:56:14 2026
+| Host         : LAPTOP-V3PP2F49 running 64-bit major release  (build 9200)
+| Command      : report_drc -file C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/evidence/task001/ebaz_slave/drc.rpt
+| Design       : ebaz_slave
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: ebaz_slave
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 2
++--------+----------+-----------------------+--------+
+| Rule   | Severity | Description           | Checks |
++--------+----------+-----------------------+--------+
+| IOSR-1 | Warning  | IOB set reset sharing | 1      |
+| ZPS7-1 | Warning  | PS7 block required    | 1      |
++--------+----------+-----------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO sync_data connects to flops which have these core/g_slave.receiver/decoder/clear
+core/g_slave.receiver/decoder/overlong set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/sync/sync_protocol.sv" into library work
+INFO: [VRFC 10-311] analyzing module sync_protocol
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/sync/timestamp_counter.sv" into library work
+INFO: [VRFC 10-311] analyzing module timestamp_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/sync/sync_master.sv" into library work
+INFO: [VRFC 10-311] analyzing module sync_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/sync/sync_slave.sv" into library work
+INFO: [VRFC 10-311] analyzing module sync_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/sync/sync_button.sv" into library work
+INFO: [VRFC 10-311] analyzing module sync_button
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/sync/delay_measure.sv" into library work
+INFO: [VRFC 10-311] analyzing module delay_measure
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/clock/clk_manager.sv" into library work
+INFO: [VRFC 10-311] analyzing module clk_manager
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/top/dual_sync_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module dual_sync_top
+ERROR: [VRFC 10-2938] 'alive' is already implicitly declared on line 64 [C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/top/dual_sync_top.sv:71]
+ERROR: [VRFC 10-8530] module 'dual_sync_top' is ignored due to previous errors [C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/top/dual_sync_top.sv:3]
+INFO: [VRFC 10-311] analyzing module ebaz_master
+ERROR: [VRFC 10-8530] module 'ebaz_master' is ignored due to previous errors [C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/top/dual_sync_top.sv:93]
+INFO: [VRFC 10-311] analyzing module ebaz_slave
+ERROR: [VRFC 10-8530] module 'ebaz_slave' is ignored due to previous errors [C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/rtl/top/dual_sync_top.sv:101]

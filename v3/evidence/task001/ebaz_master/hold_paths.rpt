@@ -1,0 +1,643 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Sep 30 22:53:16 2026
+| Host         : LAPTOP-V3PP2F49 running 64-bit major release  (build 9200)
+| Command      : report_timing -delay_type min -max_paths 10 -file C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/evidence/task001/ebaz_master/hold_paths.rpt
+| Design       : ebaz_master
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.006ns  (arrival time - required time)
+  Source:                 core/g_master.tx/payload_reg[32]/C
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_master.tx/payload_reg[33]/D
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk fall@10.000ns)
+  Data Path Delay:        0.346ns  (logic 0.212ns (61.241%)  route 0.134ns (38.759%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.712ns = ( 9.288 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.480ns = ( 9.520 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    -0.247ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260    10.260 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440    10.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271     8.429 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482     8.910    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     8.936 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.584     9.520    core/g_master.tx/CLK
+    SLICE_X38Y65         FDRE                                         r  core/g_master.tx/payload_reg[32]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y65         FDRE (Prop_fdre_C_Q)         0.167     9.687 r  core/g_master.tx/payload_reg[32]/Q
+                         net (fo=1, routed)           0.134     9.821    core/g_master.tx/payload_reg_n_0_[32]
+    SLICE_X38Y64         LUT6 (Prop_lut6_I0_O)        0.045     9.866 r  core/g_master.tx/payload[33]_i_1/O
+                         net (fo=1, routed)           0.000     9.866    core/g_master.tx/payload[33]_i_1_n_0
+    SLICE_X38Y64         FDRE                                         r  core/g_master.tx/payload_reg[33]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448    10.448 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480    10.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050     7.878 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528     8.406    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     8.435 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.853     9.288    core/g_master.tx/CLK
+    SLICE_X38Y64         FDRE                                         r  core/g_master.tx/payload_reg[33]/C  (IS_INVERTED)
+                         clock pessimism              0.247     9.535    
+                         clock uncertainty            0.200     9.735    
+    SLICE_X38Y64         FDRE (Hold_fdre_C_D)         0.125     9.860    core/g_master.tx/payload_reg[33]
+  -------------------------------------------------------------------
+                         required time                         -9.860    
+                         arrival time                           9.866    
+  -------------------------------------------------------------------
+                         slack                                  0.006    
+
+Slack (MET) :             0.017ns  (arrival time - required time)
+  Source:                 core/g_master.tx/payload_reg[37]/C
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_master.tx/payload_reg[38]/D
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk fall@10.000ns)
+  Data Path Delay:        0.329ns  (logic 0.191ns (58.024%)  route 0.138ns (41.976%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.716ns = ( 9.284 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.482ns = ( 9.518 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    -0.247ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260    10.260 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440    10.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271     8.429 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482     8.910    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     8.936 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.582     9.518    core/g_master.tx/CLK
+    SLICE_X39Y67         FDRE                                         r  core/g_master.tx/payload_reg[37]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y67         FDRE (Prop_fdre_C_Q)         0.146     9.664 r  core/g_master.tx/payload_reg[37]/Q
+                         net (fo=1, routed)           0.138     9.802    core/g_master.tx/payload_reg_n_0_[37]
+    SLICE_X39Y68         LUT6 (Prop_lut6_I0_O)        0.045     9.847 r  core/g_master.tx/payload[38]_i_1/O
+                         net (fo=1, routed)           0.000     9.847    core/g_master.tx/payload[38]_i_1_n_0
+    SLICE_X39Y68         FDRE                                         r  core/g_master.tx/payload_reg[38]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448    10.448 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480    10.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050     7.878 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528     8.406    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     8.435 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.849     9.284    core/g_master.tx/CLK
+    SLICE_X39Y68         FDRE                                         r  core/g_master.tx/payload_reg[38]/C  (IS_INVERTED)
+                         clock pessimism              0.247     9.531    
+                         clock uncertainty            0.200     9.731    
+    SLICE_X39Y68         FDRE (Hold_fdre_C_D)         0.099     9.830    core/g_master.tx/payload_reg[38]
+  -------------------------------------------------------------------
+                         required time                         -9.830    
+                         arrival time                           9.847    
+  -------------------------------------------------------------------
+                         slack                                  0.017    
+
+Slack (MET) :             0.030ns  (arrival time - required time)
+  Source:                 core/g_master.tx/crc_reg[14]/C
+                            (falling edge-triggered cell FDSE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_master.tx/crc_reg[15]/D
+                            (falling edge-triggered cell FDSE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk fall@10.000ns)
+  Data Path Delay:        0.344ns  (logic 0.188ns (54.635%)  route 0.156ns (45.365%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.720ns = ( 9.280 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.486ns = ( 9.514 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260    10.260 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440    10.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271     8.429 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482     8.910    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     8.936 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.578     9.514    core/g_master.tx/CLK
+    SLICE_X43Y76         FDSE                                         r  core/g_master.tx/crc_reg[14]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y76         FDSE (Prop_fdse_C_Q)         0.146     9.660 r  core/g_master.tx/crc_reg[14]/Q
+                         net (fo=1, routed)           0.156     9.816    core/g_master.tx/crc_reg_n_0_[14]
+    SLICE_X43Y76         LUT2 (Prop_lut2_I0_O)        0.042     9.858 r  core/g_master.tx/crc[15]_i_2/O
+                         net (fo=1, routed)           0.000     9.858    core/g_master.tx/crc[15]_i_2_n_0
+    SLICE_X43Y76         FDSE                                         r  core/g_master.tx/crc_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448    10.448 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480    10.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050     7.878 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528     8.406    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     8.435 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.845     9.280    core/g_master.tx/CLK
+    SLICE_X43Y76         FDSE                                         r  core/g_master.tx/crc_reg[15]/C  (IS_INVERTED)
+                         clock pessimism              0.234     9.514    
+                         clock uncertainty            0.200     9.714    
+    SLICE_X43Y76         FDSE (Hold_fdse_C_D)         0.114     9.828    core/g_master.tx/crc_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -9.828    
+                         arrival time                           9.858    
+  -------------------------------------------------------------------
+                         slack                                  0.030    
+
+Slack (MET) :             0.030ns  (arrival time - required time)
+  Source:                 core/g_master.tx/payload_reg[62]/C
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_master.tx/payload_reg[63]/D
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk fall@10.000ns)
+  Data Path Delay:        0.355ns  (logic 0.212ns (59.689%)  route 0.143ns (40.311%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.723ns = ( 9.277 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.489ns = ( 9.511 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260    10.260 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440    10.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271     8.429 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482     8.910    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     8.936 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.575     9.511    core/g_master.tx/CLK
+    SLICE_X38Y75         FDRE                                         r  core/g_master.tx/payload_reg[62]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y75         FDRE (Prop_fdre_C_Q)         0.167     9.678 r  core/g_master.tx/payload_reg[62]/Q
+                         net (fo=1, routed)           0.143     9.821    core/g_master.tx/payload_reg_n_0_[62]
+    SLICE_X38Y75         LUT6 (Prop_lut6_I0_O)        0.045     9.866 r  core/g_master.tx/payload[63]_i_1/O
+                         net (fo=1, routed)           0.000     9.866    core/g_master.tx/payload[63]_i_1_n_0
+    SLICE_X38Y75         FDRE                                         r  core/g_master.tx/payload_reg[63]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448    10.448 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480    10.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050     7.878 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528     8.406    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     8.435 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.842     9.277    core/g_master.tx/CLK
+    SLICE_X38Y75         FDRE                                         r  core/g_master.tx/payload_reg[63]/C  (IS_INVERTED)
+                         clock pessimism              0.234     9.511    
+                         clock uncertainty            0.200     9.711    
+    SLICE_X38Y75         FDRE (Hold_fdre_C_D)         0.125     9.836    core/g_master.tx/payload_reg[63]
+  -------------------------------------------------------------------
+                         required time                         -9.836    
+                         arrival time                           9.866    
+  -------------------------------------------------------------------
+                         slack                                  0.030    
+
+Slack (MET) :             0.030ns  (arrival time - required time)
+  Source:                 core/g_master.tx/payload_reg[67]/C
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_master.tx/payload_reg[68]/D
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk fall@10.000ns)
+  Data Path Delay:        0.365ns  (logic 0.216ns (59.117%)  route 0.149ns (40.883%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.709ns = ( 9.291 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.478ns = ( 9.522 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    -0.231ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260    10.260 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440    10.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271     8.429 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482     8.910    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     8.936 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.586     9.522    core/g_master.tx/CLK
+    SLICE_X38Y61         FDRE                                         r  core/g_master.tx/payload_reg[67]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y61         FDRE (Prop_fdre_C_Q)         0.167     9.689 r  core/g_master.tx/payload_reg[67]/Q
+                         net (fo=1, routed)           0.149     9.838    core/g_master.tx/payload_reg_n_0_[67]
+    SLICE_X38Y61         LUT3 (Prop_lut3_I0_O)        0.049     9.887 r  core/g_master.tx/payload[68]_i_1/O
+                         net (fo=1, routed)           0.000     9.887    core/g_master.tx/payload[68]_i_1_n_0
+    SLICE_X38Y61         FDRE                                         r  core/g_master.tx/payload_reg[68]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448    10.448 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480    10.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050     7.878 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528     8.406    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     8.435 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.856     9.291    core/g_master.tx/CLK
+    SLICE_X38Y61         FDRE                                         r  core/g_master.tx/payload_reg[68]/C  (IS_INVERTED)
+                         clock pessimism              0.231     9.522    
+                         clock uncertainty            0.200     9.722    
+    SLICE_X38Y61         FDRE (Hold_fdre_C_D)         0.135     9.857    core/g_master.tx/payload_reg[68]
+  -------------------------------------------------------------------
+                         required time                         -9.857    
+                         arrival time                           9.887    
+  -------------------------------------------------------------------
+                         slack                                  0.030    
+
+Slack (MET) :             0.030ns  (arrival time - required time)
+  Source:                 core/mmcm_release_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/mmcm_release_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.247ns  (logic 0.128ns (51.736%)  route 0.119ns (48.264%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.711ns
+    Source Clock Delay      (SCD):    -0.478ns
+    Clock Pessimism Removal (CPR):    -0.233ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260     0.260 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.571 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.090    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.064 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.586    -0.478    core/clk
+    SLICE_X43Y65         FDCE                                         r  core/mmcm_release_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y65         FDCE (Prop_fdce_C_Q)         0.128    -0.350 r  core/mmcm_release_reg[1]/Q
+                         net (fo=1, routed)           0.119    -0.230    core/mmcm_release[1]
+    SLICE_X43Y65         FDCE                                         r  core/mmcm_release_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448     0.448 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.122 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.594    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.565 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.854    -0.711    core/clk
+    SLICE_X43Y65         FDCE                                         r  core/mmcm_release_reg[2]/C
+                         clock pessimism              0.233    -0.478    
+                         clock uncertainty            0.200    -0.278    
+    SLICE_X43Y65         FDCE (Hold_fdce_C_D)         0.017    -0.261    core/mmcm_release_reg[2]
+  -------------------------------------------------------------------
+                         required time                          0.261    
+                         arrival time                          -0.230    
+  -------------------------------------------------------------------
+                         slack                                  0.030    
+
+Slack (MET) :             0.030ns  (arrival time - required time)
+  Source:                 core/reset_release_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/reset_release_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.247ns  (logic 0.128ns (51.736%)  route 0.119ns (48.264%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.710ns
+    Source Clock Delay      (SCD):    -0.478ns
+    Clock Pessimism Removal (CPR):    -0.232ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260     0.260 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.571 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.090    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.064 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.586    -0.478    core/clk
+    SLICE_X43Y64         FDCE                                         r  core/reset_release_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y64         FDCE (Prop_fdce_C_Q)         0.128    -0.350 r  core/reset_release_reg[1]/Q
+                         net (fo=1, routed)           0.119    -0.230    core/reset_release[1]
+    SLICE_X43Y64         FDCE                                         r  core/reset_release_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448     0.448 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.122 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.594    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.565 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.855    -0.710    core/clk
+    SLICE_X43Y64         FDCE                                         r  core/reset_release_reg[2]/C
+                         clock pessimism              0.232    -0.478    
+                         clock uncertainty            0.200    -0.278    
+    SLICE_X43Y64         FDCE (Hold_fdce_C_D)         0.017    -0.261    core/reset_release_reg[2]
+  -------------------------------------------------------------------
+                         required time                          0.261    
+                         arrival time                          -0.230    
+  -------------------------------------------------------------------
+                         slack                                  0.030    
+
+Slack (MET) :             0.034ns  (arrival time - required time)
+  Source:                 core/g_master.tx/payload_reg[104]/C
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_master.tx/payload_reg[105]/D
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk fall@10.000ns)
+  Data Path Delay:        0.333ns  (logic 0.191ns (57.292%)  route 0.142ns (42.708%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.740ns = ( 9.260 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.507ns = ( 9.493 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    -0.233ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260    10.260 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440    10.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271     8.429 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482     8.910    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     8.936 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.557     9.493    core/g_master.tx/CLK
+    SLICE_X33Y63         FDRE                                         r  core/g_master.tx/payload_reg[104]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y63         FDRE (Prop_fdre_C_Q)         0.146     9.639 r  core/g_master.tx/payload_reg[104]/Q
+                         net (fo=1, routed)           0.142     9.781    core/g_master.tx/payload_reg_n_0_[104]
+    SLICE_X33Y63         LUT2 (Prop_lut2_I0_O)        0.045     9.826 r  core/g_master.tx/payload[105]_i_1/O
+                         net (fo=1, routed)           0.000     9.826    core/g_master.tx/payload[105]_i_1_n_0
+    SLICE_X33Y63         FDRE                                         r  core/g_master.tx/payload_reg[105]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448    10.448 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480    10.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050     7.878 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528     8.406    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     8.435 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.825     9.260    core/g_master.tx/CLK
+    SLICE_X33Y63         FDRE                                         r  core/g_master.tx/payload_reg[105]/C  (IS_INVERTED)
+                         clock pessimism              0.233     9.493    
+                         clock uncertainty            0.200     9.693    
+    SLICE_X33Y63         FDRE (Hold_fdre_C_D)         0.099     9.792    core/g_master.tx/payload_reg[105]
+  -------------------------------------------------------------------
+                         required time                         -9.792    
+                         arrival time                           9.826    
+  -------------------------------------------------------------------
+                         slack                                  0.034    
+
+Slack (MET) :             0.036ns  (arrival time - required time)
+  Source:                 core/g_master.tx/payload_reg[124]/C
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_master.tx/payload_reg[125]/D
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk fall@10.000ns)
+  Data Path Delay:        0.391ns  (logic 0.191ns (48.897%)  route 0.200ns (51.103%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.031ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.722ns = ( 9.278 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.486ns = ( 9.514 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    -0.267ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260    10.260 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440    10.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271     8.429 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482     8.910    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     8.936 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.578     9.514    core/g_master.tx/CLK
+    SLICE_X41Y73         FDRE                                         r  core/g_master.tx/payload_reg[124]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y73         FDRE (Prop_fdre_C_Q)         0.146     9.660 r  core/g_master.tx/payload_reg[124]/Q
+                         net (fo=1, routed)           0.200     9.860    core/g_master.tx/payload_reg_n_0_[124]
+    SLICE_X38Y73         LUT2 (Prop_lut2_I0_O)        0.045     9.905 r  core/g_master.tx/payload[125]_i_1/O
+                         net (fo=1, routed)           0.000     9.905    core/g_master.tx/payload[125]_i_1_n_0
+    SLICE_X38Y73         FDRE                                         r  core/g_master.tx/payload_reg[125]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448    10.448 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480    10.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050     7.878 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528     8.406    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     8.435 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.843     9.278    core/g_master.tx/CLK
+    SLICE_X38Y73         FDRE                                         r  core/g_master.tx/payload_reg[125]/C  (IS_INVERTED)
+                         clock pessimism              0.267     9.545    
+                         clock uncertainty            0.200     9.745    
+    SLICE_X38Y73         FDRE (Hold_fdre_C_D)         0.124     9.869    core/g_master.tx/payload_reg[125]
+  -------------------------------------------------------------------
+                         required time                         -9.869    
+                         arrival time                           9.905    
+  -------------------------------------------------------------------
+                         slack                                  0.036    
+
+Slack (MET) :             0.038ns  (arrival time - required time)
+  Source:                 core/g_master.tx/payload_reg[97]/C
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_master.tx/payload_reg[98]/D
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk fall@10.000ns)
+  Data Path Delay:        0.373ns  (logic 0.210ns (56.285%)  route 0.163ns (43.715%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.712ns = ( 9.288 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.480ns = ( 9.520 - 10.000 ) 
+    Clock Pessimism Removal (CPR):    -0.232ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260    10.260 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440    10.700    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271     8.429 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482     8.910    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     8.936 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.584     9.520    core/g_master.tx/CLK
+    SLICE_X38Y63         FDRE                                         r  core/g_master.tx/payload_reg[97]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y63         FDRE (Prop_fdre_C_Q)         0.167     9.687 r  core/g_master.tx/payload_reg[97]/Q
+                         net (fo=1, routed)           0.163     9.850    core/g_master.tx/payload_reg_n_0_[97]
+    SLICE_X38Y63         LUT4 (Prop_lut4_I2_O)        0.043     9.893 r  core/g_master.tx/payload[98]_i_1/O
+                         net (fo=1, routed)           0.000     9.893    core/g_master.tx/payload[98]_i_1_n_0
+    SLICE_X38Y63         FDRE                                         r  core/g_master.tx/payload_reg[98]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448    10.448 f  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480    10.928    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050     7.878 f  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528     8.406    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     8.435 f  core/clocks/g_hw.output_buffer/O
+                         net (fo=617, routed)         0.853     9.288    core/g_master.tx/CLK
+    SLICE_X38Y63         FDRE                                         r  core/g_master.tx/payload_reg[98]/C  (IS_INVERTED)
+                         clock pessimism              0.232     9.520    
+                         clock uncertainty            0.200     9.720    
+    SLICE_X38Y63         FDRE (Hold_fdre_C_D)         0.135     9.855    core/g_master.tx/payload_reg[98]
+  -------------------------------------------------------------------
+                         required time                         -9.855    
+                         arrival time                           9.893    
+  -------------------------------------------------------------------
+                         slack                                  0.038    
+
+
+
+

@@ -1,0 +1,20 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Sep 29 23:42:41 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/top_clock_snapshot/xsim_script.tcl
+# xsim {top_clock_snapshot} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS timestamp waveform matches with independent 100ppm local crystal
+TOP_RTT roundtrip=148 delay=0 valid=0
+Fatal: FAIL default RTT turnaround profile matches physical-wrapper simulation
+Time: 165158 ns  Iteration: 0  Process: /top_clock_tb/check  Scope: top_clock_tb.check  File: C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/tb/top_clock_tb.sv Line: 26
+$finish called at time : 165158 ns
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 23:42:43 2026...

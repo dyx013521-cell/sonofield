@@ -1,0 +1,641 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Sep 30 22:56:10 2026
+| Host         : LAPTOP-V3PP2F49 running 64-bit major release  (build 9200)
+| Command      : report_timing -delay_type min -max_paths 10 -file C:/Users/BELYA/Documents/Codex/2026-09-29/https-github-com-loverlike1216-sonofield-fpga/outputs/sonofield-v3/v3/evidence/task001/ebaz_slave/hold_paths.rpt
+| Design       : ebaz_slave
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.052ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/good_frames_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/sync_locked_reg/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.356ns  (logic 0.186ns (52.212%)  route 0.170ns (47.788%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.741ns
+    Source Clock Delay      (SCD):    -0.507ns
+    Clock Pessimism Removal (CPR):    -0.247ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.555    -0.507    core/g_slave.receiver/clk
+    SLICE_X26Y82         FDRE                                         r  core/g_slave.receiver/good_frames_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y82         FDRE (Prop_fdre_C_Q)         0.141    -0.366 r  core/g_slave.receiver/good_frames_reg[1]/Q
+                         net (fo=4, routed)           0.170    -0.196    core/g_slave.receiver/decoder/sync_locked0
+    SLICE_X27Y82         LUT6 (Prop_lut6_I2_O)        0.045    -0.151 r  core/g_slave.receiver/decoder/sync_locked_i_1/O
+                         net (fo=1, routed)           0.000    -0.151    core/g_slave.receiver/decoder_n_283
+    SLICE_X27Y82         FDRE                                         r  core/g_slave.receiver/sync_locked_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.822    -0.741    core/g_slave.receiver/clk
+    SLICE_X27Y82         FDRE                                         r  core/g_slave.receiver/sync_locked_reg/C
+                         clock pessimism              0.247    -0.494    
+                         clock uncertainty            0.200    -0.294    
+    SLICE_X27Y82         FDRE (Hold_fdre_C_D)         0.091    -0.203    core/g_slave.receiver/sync_locked_reg
+  -------------------------------------------------------------------
+                         required time                          0.203    
+                         arrival time                          -0.151    
+  -------------------------------------------------------------------
+                         slack                                  0.052    
+
+Slack (MET) :             0.058ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/decoder/shift_payload_reg[104]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/decoder/shift_payload_reg[105]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.344ns  (logic 0.141ns (40.949%)  route 0.203ns (59.051%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.704ns
+    Source Clock Delay      (SCD):    -0.473ns
+    Clock Pessimism Removal (CPR):    -0.247ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.589    -0.473    core/g_slave.receiver/decoder/clk
+    SLICE_X40Y90         FDRE                                         r  core/g_slave.receiver/decoder/shift_payload_reg[104]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y90         FDRE (Prop_fdre_C_Q)         0.141    -0.332 r  core/g_slave.receiver/decoder/shift_payload_reg[104]/Q
+                         net (fo=2, routed)           0.203    -0.129    core/g_slave.receiver/decoder/p_0_in_1[0]
+    SLICE_X40Y91         FDRE                                         r  core/g_slave.receiver/decoder/shift_payload_reg[105]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.859    -0.704    core/g_slave.receiver/decoder/clk
+    SLICE_X40Y91         FDRE                                         r  core/g_slave.receiver/decoder/shift_payload_reg[105]/C
+                         clock pessimism              0.247    -0.457    
+                         clock uncertainty            0.200    -0.257    
+    SLICE_X40Y91         FDRE (Hold_fdre_C_D)         0.070    -0.187    core/g_slave.receiver/decoder/shift_payload_reg[105]
+  -------------------------------------------------------------------
+                         required time                          0.187    
+                         arrival time                          -0.129    
+  -------------------------------------------------------------------
+                         slack                                  0.058    
+
+Slack (MET) :             0.060ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/decoder/shift_payload_reg[64]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/decoder/shift_payload_reg[65]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.321ns  (logic 0.164ns (51.102%)  route 0.157ns (48.898%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.707ns
+    Source Clock Delay      (SCD):    -0.474ns
+    Clock Pessimism Removal (CPR):    -0.247ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.588    -0.474    core/g_slave.receiver/decoder/clk
+    SLICE_X42Y88         FDRE                                         r  core/g_slave.receiver/decoder/shift_payload_reg[64]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y88         FDRE (Prop_fdre_C_Q)         0.164    -0.310 r  core/g_slave.receiver/decoder/shift_payload_reg[64]/Q
+                         net (fo=2, routed)           0.157    -0.153    core/g_slave.receiver/decoder/shift_payload[64]
+    SLICE_X41Y87         FDRE                                         r  core/g_slave.receiver/decoder/shift_payload_reg[65]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.856    -0.707    core/g_slave.receiver/decoder/clk
+    SLICE_X41Y87         FDRE                                         r  core/g_slave.receiver/decoder/shift_payload_reg[65]/C
+                         clock pessimism              0.247    -0.460    
+                         clock uncertainty            0.200    -0.260    
+    SLICE_X41Y87         FDRE (Hold_fdre_C_D)         0.047    -0.213    core/g_slave.receiver/decoder/shift_payload_reg[65]
+  -------------------------------------------------------------------
+                         required time                          0.213    
+                         arrival time                          -0.153    
+  -------------------------------------------------------------------
+                         slack                                  0.060    
+
+Slack (MET) :             0.061ns  (arrival time - required time)
+  Source:                 core/g_slave.silence_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.silence_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by local50  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             local50
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (local50 rise@0.000ns - local50 rise@0.000ns)
+  Data Path Delay:        0.392ns  (logic 0.207ns (52.792%)  route 0.185ns (47.208%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.008ns
+    Source Clock Delay      (SCD):    1.493ns
+    Clock Pessimism Removal (CPR):    0.515ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock local50 rise edge)    0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.260     0.260 r  clk50_IBUF_inst/O
+                         net (fo=1, routed)           0.627     0.887    clk50_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.913 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, routed)          0.580     1.493    core/CLK
+    SLICE_X38Y69         FDRE                                         r  core/g_slave.silence_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y69         FDRE (Prop_fdre_C_Q)         0.164     1.657 r  core/g_slave.silence_reg[7]/Q
+                         net (fo=5, routed)           0.185     1.842    core/g_slave.silence_reg[7]
+    SLICE_X38Y69         LUT4 (Prop_lut4_I0_O)        0.043     1.885 r  core/g_slave.silence[8]_i_3/O
+                         net (fo=1, routed)           0.000     1.885    core/p_0_in__1[8]
+    SLICE_X38Y69         FDRE                                         r  core/g_slave.silence_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock local50 rise edge)    0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    clk50
+    N18                  IBUF (Prop_ibuf_I_O)         0.448     0.448 r  clk50_IBUF_inst/O
+                         net (fo=1, routed)           0.683     1.131    clk50_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.160 r  clk50_IBUF_BUFG_inst/O
+                         net (fo=14, routed)          0.848     2.008    core/CLK
+    SLICE_X38Y69         FDRE                                         r  core/g_slave.silence_reg[8]/C
+                         clock pessimism             -0.515     1.493    
+                         clock uncertainty            0.200     1.693    
+    SLICE_X38Y69         FDRE (Hold_fdre_C_D)         0.131     1.824    core/g_slave.silence_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -1.824    
+                         arrival time                           1.885    
+  -------------------------------------------------------------------
+                         slack                                  0.061    
+
+Slack (MET) :             0.062ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/decoder/count_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/decoder/count_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.393ns  (logic 0.207ns (52.617%)  route 0.186ns (47.383%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.706ns
+    Source Clock Delay      (SCD):    -0.475ns
+    Clock Pessimism Removal (CPR):    -0.231ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.587    -0.475    core/g_slave.receiver/decoder/clk
+    SLICE_X38Y90         FDRE                                         r  core/g_slave.receiver/decoder/count_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y90         FDRE (Prop_fdre_C_Q)         0.164    -0.311 r  core/g_slave.receiver/decoder/count_reg[2]/Q
+                         net (fo=6, routed)           0.186    -0.125    core/g_slave.receiver/decoder/count_reg[2]
+    SLICE_X38Y90         LUT4 (Prop_lut4_I0_O)        0.043    -0.082 r  core/g_slave.receiver/decoder/count[3]_i_1/O
+                         net (fo=1, routed)           0.000    -0.082    core/g_slave.receiver/decoder/p_0_in[3]
+    SLICE_X38Y90         FDRE                                         r  core/g_slave.receiver/decoder/count_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.857    -0.706    core/g_slave.receiver/decoder/clk
+    SLICE_X38Y90         FDRE                                         r  core/g_slave.receiver/decoder/count_reg[3]/C
+                         clock pessimism              0.231    -0.475    
+                         clock uncertainty            0.200    -0.275    
+    SLICE_X38Y90         FDRE (Hold_fdre_C_D)         0.131    -0.144    core/g_slave.receiver/decoder/count_reg[3]
+  -------------------------------------------------------------------
+                         required time                          0.144    
+                         arrival time                          -0.082    
+  -------------------------------------------------------------------
+                         slack                                  0.062    
+
+Slack (MET) :             0.064ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/sequence_errors_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/sequence_errors_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.718ns
+    Source Clock Delay      (SCD):    -0.484ns
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.578    -0.484    core/g_slave.receiver/clk
+    SLICE_X41Y73         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y73         FDRE (Prop_fdre_C_Q)         0.141    -0.343 r  core/g_slave.receiver/sequence_errors_reg[15]/Q
+                         net (fo=2, routed)           0.120    -0.223    core/g_slave.receiver/sequence_errors_reg[15]
+    SLICE_X41Y73         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108    -0.115 r  core/g_slave.receiver/sequence_errors_reg[12]_i_1/O[3]
+                         net (fo=1, routed)           0.000    -0.115    core/g_slave.receiver/sequence_errors_reg[12]_i_1_n_4
+    SLICE_X41Y73         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.845    -0.718    core/g_slave.receiver/clk
+    SLICE_X41Y73         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[15]/C
+                         clock pessimism              0.234    -0.484    
+                         clock uncertainty            0.200    -0.284    
+    SLICE_X41Y73         FDRE (Hold_fdre_C_D)         0.105    -0.179    core/g_slave.receiver/sequence_errors_reg[15]
+  -------------------------------------------------------------------
+                         required time                          0.179    
+                         arrival time                          -0.115    
+  -------------------------------------------------------------------
+                         slack                                  0.064    
+
+Slack (MET) :             0.064ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/sequence_errors_reg[23]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/sequence_errors_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.719ns
+    Source Clock Delay      (SCD):    -0.485ns
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.577    -0.485    core/g_slave.receiver/clk
+    SLICE_X41Y75         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y75         FDRE (Prop_fdre_C_Q)         0.141    -0.344 r  core/g_slave.receiver/sequence_errors_reg[23]/Q
+                         net (fo=2, routed)           0.120    -0.224    core/g_slave.receiver/sequence_errors_reg[23]
+    SLICE_X41Y75         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108    -0.116 r  core/g_slave.receiver/sequence_errors_reg[20]_i_1/O[3]
+                         net (fo=1, routed)           0.000    -0.116    core/g_slave.receiver/sequence_errors_reg[20]_i_1_n_4
+    SLICE_X41Y75         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.844    -0.719    core/g_slave.receiver/clk
+    SLICE_X41Y75         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[23]/C
+                         clock pessimism              0.234    -0.485    
+                         clock uncertainty            0.200    -0.285    
+    SLICE_X41Y75         FDRE (Hold_fdre_C_D)         0.105    -0.180    core/g_slave.receiver/sequence_errors_reg[23]
+  -------------------------------------------------------------------
+                         required time                          0.180    
+                         arrival time                          -0.116    
+  -------------------------------------------------------------------
+                         slack                                  0.064    
+
+Slack (MET) :             0.064ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/sequence_errors_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/sequence_errors_reg[27]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.718ns
+    Source Clock Delay      (SCD):    -0.484ns
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.578    -0.484    core/g_slave.receiver/clk
+    SLICE_X41Y76         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y76         FDRE (Prop_fdre_C_Q)         0.141    -0.343 r  core/g_slave.receiver/sequence_errors_reg[27]/Q
+                         net (fo=2, routed)           0.120    -0.223    core/g_slave.receiver/sequence_errors_reg[27]
+    SLICE_X41Y76         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108    -0.115 r  core/g_slave.receiver/sequence_errors_reg[24]_i_1/O[3]
+                         net (fo=1, routed)           0.000    -0.115    core/g_slave.receiver/sequence_errors_reg[24]_i_1_n_4
+    SLICE_X41Y76         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.845    -0.718    core/g_slave.receiver/clk
+    SLICE_X41Y76         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[27]/C
+                         clock pessimism              0.234    -0.484    
+                         clock uncertainty            0.200    -0.284    
+    SLICE_X41Y76         FDRE (Hold_fdre_C_D)         0.105    -0.179    core/g_slave.receiver/sequence_errors_reg[27]
+  -------------------------------------------------------------------
+                         required time                          0.179    
+                         arrival time                          -0.115    
+  -------------------------------------------------------------------
+                         slack                                  0.064    
+
+Slack (MET) :             0.064ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/sequence_errors_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/sequence_errors_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.714ns
+    Source Clock Delay      (SCD):    -0.481ns
+    Clock Pessimism Removal (CPR):    -0.233ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.581    -0.481    core/g_slave.receiver/clk
+    SLICE_X41Y70         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y70         FDRE (Prop_fdre_C_Q)         0.141    -0.340 r  core/g_slave.receiver/sequence_errors_reg[3]/Q
+                         net (fo=2, routed)           0.120    -0.220    core/g_slave.receiver/sequence_errors_reg[3]
+    SLICE_X41Y70         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108    -0.112 r  core/g_slave.receiver/sequence_errors_reg[0]_i_2/O[3]
+                         net (fo=1, routed)           0.000    -0.112    core/g_slave.receiver/sequence_errors_reg[0]_i_2_n_4
+    SLICE_X41Y70         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.849    -0.714    core/g_slave.receiver/clk
+    SLICE_X41Y70         FDRE                                         r  core/g_slave.receiver/sequence_errors_reg[3]/C
+                         clock pessimism              0.233    -0.481    
+                         clock uncertainty            0.200    -0.281    
+    SLICE_X41Y70         FDRE (Hold_fdre_C_D)         0.105    -0.176    core/g_slave.receiver/sequence_errors_reg[3]
+  -------------------------------------------------------------------
+                         required time                          0.176    
+                         arrival time                          -0.112    
+  -------------------------------------------------------------------
+                         slack                                  0.064    
+
+Slack (MET) :             0.064ns  (arrival time - required time)
+  Source:                 core/g_slave.receiver/age_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/g_slave.receiver/age_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.712ns
+    Source Clock Delay      (SCD):    -0.479ns
+    Clock Pessimism Removal (CPR):    -0.233ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.583    -0.479    core/g_slave.receiver/clk
+    SLICE_X41Y81         FDRE                                         r  core/g_slave.receiver/age_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y81         FDRE (Prop_fdre_C_Q)         0.141    -0.338 r  core/g_slave.receiver/age_reg[12]/Q
+                         net (fo=3, routed)           0.120    -0.218    core/g_slave.receiver/age[12]
+    SLICE_X41Y81         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108    -0.110 r  core/g_slave.receiver/age0_carry__1/O[3]
+                         net (fo=1, routed)           0.000    -0.110    core/g_slave.receiver/age0[12]
+    SLICE_X41Y81         FDRE                                         r  core/g_slave.receiver/age_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/clocks/g_hw.output_buffer/O
+                         net (fo=601, routed)         0.851    -0.712    core/g_slave.receiver/clk
+    SLICE_X41Y81         FDRE                                         r  core/g_slave.receiver/age_reg[12]/C
+                         clock pessimism              0.233    -0.479    
+                         clock uncertainty            0.200    -0.279    
+    SLICE_X41Y81         FDRE (Hold_fdre_C_D)         0.105    -0.174    core/g_slave.receiver/age_reg[12]
+  -------------------------------------------------------------------
+                         required time                          0.174    
+                         arrival time                          -0.110    
+  -------------------------------------------------------------------
+                         slack                                  0.064    
+
+
+
+
