@@ -1,0 +1,23 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/amd2025_2/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe dual_sync_tb -s dual_sync_tb_snapshot -debug typical 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'scheduled_apply_valid' remains unconnected for this instance [D:/codex_project/sonofield/v3/tb/dual_sync_tb.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.sync_defs
+Compiling module work.timestamp_counter
+Compiling module work.sync_master
+Compiling module work.sync_protocol
+Compiling module work.sync_slave_default
+Compiling module work.sync_slave(LINK_CYCLES=1)
+Compiling module work.sync_slave(LINK_CYCLES=2)
+Compiling module work.sync_slave(LINK_CYCLES=3)
+Compiling module work.delay_measure(TURNAROUND_CYCLES=...
+Compiling module work.dual_sync_tb
+Built simulation snapshot dual_sync_tb_snapshot

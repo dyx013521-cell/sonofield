@@ -4,7 +4,9 @@ module dual_sync_top #(parameter bit MASTER=1,SIMULATION=0,parameter integer WAV
  input wire clk50,rst_n,sync_clk_in,sync_data_in,sync_valid_in,sync_reset_in,
  input wire sync_lock_in,sync_echo_in,reset_request_n,trigger_request_n,
  output wire sync_clk_out,sync_data_out,sync_valid_out,sync_reset_out,
- output wire sync_lock_out,sync_echo_out,trigger_out,waveform_out,output wire [3:0] led_n);
+ output wire sync_lock_out,sync_echo_out,trigger_out,waveform_out,output wire [3:0] led_n,
+ output wire array_clk,array_locked,array_run,array_alive,array_fault,array_sync_locked,array_watchdog_alive,
+ output wire [63:0] array_timestamp,scheduled_apply_at,output wire scheduled_apply_valid);
  wire clk,locked;
  clk_manager #(.SIMULATION(SIMULATION)) clocks(.clk_in(MASTER?clk50:sync_clk_in),.rst_n(rst_n),.clk(clk),.locked(locked));
  (* ASYNC_REG="TRUE" *) reg [2:0] reset_release=0;
@@ -24,11 +26,23 @@ module dual_sync_top #(parameter bit MASTER=1,SIMULATION=0,parameter integer WAV
  end endgenerate
  wire run=reset_release[2] && mmcm_release[2] && link_run;
  wire [63:0] stamp;
+ assign array_clk=clk;assign array_locked=locked;assign array_run=run;
+ assign array_timestamp=stamp;
  wire [31:0] measured_delay,measured_roundtrip;
  wire measured_valid,measure_timeout;
  generate if(MASTER) begin:g_master
   (* MARK_DEBUG="TRUE" *) wire [31:0] debug_delay=measured_delay,debug_roundtrip=measured_roundtrip;
   wire ready,tx_event,command_error,reset_due,trigger_due,wrap_pulse;
+  reg array_command_error;
+  // The transmitter reports errors on the falling edge. Capture them in the
+  // rising-edge array domain before gating data pins; /OE remains independent.
+  always @(posedge clk) if(!run) array_command_error<=0;else array_command_error<=command_error;
+  assign array_alive=run;assign array_fault=array_command_error || measure_timeout;
+  assign array_sync_locked=lock_pipe[1];assign array_watchdog_alive=run;
+  // TX accepts on the falling edge; ready is already low at the following
+  // rising edge where the array captures this accepted command.
+  assign scheduled_apply_valid=trigger_request && !command_error;
+  assign scheduled_apply_at=event_at;
   reg [9:0] cadence;
   reg request,reset_request,trigger_request,want_reset,want_trigger;
   reg [63:0] event_at;
@@ -76,9 +90,16 @@ module dual_sync_top #(parameter bit MASTER=1,SIMULATION=0,parameter integer WAV
   wire slave_lock,slave_trigger,echo;
   wire signed [63:0] offset;
   wire [31:0] crc_errors,sequence_errors,timeout_errors,received_sequence;
+  assign array_alive=alive_pipe[1];assign array_watchdog_alive=alive;
+  assign array_sync_locked=slave_lock && alive_pipe[1] && run;
+  wire receiver_error_event;
+  reg array_receiver_error;
+  always @(posedge clk) if(!run) array_receiver_error<=0;else array_receiver_error<=receiver_error_event;
+  assign array_fault=array_receiver_error;
   sync_slave receiver(.clk(clk),.rst_n(run && alive_pipe[1]),.sync_data(sync_data_in),.sync_valid(sync_valid_in),
    .sync_locked(slave_lock),.slave_timestamp(stamp),.offset_value(offset),.trigger_pulse(slave_trigger),
-   .echo_toggle(echo),.crc_errors(crc_errors),.sequence_errors(sequence_errors),.timeout_errors(timeout_errors),.received_sequence(received_sequence));
+   .echo_toggle(echo),.crc_errors(crc_errors),.sequence_errors(sequence_errors),.timeout_errors(timeout_errors),.received_sequence(received_sequence),
+   .scheduled_apply_valid(scheduled_apply_valid),.scheduled_apply_at(scheduled_apply_at),.fatal_error_event(receiver_error_event));
   // Free-running local N18 clock supervises forwarded-clock loss. Not used for global time.
   (* ASYNC_REG="TRUE" *) reg [1:0] heartbeat_pipe;
   reg heartbeat_previous;

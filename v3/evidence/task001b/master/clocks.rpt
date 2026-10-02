@@ -1,0 +1,74 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Oct  2 20:43:14 2026
+| Host         : LAPTOP-V3PP2F49 running 64-bit major release  (build 9200)
+| Command      : report_clocks -file D:/codex_project/sonofield/v3/evidence/task001b/master/clocks.rpt
+| Design       : ebaz_master_serializer_prepcb
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Report
+
+
+Attributes
+  P: Propagated
+  G: Generated
+  A: Auto-derived
+  R: Renamed
+  V: Virtual
+  I: Inverted
+  S: Pin phase-shifted with Latency mode
+
+Clock                                                                                       Period(ns)  Waveform(ns)    Attributes  Sources
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  33.000      {0.000 16.500}  P           {dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK}
+local50                                                                                     20.000      {0.000 10.000}  P           {clk50}
+forwarded50                                                                                 20.000      {0.000 10.000}  P,G         {sync_clk}
+g_hw.feedback                                                                               20.000      {0.000 10.000}  P,G,A       {core/core/clocks/g_hw.mmcm/CLKFBOUT}
+g_hw.mmcm_clk                                                                               20.000      {0.000 10.000}  P,G,A       {core/core/clocks/g_hw.mmcm/CLKOUT0}
+
+
+====================================================
+Generated Clocks
+====================================================
+
+Generated Clock     : forwarded50
+Master Source       : core/core/g_master.forward_clock/C
+Master Clock        : g_hw.mmcm_clk
+Divide By           : 1
+Generated Sources   : {sync_clk}
+
+Generated Clock     : g_hw.feedback
+Master Source       : core/core/clocks/g_hw.mmcm/CLKIN1
+Master Clock        : local50
+Multiply By         : 1
+Generated Sources   : {core/core/clocks/g_hw.mmcm/CLKFBOUT}
+
+Generated Clock     : g_hw.mmcm_clk
+Master Source       : core/core/clocks/g_hw.mmcm/CLKIN1
+Master Clock        : local50
+Multiply By         : 1
+Generated Sources   : {core/core/clocks/g_hw.mmcm/CLKOUT0}
+
+
+
+====================================================
+User Uncertainty
+====================================================
+
+From Clock     To Clock       Setup(ns)  Hold(ns)  Edges
+forwarded50    forwarded50    0.200      0.200     rf -> rf
+g_hw.feedback  g_hw.feedback  0.200      0.200     rf -> rf
+g_hw.mmcm_clk  g_hw.mmcm_clk  0.200      0.200     rf -> rf
+local50        local50        0.200      0.200     rf -> rf
+
+
+====================================================
+User Jitter
+====================================================
+
+Clock    Jitter(ns)
+local50  0.100
+

@@ -1,0 +1,204 @@
+{
+  "TASK": "TASK-001B / DUAL_BOARD_SERIALIZER_PRE_PCB_BRINGUP",
+  "CAPTURED_AT": "2026-10-02T20:53:19.242792+08:00",
+  "BOARD1_ROLE": "MASTER",
+  "BOARD2_ROLE": "SLAVE",
+  "BOARD1_CHANNELS": 64,
+  "BOARD2_CHANNELS": 64,
+  "TOTAL_CHANNELS": 128,
+  "SERIAL_LANES_PER_BOARD": 16,
+  "BITS_PER_LANE": 4,
+  "SERIAL_DATA_GPIO": 16,
+  "SHIFT_CLOCK_GPIO": 1,
+  "LATCH_CLOCK_GPIO": 1,
+  "OUTPUT_DISABLE_GPIO": 1,
+  "TOTAL_ARRAY_GPIO_PER_BOARD": 19,
+  "PRIMARY_CONNECTOR": "P1",
+  "FALLBACK_CONNECTORS": [
+    "P2",
+    "P3"
+  ],
+  "P1_GPIO_USED": 14,
+  "P2_GPIO_USED": 5,
+  "P3_GPIO_USED": 0,
+  "P5_RESERVED_FOR_SYNC": true,
+  "P1_P2_P3_PINMAP_COMPLETE": true,
+  "P1_P5_CONFLICT_COUNT": 0,
+  "P5_ARRAY_GPIO_COUNT": 0,
+  "BANK_VCCO_SCHEMA_PASS": true,
+  "BANK_VCCO_PASS": false,
+  "BANK_VCCO_MEASURED": false,
+  "SERIALIZER_SIM_PASS": true,
+  "595_MODEL_SIM_PASS": true,
+  "DUAL_SERIALIZER_SIM_PASS": true,
+  "TASK001_REGRESSION_PASS": true,
+  "SYNTHESIS_PASS": true,
+  "IMPLEMENTATION_PASS": true,
+  "DRC_PASS": true,
+  "CDC_PASS": true,
+  "TIMING_PASS": true,
+  "ZYNQ_CONFIGURATION_RELEASED": false,
+  "CRITICAL_UNCONSTRAINED_ENDPOINTS_ZERO": true,
+  "UNCONSTRAINED_CHECKS": {
+    "master": {
+      "no_clock": 0,
+      "unconstrained_internal_endpoints": 0,
+      "no_input_delay": 0,
+      "no_output_delay": 1,
+      "data_ports_missing_output_delay": 0
+    },
+    "slave": {
+      "no_clock": 0,
+      "unconstrained_internal_endpoints": 0,
+      "no_input_delay": 0,
+      "no_output_delay": 0,
+      "data_ports_missing_output_delay": 0
+    }
+  },
+  "RESOURCES": {
+    "master": {
+      "LUT": 2125.0,
+      "FF": 2751.0,
+      "BRAM_TILE": 2.0,
+      "IOB": 32.0
+    },
+    "slave": {
+      "LUT": 2121.0,
+      "FF": 2750.0,
+      "BRAM_TILE": 2.0,
+      "IOB": 30.0
+    }
+  },
+  "METHODOLOGY_REVIEW_ITEMS": {
+    "master": [
+      {
+        "rule": "LUTAR-1",
+        "severity": "Warning",
+        "count": 6
+      },
+      {
+        "rule": "TIMING-18",
+        "severity": "Warning",
+        "count": 2
+      },
+      {
+        "rule": "TIMING-28",
+        "severity": "Warning",
+        "count": 4
+      },
+      {
+        "rule": "XDCB-5",
+        "severity": "Warning",
+        "count": 2
+      }
+    ],
+    "slave": [
+      {
+        "rule": "TIMING-6",
+        "severity": "Critical Warning",
+        "count": 3
+      },
+      {
+        "rule": "TIMING-7",
+        "severity": "Critical Warning",
+        "count": 3
+      },
+      {
+        "rule": "LUTAR-1",
+        "severity": "Warning",
+        "count": 5
+      },
+      {
+        "rule": "TIMING-18",
+        "severity": "Warning",
+        "count": 7
+      },
+      {
+        "rule": "TIMING-28",
+        "severity": "Warning",
+        "count": 4
+      },
+      {
+        "rule": "XDCB-5",
+        "severity": "Warning",
+        "count": 2
+      }
+    ]
+  },
+  "AUTOMATIC_PROGRAMMING_ALLOWED": false,
+  "PROGRAMMING_POLICY": "Latest user engineering contract: No automatic programming.",
+  "METHODOLOGY_REVIEW_COMPLETE": false,
+  "PHYSICAL_TIMING_MEASURED": false,
+  "DEBUG_BUS_SKEW_RESULTS": {
+    "master": {
+      "worst_slack_ns": 19.053,
+      "pass": true
+    },
+    "slave": {
+      "worst_slack_ns": 19.087,
+      "pass": true
+    }
+  },
+  "DEBUG_BUS_SKEW_PASS": true,
+  "MASTER_BITSTREAM_GENERATED": false,
+  "SLAVE_BITSTREAM_GENERATED": false,
+  "MASTER_PROGRAMMED": false,
+  "SLAVE_PROGRAMMED": false,
+  "P5_SYNC_LOCK": false,
+  "P5_SYNC_LOCK_OBSERVED": null,
+  "SERIALIZER_PREPCB_TEST_PASS": false,
+  "DEFAULT_DISABLE_SIM_PASS": true,
+  "PCB_CONNECTED": null,
+  "PCB_EXPECTED_CONNECTED": false,
+  "PCB_CONNECTION_CONFIRMED": false,
+  "READY_FOR_PCB_CONNECTION": false,
+  "BOARD_TESTED": false,
+  "HARDWARE_VERIFIED": false,
+  "BLOCKERS": [
+    "BLOCKED_ZYNQ_CONFIGURATION_REVIEW",
+    "PHYSICAL_PRECONDITIONS_UNCONFIRMED",
+    "P5_SYNC_NOT_BOARD_TESTED",
+    "SERIALIZER_NOT_BOARD_TESTED"
+  ],
+  "BUILD_RESULTS": {
+    "master": {
+      "role": "master",
+      "synthesis": "SYNTHESIZED",
+      "implementation": "IMPLEMENTED",
+      "setup_ns": "0.494",
+      "hold_ns": "0.007",
+      "cdc_critical": "0",
+      "drc_errors": "0",
+      "status": "REVIEW_REQUIRED"
+    },
+    "slave": {
+      "role": "slave",
+      "synthesis": "SYNTHESIZED",
+      "implementation": "IMPLEMENTED",
+      "setup_ns": "0.430",
+      "hold_ns": "0.015",
+      "cdc_critical": "0",
+      "drc_errors": "0",
+      "status": "REVIEW_REQUIRED"
+    }
+  },
+  "SIMULATION_RESULTS": {
+    "dual_sync_tb": {
+      "pass": true,
+      "result": "DUAL_SYNC_TB PASS checks=34 aligned_samples=264138 hour_test=BOUNDARY_ONLY"
+    },
+    "top_clock_tb": {
+      "pass": true,
+      "result": "TOP_CLOCK_TB PASS checks=6 aligned=9405"
+    },
+    "serializer64_tb": {
+      "pass": true,
+      "result": "SERIALIZER64_TB PASS checks=6995 reconstructed_frames=388 virtual_595=16 bits_per_595=8 used_Q=0..3"
+    },
+    "dual_serializer_sync_tb": {
+      "pass": true,
+      "result": "DUAL_SERIALIZER_SYNC_TB PASS checks=18 common_latches=7 output_disable=1"
+    }
+  },
+  "NOTE": "False for an unperformed acceptance gate is not a measured failure. null denotes unavailable physical observation. JTAG scan success is not programming or sync verification."
+}

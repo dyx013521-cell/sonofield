@@ -1,0 +1,32 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Oct  2 20:52:42 2026
+| Host         : LAPTOP-V3PP2F49 running 64-bit major release  (build 9200)
+| Command      : report_clock_interaction -file D:/codex_project/sonofield/v3/evidence/task001b/slave/clock-interaction.rpt
+| Design       : ebaz_slave_serializer_prepcb
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+Clock Interaction Table
+-----------------------
+
+                                                                                                                                                                                        WNS                            TNS Failing  TNS Total    WNS Path         Clock-Pair           Inter-Clock              
+From Clock                                                                                  To Clock                                                                                    Clock Edges  WNS(ns)  TNS(ns)    Endpoints    Endpoints  Requirement(ns)  Classification       Constraints              
+------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------  -----------  -------  -------  -----------  -----------  ---------------  -------------------  -----------------------  
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  rise - rise    25.24     0.00            0         1028            33.00  Clean                Timed                    
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  g_hw.mmcm_clk                                                                               rise - rise    31.48     0.00            0           86            33.00  Ignored              Max Delay Datapath Only  
+g_hw.mmcm_clk                                                                               dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  rise - rise    18.58     0.00            0          102            20.00  Ignored              Max Delay Datapath Only  
+g_hw.mmcm_clk                                                                               g_hw.mmcm_clk                                                                               rise - rise     8.53     0.00            0         4976            20.00  Clean                Partial False Path       
+g_hw.mmcm_clk                                                                               local50                                                                                     rise - rise    14.92     0.00            0            1            20.00  No Common Clock      Timed (unsafe)           
+g_hw.mmcm_clk                                                                               received50                                                                                  rise - rise     6.11     0.00            0           23            20.00  Clean                Timed                    
+local50                                                                                     g_hw.mmcm_clk                                                                               rise - rise     6.72     0.00            0            7            20.00  No Common Clock      Timed (unsafe)           
+local50                                                                                     local50                                                                                     rise - rise    12.68     0.00            0           36            20.00  Clean                Timed                    
+local50                                                                                     received50                                                                                  rise - rise     0.93     0.00            0            4            20.00  No Common Clock      Timed (unsafe)           
+received50                                                                                  g_hw.mmcm_clk                                                                               fall - rise     0.43     0.00            0          284            10.00  Clean                Timed                    
+
+

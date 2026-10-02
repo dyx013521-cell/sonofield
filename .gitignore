@@ -12,3 +12,14 @@ v3/evidence/task001/dfx_runtime.txt
 v3/evidence/task001/tight_setup_hold_pins.txt
 dfx_runtime.txt
 v3/evidence/task001/hardware_check/dfx_runtime.txt
+v3/build/
+v3/evidence/task001b/**/*.dcp
+v3/evidence/task001b/*/gui-bus-skew.rpt
+v3/evidence/task001b/attempt*/master/
+v3/evidence/task001b/attempt*/slave/
+v3/evidence/task001b/hardware_check/windows-device-inventory.*
+v3/evidence/task001b/hardware_check/usb-*
+v3/evidence/task001b/hardware_check/matching-pnp-entities.txt
+v3/evidence/task001b/hardware_check/hardware-check-summary.json
+v3/evidence/task001b/hardware_check/hw-server-*.txt
+clockInfo.txt

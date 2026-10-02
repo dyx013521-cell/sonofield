@@ -1,0 +1,34 @@
+{
+  "part": "xc7z010clg400-1",
+  "source": "EBAZ4205_EXBOARD_20200313.pdf page 1 and 4205.pdf page 1",
+  "connector_pins": {
+    "P1": ["VCC_IN","VCC_IN","GND","GND","A20","H16","B19","B20","C20","NC","H17","GND","D20","D18","H18","D19","F20","E19","F19","K17"],
+    "P2": ["VCC_IN","VCC_IN","GND","GND","G20","J18","G19","H20","J19","NC","K18","GND","K19","J20","L16","L19","M18","L20","M20","L17"],
+    "P3": ["VCC_IN","VCC_IN","GND","GND","M19","N20","P18","M17","N17","NC","P20","GND","R18","R19","P19","T20","U20","T19","V20","U19"],
+    "P5": ["GND","VCC_3V3","M18","L20","M20","L17","N20","M19","M17","P18","P20","N17","R19","R18","T20","P19","T19","U20","U19","V20","NC","NC","TXD","RXD","NC","NC","NC","NC"]
+  },
+  "selected": [
+    ["serial_data[0]","P1",5,"A20"],
+    ["serial_data[1]","P1",6,"H16"],
+    ["serial_data[2]","P1",7,"B19"],
+    ["serial_data[3]","P1",8,"B20"],
+    ["serial_data[4]","P1",9,"C20"],
+    ["serial_data[5]","P1",11,"H17"],
+    ["serial_data[6]","P1",13,"D20"],
+    ["serial_data[7]","P1",14,"D18"],
+    ["serial_data[8]","P1",15,"H18"],
+    ["serial_data[9]","P1",16,"D19"],
+    ["serial_data[10]","P1",17,"F20"],
+    ["serial_data[11]","P1",18,"E19"],
+    ["serial_data[12]","P1",19,"F19"],
+    ["serial_data[13]","P1",20,"K17"],
+    ["serial_data[14]","P2",5,"G20"],
+    ["serial_data[15]","P2",6,"J18"],
+    ["shift_clock","P2",8,"H20"],
+    ["latch_clock","P2",14,"J20"],
+    ["output_disable","P2",16,"L19"]
+  ],
+  "reserved_base": ["N18","G19","J19","K19","L16","K18","F9","G6","F6","J6"],
+  "nominal_supply": {"35":"VCCB <- R2460 0R <- VCC; U22/L7 TP1 3V3","34":"VCCE <- FB16 <- VCC; U22/L7 TP1 3V3"},
+  "hardware_confirmation": "PENDING_USER_BOARD_REVISION_AND_PERIPHERAL_CONFIRMATION"
+}

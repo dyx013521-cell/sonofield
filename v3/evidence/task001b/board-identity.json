@@ -1,0 +1,16 @@
+{
+  "Board1": {
+    "role": "MASTER",
+    "jtag_serial": "210299245711",
+    "uart": "COM7"
+  },
+  "Board2": {
+    "role": "SLAVE",
+    "jtag_serial": "210299835073",
+    "uart": "NOT_ENUMERATED",
+    "uart_gate": "OPTIONAL_DEBUG_NOT_BLOCKING"
+  },
+  "mapping_source": "USER_CONFIRMED",
+  "read_only_scan": "hardware_check/vivado-probe-status.tsv",
+  "programming_performed": false
+}

@@ -1,0 +1,14 @@
+{
+  "selected_array_gpio_count": 19,
+  "p1_count": 14,
+  "p2_count": 5,
+  "p3_count": 0,
+  "p5_count": 0,
+  "selected_duplicate_ball_count": 0,
+  "selected_duplicate_connector_pin_count": 0,
+  "array_sync_pin_conflict_count": 0,
+  "bank_mismatch_count": 0,
+  "schematic_nominal_vcco_conflict_count": 0,
+  "physical_confirmation": "PENDING",
+  "pinmap_complete": true
+}

@@ -1,0 +1,1207 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Oct  2 20:43:07 2026
+| Host         : LAPTOP-V3PP2F49 running 64-bit major release  (build 9200)
+| Command      : report_timing -delay_type max -max_paths 10 -file D:/codex_project/sonofield/v3/evidence/task001b/master/setup.rpt
+| Design       : ebaz_master_serializer_prepcb
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.494ns  (required time - arrival time)
+  Source:                 core/core/g_master.event_at_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[40]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.770ns  (logic 4.338ns (49.462%)  route 4.432ns (50.538%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.067ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.367ns = ( 8.633 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.713ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.659    -0.713    core/core/array_clk
+    SLICE_X30Y62         FDRE                                         r  core/core/g_master.event_at_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y62         FDRE (Prop_fdre_C_Q)         0.518    -0.195 r  core/core/g_master.event_at_reg[1]/Q
+                         net (fo=8, routed)           0.633     0.438    core/core/g_master.timer/remaining_carry__14[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I0_O)        0.124     0.562 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.562    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.095 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.095    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.212 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.212    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.329 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.329    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.446 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.446    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.563 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.563    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.680 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.680    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.797 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.797    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.914 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.914    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.031 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.031    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.148 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.148    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.265 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.265    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.382 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.382    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.499 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.499    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.616 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.625    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.844 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.790    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.085 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.085    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.617 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.252    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.376 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.839    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.959 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.681    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.033 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         1.025     8.057    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X32Y78         FDRE                                         r  core/core/g_master.tx/payload_reg[40]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.478     8.633    core/core/g_master.tx/array_clk
+    SLICE_X32Y78         FDRE                                         r  core/core/g_master.tx/payload_reg[40]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.220    
+                         clock uncertainty           -0.296     8.924    
+    SLICE_X32Y78         FDRE (Setup_fdre_C_CE)      -0.372     8.552    core/core/g_master.tx/payload_reg[40]
+  -------------------------------------------------------------------
+                         required time                          8.552    
+                         arrival time                          -8.057    
+  -------------------------------------------------------------------
+                         slack                                  0.494    
+
+Slack (MET) :             0.494ns  (required time - arrival time)
+  Source:                 core/core/g_master.event_at_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[67]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.770ns  (logic 4.338ns (49.462%)  route 4.432ns (50.538%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.067ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.367ns = ( 8.633 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.713ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.659    -0.713    core/core/array_clk
+    SLICE_X30Y62         FDRE                                         r  core/core/g_master.event_at_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y62         FDRE (Prop_fdre_C_Q)         0.518    -0.195 r  core/core/g_master.event_at_reg[1]/Q
+                         net (fo=8, routed)           0.633     0.438    core/core/g_master.timer/remaining_carry__14[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I0_O)        0.124     0.562 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.562    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.095 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.095    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.212 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.212    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.329 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.329    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.446 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.446    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.563 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.563    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.680 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.680    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.797 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.797    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.914 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.914    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.031 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.031    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.148 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.148    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.265 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.265    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.382 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.382    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.499 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.499    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.616 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.625    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.844 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.790    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.085 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.085    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.617 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.252    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.376 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.839    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.959 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.681    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.033 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         1.025     8.057    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X32Y78         FDRE                                         r  core/core/g_master.tx/payload_reg[67]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.478     8.633    core/core/g_master.tx/array_clk
+    SLICE_X32Y78         FDRE                                         r  core/core/g_master.tx/payload_reg[67]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.220    
+                         clock uncertainty           -0.296     8.924    
+    SLICE_X32Y78         FDRE (Setup_fdre_C_CE)      -0.372     8.552    core/core/g_master.tx/payload_reg[67]
+  -------------------------------------------------------------------
+                         required time                          8.552    
+                         arrival time                          -8.057    
+  -------------------------------------------------------------------
+                         slack                                  0.494    
+
+Slack (MET) :             0.494ns  (required time - arrival time)
+  Source:                 core/core/g_master.event_at_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[68]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.770ns  (logic 4.338ns (49.462%)  route 4.432ns (50.538%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.067ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.367ns = ( 8.633 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.713ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.659    -0.713    core/core/array_clk
+    SLICE_X30Y62         FDRE                                         r  core/core/g_master.event_at_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y62         FDRE (Prop_fdre_C_Q)         0.518    -0.195 r  core/core/g_master.event_at_reg[1]/Q
+                         net (fo=8, routed)           0.633     0.438    core/core/g_master.timer/remaining_carry__14[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I0_O)        0.124     0.562 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.562    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.095 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.095    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.212 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.212    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.329 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.329    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.446 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.446    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.563 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.563    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.680 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.680    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.797 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.797    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.914 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.914    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.031 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.031    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.148 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.148    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.265 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.265    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.382 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.382    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.499 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.499    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.616 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.625    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.844 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.790    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.085 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.085    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.617 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.252    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.376 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.839    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.959 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.681    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.033 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         1.025     8.057    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X32Y78         FDRE                                         r  core/core/g_master.tx/payload_reg[68]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.478     8.633    core/core/g_master.tx/array_clk
+    SLICE_X32Y78         FDRE                                         r  core/core/g_master.tx/payload_reg[68]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.220    
+                         clock uncertainty           -0.296     8.924    
+    SLICE_X32Y78         FDRE (Setup_fdre_C_CE)      -0.372     8.552    core/core/g_master.tx/payload_reg[68]
+  -------------------------------------------------------------------
+                         required time                          8.552    
+                         arrival time                          -8.057    
+  -------------------------------------------------------------------
+                         slack                                  0.494    
+
+Slack (MET) :             0.517ns  (required time - arrival time)
+  Source:                 core/core/g_master.event_at_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[101]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.746ns  (logic 4.338ns (49.603%)  route 4.408ns (50.397%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.069ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.369ns = ( 8.631 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.713ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.659    -0.713    core/core/array_clk
+    SLICE_X30Y62         FDRE                                         r  core/core/g_master.event_at_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y62         FDRE (Prop_fdre_C_Q)         0.518    -0.195 r  core/core/g_master.event_at_reg[1]/Q
+                         net (fo=8, routed)           0.633     0.438    core/core/g_master.timer/remaining_carry__14[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I0_O)        0.124     0.562 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.562    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.095 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.095    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.212 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.212    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.329 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.329    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.446 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.446    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.563 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.563    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.680 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.680    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.797 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.797    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.914 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.914    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.031 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.031    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.148 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.148    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.265 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.265    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.382 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.382    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.499 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.499    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.616 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.625    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.844 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.790    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.085 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.085    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.617 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.252    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.376 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.839    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.959 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.681    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.033 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         1.000     8.033    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X34Y77         FDRE                                         r  core/core/g_master.tx/payload_reg[101]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.476     8.631    core/core/g_master.tx/array_clk
+    SLICE_X34Y77         FDRE                                         r  core/core/g_master.tx/payload_reg[101]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.218    
+                         clock uncertainty           -0.296     8.922    
+    SLICE_X34Y77         FDRE (Setup_fdre_C_CE)      -0.372     8.550    core/core/g_master.tx/payload_reg[101]
+  -------------------------------------------------------------------
+                         required time                          8.550    
+                         arrival time                          -8.033    
+  -------------------------------------------------------------------
+                         slack                                  0.517    
+
+Slack (MET) :             0.517ns  (required time - arrival time)
+  Source:                 core/core/g_master.event_at_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[65]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.746ns  (logic 4.338ns (49.603%)  route 4.408ns (50.397%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.069ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.369ns = ( 8.631 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.713ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.659    -0.713    core/core/array_clk
+    SLICE_X30Y62         FDRE                                         r  core/core/g_master.event_at_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y62         FDRE (Prop_fdre_C_Q)         0.518    -0.195 r  core/core/g_master.event_at_reg[1]/Q
+                         net (fo=8, routed)           0.633     0.438    core/core/g_master.timer/remaining_carry__14[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I0_O)        0.124     0.562 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.562    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.095 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.095    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.212 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.212    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.329 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.329    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.446 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.446    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.563 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.563    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.680 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.680    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.797 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.797    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.914 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.914    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.031 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.031    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.148 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.148    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.265 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.265    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.382 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.382    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.499 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.499    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.616 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.625    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.844 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.790    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.085 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.085    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.617 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.252    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.376 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.839    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.959 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.681    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.033 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         1.000     8.033    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X34Y77         FDRE                                         r  core/core/g_master.tx/payload_reg[65]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.476     8.631    core/core/g_master.tx/array_clk
+    SLICE_X34Y77         FDRE                                         r  core/core/g_master.tx/payload_reg[65]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.218    
+                         clock uncertainty           -0.296     8.922    
+    SLICE_X34Y77         FDRE (Setup_fdre_C_CE)      -0.372     8.550    core/core/g_master.tx/payload_reg[65]
+  -------------------------------------------------------------------
+                         required time                          8.550    
+                         arrival time                          -8.033    
+  -------------------------------------------------------------------
+                         slack                                  0.517    
+
+Slack (MET) :             0.517ns  (required time - arrival time)
+  Source:                 core/core/g_master.event_at_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[66]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.746ns  (logic 4.338ns (49.603%)  route 4.408ns (50.397%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.069ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.369ns = ( 8.631 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.713ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.659    -0.713    core/core/array_clk
+    SLICE_X30Y62         FDRE                                         r  core/core/g_master.event_at_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y62         FDRE (Prop_fdre_C_Q)         0.518    -0.195 r  core/core/g_master.event_at_reg[1]/Q
+                         net (fo=8, routed)           0.633     0.438    core/core/g_master.timer/remaining_carry__14[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I0_O)        0.124     0.562 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.562    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.095 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.095    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.212 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.212    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.329 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.329    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.446 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.446    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.563 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.563    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.680 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.680    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.797 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.797    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.914 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.914    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.031 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.031    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.148 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.148    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.265 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.265    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.382 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.382    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.499 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.499    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.616 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.625    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.844 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.790    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.085 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.085    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.617 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.252    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.376 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.839    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.959 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.681    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.033 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         1.000     8.033    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X34Y77         FDRE                                         r  core/core/g_master.tx/payload_reg[66]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.476     8.631    core/core/g_master.tx/array_clk
+    SLICE_X34Y77         FDRE                                         r  core/core/g_master.tx/payload_reg[66]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.218    
+                         clock uncertainty           -0.296     8.922    
+    SLICE_X34Y77         FDRE (Setup_fdre_C_CE)      -0.372     8.550    core/core/g_master.tx/payload_reg[66]
+  -------------------------------------------------------------------
+                         required time                          8.550    
+                         arrival time                          -8.033    
+  -------------------------------------------------------------------
+                         slack                                  0.517    
+
+Slack (MET) :             0.517ns  (required time - arrival time)
+  Source:                 core/core/g_master.event_at_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[71]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.746ns  (logic 4.338ns (49.603%)  route 4.408ns (50.397%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.069ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.369ns = ( 8.631 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.713ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.659    -0.713    core/core/array_clk
+    SLICE_X30Y62         FDRE                                         r  core/core/g_master.event_at_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y62         FDRE (Prop_fdre_C_Q)         0.518    -0.195 r  core/core/g_master.event_at_reg[1]/Q
+                         net (fo=8, routed)           0.633     0.438    core/core/g_master.timer/remaining_carry__14[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I0_O)        0.124     0.562 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.562    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.095 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.095    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.212 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.212    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.329 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.329    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.446 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.446    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.563 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.563    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.680 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.680    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.797 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.797    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.914 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.914    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.031 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.031    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.148 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.148    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.265 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.265    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.382 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.382    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.499 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.499    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.616 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.625    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.844 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.790    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.085 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.085    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.617 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.252    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.376 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.839    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.959 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.681    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.033 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         1.000     8.033    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X34Y77         FDRE                                         r  core/core/g_master.tx/payload_reg[71]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.476     8.631    core/core/g_master.tx/array_clk
+    SLICE_X34Y77         FDRE                                         r  core/core/g_master.tx/payload_reg[71]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.218    
+                         clock uncertainty           -0.296     8.922    
+    SLICE_X34Y77         FDRE (Setup_fdre_C_CE)      -0.372     8.550    core/core/g_master.tx/payload_reg[71]
+  -------------------------------------------------------------------
+                         required time                          8.550    
+                         arrival time                          -8.033    
+  -------------------------------------------------------------------
+                         slack                                  0.517    
+
+Slack (MET) :             0.581ns  (required time - arrival time)
+  Source:                 core/core/g_master.timer/timestamp_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[28]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.686ns  (logic 4.338ns (49.943%)  route 4.348ns (50.057%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.364ns = ( 8.636 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.712ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.660    -0.712    core/core/g_master.timer/array_clk
+    SLICE_X32Y61         FDRE                                         r  core/core/g_master.timer/timestamp_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y61         FDRE (Prop_fdre_C_Q)         0.518    -0.194 r  core/core/g_master.timer/timestamp_reg[1]/Q
+                         net (fo=14, routed)          0.627     0.433    core/core/g_master.timer/out[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I1_O)        0.124     0.557 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.557    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.090 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.090    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.207 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.207    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.324 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.324    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.441 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.441    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.558 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.558    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.675 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.675    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.792 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.792    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.909 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.909    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.026 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.026    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.143 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.143    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.260 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.260    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.377 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.377    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.494 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.494    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.611 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.620    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.839 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.785    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.080 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.080    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.612 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.247    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.371 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.834    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.954 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.676    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.028 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         0.946     7.974    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X28Y67         FDRE                                         r  core/core/g_master.tx/payload_reg[28]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.481     8.636    core/core/g_master.tx/array_clk
+    SLICE_X28Y67         FDRE                                         r  core/core/g_master.tx/payload_reg[28]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.223    
+                         clock uncertainty           -0.296     8.927    
+    SLICE_X28Y67         FDRE (Setup_fdre_C_CE)      -0.372     8.555    core/core/g_master.tx/payload_reg[28]
+  -------------------------------------------------------------------
+                         required time                          8.555    
+                         arrival time                          -7.974    
+  -------------------------------------------------------------------
+                         slack                                  0.581    
+
+Slack (MET) :             0.581ns  (required time - arrival time)
+  Source:                 core/core/g_master.timer/timestamp_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[29]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.686ns  (logic 4.338ns (49.943%)  route 4.348ns (50.057%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.364ns = ( 8.636 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.712ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.660    -0.712    core/core/g_master.timer/array_clk
+    SLICE_X32Y61         FDRE                                         r  core/core/g_master.timer/timestamp_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y61         FDRE (Prop_fdre_C_Q)         0.518    -0.194 r  core/core/g_master.timer/timestamp_reg[1]/Q
+                         net (fo=14, routed)          0.627     0.433    core/core/g_master.timer/out[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I1_O)        0.124     0.557 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.557    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.090 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.090    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.207 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.207    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.324 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.324    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.441 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.441    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.558 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.558    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.675 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.675    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.792 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.792    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.909 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.909    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.026 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.026    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.143 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.143    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.260 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.260    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.377 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.377    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.494 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.494    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.611 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.620    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.839 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.785    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.080 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.080    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.612 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.247    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.371 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.834    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.954 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.676    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.028 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         0.946     7.974    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X28Y67         FDRE                                         r  core/core/g_master.tx/payload_reg[29]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.481     8.636    core/core/g_master.tx/array_clk
+    SLICE_X28Y67         FDRE                                         r  core/core/g_master.tx/payload_reg[29]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.223    
+                         clock uncertainty           -0.296     8.927    
+    SLICE_X28Y67         FDRE (Setup_fdre_C_CE)      -0.372     8.555    core/core/g_master.tx/payload_reg[29]
+  -------------------------------------------------------------------
+                         required time                          8.555    
+                         arrival time                          -7.974    
+  -------------------------------------------------------------------
+                         slack                                  0.581    
+
+Slack (MET) :             0.581ns  (required time - arrival time)
+  Source:                 core/core/g_master.timer/timestamp_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            core/core/g_master.tx/payload_reg[30]/CE
+                            (falling edge-triggered cell FDRE clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (g_hw.mmcm_clk fall@10.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        8.686ns  (logic 4.338ns (49.943%)  route 4.348ns (50.057%))
+  Logic Levels:           21  (CARRY4=16 LUT2=2 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.364ns = ( 8.636 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.712ns
+    Clock Pessimism Removal (CPR):    0.587ns
+  Clock Uncertainty:      0.296ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.179ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N18                                               0.000     0.000 r  clk50 (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.285     2.777    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.010    -4.233 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.760    -2.473    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.372 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.660    -0.712    core/core/g_master.timer/array_clk
+    SLICE_X32Y61         FDRE                                         r  core/core/g_master.timer/timestamp_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y61         FDRE (Prop_fdre_C_Q)         0.518    -0.194 r  core/core/g_master.timer/timestamp_reg[1]/Q
+                         net (fo=14, routed)          0.627     0.433    core/core/g_master.timer/out[1]
+    SLICE_X30Y61         LUT2 (Prop_lut2_I1_O)        0.124     0.557 r  core/core/g_master.timer/lead_carry_i_3/O
+                         net (fo=1, routed)           0.000     0.557    core/core/g_master.tx/sync_valid7_carry_i_4_0[1]
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.090 r  core/core/g_master.tx/lead_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.090    core/core/g_master.tx/lead_carry_n_0
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.207 r  core/core/g_master.tx/lead_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     1.207    core/core/g_master.tx/lead_carry__0_n_0
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.324 r  core/core/g_master.tx/lead_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     1.324    core/core/g_master.tx/lead_carry__1_n_0
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.441 r  core/core/g_master.tx/lead_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     1.441    core/core/g_master.tx/lead_carry__2_n_0
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.558 r  core/core/g_master.tx/lead_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     1.558    core/core/g_master.tx/lead_carry__3_n_0
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.675 r  core/core/g_master.tx/lead_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     1.675    core/core/g_master.tx/lead_carry__4_n_0
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.792 r  core/core/g_master.tx/lead_carry__5/CO[3]
+                         net (fo=1, routed)           0.000     1.792    core/core/g_master.tx/lead_carry__5_n_0
+    SLICE_X30Y68         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.909 r  core/core/g_master.tx/lead_carry__6/CO[3]
+                         net (fo=1, routed)           0.000     1.909    core/core/g_master.tx/lead_carry__6_n_0
+    SLICE_X30Y69         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.026 r  core/core/g_master.tx/lead_carry__7/CO[3]
+                         net (fo=1, routed)           0.000     2.026    core/core/g_master.tx/lead_carry__7_n_0
+    SLICE_X30Y70         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.143 r  core/core/g_master.tx/lead_carry__8/CO[3]
+                         net (fo=1, routed)           0.000     2.143    core/core/g_master.tx/lead_carry__8_n_0
+    SLICE_X30Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.260 r  core/core/g_master.tx/lead_carry__9/CO[3]
+                         net (fo=1, routed)           0.000     2.260    core/core/g_master.tx/lead_carry__9_n_0
+    SLICE_X30Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.377 r  core/core/g_master.tx/lead_carry__10/CO[3]
+                         net (fo=1, routed)           0.000     2.377    core/core/g_master.tx/lead_carry__10_n_0
+    SLICE_X30Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.494 r  core/core/g_master.tx/lead_carry__11/CO[3]
+                         net (fo=1, routed)           0.000     2.494    core/core/g_master.tx/lead_carry__11_n_0
+    SLICE_X30Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.611 r  core/core/g_master.tx/lead_carry__12/CO[3]
+                         net (fo=1, routed)           0.009     2.620    core/core/g_master.tx/lead_carry__12_n_0
+    SLICE_X30Y75         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     2.839 f  core/core/g_master.tx/lead_carry__13/O[0]
+                         net (fo=3, routed)           0.946     3.785    core/core/g_master.tx/lead_carry__13_n_7
+    SLICE_X29Y73         LUT2 (Prop_lut2_I0_O)        0.295     4.080 r  core/core/g_master.tx/sync_valid7_carry__6_i_8/O
+                         net (fo=1, routed)           0.000     4.080    core/core/g_master.tx/sync_valid7_carry__6_i_8_n_0
+    SLICE_X29Y73         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     4.612 f  core/core/g_master.tx/sync_valid7_carry__6/CO[3]
+                         net (fo=1, routed)           0.635     5.247    core/core/g_master.tx/sync_valid7
+    SLICE_X29Y75         LUT6 (Prop_lut6_I2_O)        0.124     5.371 f  core/core/g_master.tx/trigger_at[63]_i_2/O
+                         net (fo=4, routed)           0.463     5.834    core/core/g_master.tx/trigger_at[63]_i_2_n_0
+    SLICE_X26Y75         LUT5 (Prop_lut5_I4_O)        0.120     5.954 r  core/core/g_master.tx/sequence_id[0]_i_1/O
+                         net (fo=40, routed)          0.722     6.676    core/core/g_master.tx/sequence_id[0]
+    SLICE_X26Y75         LUT3 (Prop_lut3_I0_O)        0.352     7.028 r  core/core/g_master.tx/payload[127]_i_1/O
+                         net (fo=127, routed)         0.946     7.974    core/core/g_master.tx/payload[127]_i_1_n_0
+    SLICE_X28Y67         FDRE                                         r  core/core/g_master.tx/payload_reg[30]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk fall edge)
+                                                     10.000    10.000 f  
+    N18                                               0.000    10.000 f  clk50 (IN)
+                         net (fo=0)                   0.000    10.000    core/core/clocks/clk50
+    N18                  IBUF (Prop_ibuf_I_O)         1.421    11.421 f  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           1.162    12.583    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.118     5.465 f  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           1.599     7.064    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.155 f  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2534, routed)        1.481     8.636    core/core/g_master.tx/array_clk
+    SLICE_X28Y67         FDRE                                         r  core/core/g_master.tx/payload_reg[30]/C  (IS_INVERTED)
+                         clock pessimism              0.587     9.223    
+                         clock uncertainty           -0.296     8.927    
+    SLICE_X28Y67         FDRE (Setup_fdre_C_CE)      -0.372     8.555    core/core/g_master.tx/payload_reg[30]
+  -------------------------------------------------------------------
+                         required time                          8.555    
+                         arrival time                          -7.974    
+  -------------------------------------------------------------------
+                         slack                                  0.581    
+
+
+
+

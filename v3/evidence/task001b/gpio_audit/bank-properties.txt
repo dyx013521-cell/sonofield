@@ -1,0 +1,77 @@
+Property       Type     Read-only  Value
+BANK_TYPE      string   true       BT_NO_USER_IO
+CLASS          string   true       iobank
+DCI_CASCADE    string*  false      
+INTERNAL_VREF  double   false      
+IS_MASTER      bool     true       0
+IS_SLAVE       bool     true       0
+MASTER_BANK    string   true       
+NAME           string   true       0
+SLR_INDEX      int      true       0
+VCCOSENSEMODE  string   false      
+Property       Type     Read-only  Value
+BANK_TYPE      string   true       BT_NO_USER_IO
+CLASS          string   true       iobank
+DCI_CASCADE    string*  false      
+INTERNAL_VREF  double   false      
+IS_MASTER      bool     true       0
+IS_SLAVE       bool     true       0
+MASTER_BANK    string   true       
+NAME           string   true       13
+SLR_INDEX      int      true       -1
+VCCOSENSEMODE  string   false      
+Property       Type     Read-only  Value
+BANK_TYPE      string   true       BT_HIGH_RANGE
+CLASS          string   true       iobank
+DCI_CASCADE    string*  false      
+INTERNAL_VREF  double   false      
+IS_MASTER      bool     true       0
+IS_SLAVE       bool     true       0
+MASTER_BANK    string   true       
+NAME           string   true       34
+SLR_INDEX      int      true       0
+VCCOSENSEMODE  string   false      
+Property       Type     Read-only  Value
+BANK_TYPE      string   true       BT_HIGH_RANGE
+CLASS          string   true       iobank
+DCI_CASCADE    string*  false      
+INTERNAL_VREF  double   false      
+IS_MASTER      bool     true       0
+IS_SLAVE       bool     true       0
+MASTER_BANK    string   true       
+NAME           string   true       35
+SLR_INDEX      int      true       0
+VCCOSENSEMODE  string   false      
+Property       Type     Read-only  Value
+BANK_TYPE      string   true       BT_PSS
+CLASS          string   true       iobank
+DCI_CASCADE    string*  false      
+INTERNAL_VREF  double   false      
+IS_MASTER      bool     true       0
+IS_SLAVE       bool     true       0
+MASTER_BANK    string   true       
+NAME           string   true       500
+SLR_INDEX      int      true       0
+VCCOSENSEMODE  string   false      
+Property       Type     Read-only  Value
+BANK_TYPE      string   true       BT_PSS
+CLASS          string   true       iobank
+DCI_CASCADE    string*  false      
+INTERNAL_VREF  double   false      
+IS_MASTER      bool     true       0
+IS_SLAVE       bool     true       0
+MASTER_BANK    string   true       
+NAME           string   true       501
+SLR_INDEX      int      true       0
+VCCOSENSEMODE  string   false      
+Property       Type     Read-only  Value
+BANK_TYPE      string   true       BT_PSS
+CLASS          string   true       iobank
+DCI_CASCADE    string*  false      
+INTERNAL_VREF  double   false      
+IS_MASTER      bool     true       0
+IS_SLAVE       bool     true       0
+MASTER_BANK    string   true       
+NAME           string   true       502
+SLR_INDEX      int      true       0
+VCCOSENSEMODE  string   false      

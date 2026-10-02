@@ -1,0 +1,28 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Oct  2 20:43:14 2026
+| Host         : LAPTOP-V3PP2F49 running 64-bit major release  (build 9200)
+| Command      : report_clock_interaction -file D:/codex_project/sonofield/v3/evidence/task001b/master/clock-interaction.rpt
+| Design       : ebaz_master_serializer_prepcb
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+Clock Interaction Table
+-----------------------
+
+                                                                                                                                                                                        WNS                            TNS Failing  TNS Total    WNS Path         Clock-Pair           Inter-Clock              
+From Clock                                                                                  To Clock                                                                                    Clock Edges  WNS(ns)  TNS(ns)    Endpoints    Endpoints  Requirement(ns)  Classification       Constraints              
+------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------  -----------  -------  -------  -----------  -----------  ---------------  -------------------  -----------------------  
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  rise - rise    25.65     0.00            0         1028            33.00  Clean                Timed                    
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  g_hw.mmcm_clk                                                                               rise - rise    31.77     0.00            0           86            33.00  Ignored              Max Delay Datapath Only  
+g_hw.mmcm_clk                                                                               dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  rise - rise    18.42     0.00            0          102            20.00  Ignored              Max Delay Datapath Only  
+g_hw.mmcm_clk                                                                               forwarded50                                                                                 fall - rise     2.95     0.00            0           24            10.00  Clean                Timed                    
+g_hw.mmcm_clk                                                                               g_hw.mmcm_clk                                                                               rise - fall     0.49     0.00            0         4972            10.00  Clean                Partial False Path       
+local50                                                                                     g_hw.mmcm_clk                                                                               rise - rise     9.34     0.00            0            7            20.00  Clean                Timed                    
+
+

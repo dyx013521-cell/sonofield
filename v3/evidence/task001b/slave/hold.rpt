@@ -1,0 +1,647 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Oct  2 20:52:35 2026
+| Host         : LAPTOP-V3PP2F49 running 64-bit major release  (build 9200)
+| Command      : report_timing -delay_type min -max_paths 10 -file D:/codex_project/sonofield/v3/evidence/task001b/slave/hold.rpt
+| Design       : ebaz_slave_serializer_prepcb
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.713ns
+    Source Clock Delay      (SCD):    -0.480ns
+    Clock Pessimism Removal (CPR):    -0.233ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.582    -0.480    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y67         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y67         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.148 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=2, routed)           0.000    -0.148    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y67         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.850    -0.713    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y67         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.233    -0.480    
+                         clock uncertainty            0.200    -0.280    
+    SLICE_X38Y67         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.117    -0.163    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.163    
+                         arrival time                          -0.148    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRL16E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.713ns
+    Source Clock Delay      (SCD):    -0.480ns
+    Clock Pessimism Removal (CPR):    -0.233ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.582    -0.480    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y67         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y67         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.148 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=2, routed)           0.000    -0.148    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y67         SRL16E                                       r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.850    -0.713    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y67         SRL16E                                       r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.233    -0.480    
+                         clock uncertainty            0.200    -0.280    
+    SLICE_X38Y67         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.117    -0.163    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.163    
+                         arrival time                          -0.148    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.718ns
+    Source Clock Delay      (SCD):    -0.484ns
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.578    -0.484    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y72         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y72         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.152 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=2, routed)           0.000    -0.152    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y72         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.845    -0.718    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y72         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.234    -0.484    
+                         clock uncertainty            0.200    -0.284    
+    SLICE_X38Y72         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.117    -0.167    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.167    
+                         arrival time                          -0.152    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRL16E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.718ns
+    Source Clock Delay      (SCD):    -0.484ns
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.578    -0.484    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y72         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y72         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.152 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=2, routed)           0.000    -0.152    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y72         SRL16E                                       r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.845    -0.718    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X38Y72         SRL16E                                       r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.234    -0.484    
+                         clock uncertainty            0.200    -0.284    
+    SLICE_X38Y72         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.117    -0.167    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.167    
+                         arrival time                          -0.152    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.744ns
+    Source Clock Delay      (SCD):    -0.510ns
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.552    -0.510    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X30Y70         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y70         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.178 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.000    -0.178    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X30Y70         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.819    -0.744    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X30Y70         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.234    -0.510    
+                         clock uncertainty            0.200    -0.310    
+    SLICE_X30Y70         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.117    -0.193    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.193    
+                         arrival time                          -0.178    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.743ns
+    Source Clock Delay      (SCD):    -0.509ns
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.553    -0.509    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X30Y69         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y69         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.177 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.000    -0.177    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X30Y69         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.820    -0.743    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X30Y69         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.234    -0.509    
+                         clock uncertainty            0.200    -0.309    
+    SLICE_X30Y69         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.117    -0.192    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.192    
+                         arrival time                          -0.177    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.745ns
+    Source Clock Delay      (SCD):    -0.511ns
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.551    -0.511    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X30Y71         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y71         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.179 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.000    -0.179    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X30Y71         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.818    -0.745    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X30Y71         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.234    -0.511    
+                         clock uncertainty            0.200    -0.311    
+    SLICE_X30Y71         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.117    -0.194    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.194    
+                         arrival time                          -0.179    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.751ns
+    Source Clock Delay      (SCD):    -0.516ns
+    Clock Pessimism Removal (CPR):    -0.235ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.546    -0.516    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X24Y76         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y76         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.184 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.000    -0.184    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X24Y76         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.812    -0.751    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X24Y76         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.235    -0.516    
+                         clock uncertainty            0.200    -0.316    
+    SLICE_X24Y76         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.117    -0.199    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.199    
+                         arrival time                          -0.184    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.752ns
+    Source Clock Delay      (SCD):    -0.517ns
+    Clock Pessimism Removal (CPR):    -0.235ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.545    -0.517    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X24Y75         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y75         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.185 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.000    -0.185    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X24Y75         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.811    -0.752    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X24Y75         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.235    -0.517    
+                         clock uncertainty            0.200    -0.317    
+    SLICE_X24Y75         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.117    -0.200    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.200    
+                         arrival time                          -0.185    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (rising edge-triggered cell SRLC32E clocked by g_hw.mmcm_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             g_hw.mmcm_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (g_hw.mmcm_clk rise@0.000ns - g_hw.mmcm_clk rise@0.000ns)
+  Data Path Delay:        0.332ns  (logic 0.332ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.748ns
+    Source Clock Delay      (SCD):    -0.514ns
+    Clock Pessimism Removal (CPR):    -0.234ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.262     0.262 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.440     0.702    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.271    -1.570 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.482    -1.088    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.062 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.548    -0.514    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X24Y78         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y78         SRLC32E (Prop_srlc32e_CLK_Q31)
+                                                      0.332    -0.182 r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=2, routed)           0.000    -0.182    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X24Y78         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+                         (clock g_hw.mmcm_clk rise edge)
+                                                      0.000     0.000 r  
+    N20                                               0.000     0.000 r  sync_clk (IN)
+                         net (fo=0)                   0.000     0.000    core/core/clocks/sync_clk
+    N20                  IBUF (Prop_ibuf_I_O)         0.450     0.450 r  core/core/clocks/g_hw.input_buffer/O
+                         net (fo=1, routed)           0.480     0.930    core/core/clocks/g_hw.ibuf_clk
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.050    -2.120 r  core/core/clocks/g_hw.mmcm/CLKOUT0
+                         net (fo=1, routed)           0.528    -1.592    core/core/clocks/g_hw.mmcm_clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.563 r  core/core/clocks/g_hw.output_buffer/O
+                         net (fo=2518, routed)        0.815    -0.748    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    SLICE_X24Y78         SRLC32E                                      r  ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         clock pessimism              0.234    -0.514    
+                         clock uncertainty            0.200    -0.314    
+    SLICE_X24Y78         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.117    -0.197    ebaz_slave_serializer_prepcb/serializer_prepcb_core/ila_prepcb/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------
+                         required time                          0.197    
+                         arrival time                          -0.182    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+
+
+

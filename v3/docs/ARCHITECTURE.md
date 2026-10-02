@@ -64,3 +64,45 @@ forwarded edge; physical edge coincidence below20ns must be measured at the two 
 The fast hour test loads a counter near180000000000 ticks and crosses the one-hour boundary. It does not
 execute180 billion clock edges, nor establish one-hour link stability. Full-duration board evidence is pending.
 Preserve implementation warnings and CDC reports: modeled IO budgets are assumptions until measured.
+# TASK-001B extension (2026-10-02)
+
+Board1 is Master (JTAG 210299245711, UART COM7); Board2 is Slave
+(JTAG 210299835073, UART optional and not blocking).
+Each board has 64 logical bits, 16 independent serial lanes and four bits per
+lane. P5 remains reserved. P1 has 14 GPIO; P2 G20/J18 provide the last two data
+lanes. P2 H20/J20/L19 replace three LED indicators with shift/latch/disable;
+their existing 2 kohm LED loads remain, and are documented, not ignored.
+TASK-001 wrappers and original tests retain their interfaces. New PRE-PCB
+wrappers expose timing/status and early accepted TRIGGER_AT announcements
+through explicit new optional outputs of dual_sync_top/sync_slave. A frame is
+loaded into shadow storage on that announcement, shifted before the deadline,
+then published at APPLY_AT. Missed deadlines and overlap latch a fault.
+The serializer shifts bit3,2,1,0 at 2.5 MHz using the existing 50 MHz clock:
+200 ns setup, 200 ns high/hold per bit, then a common latch. A real eight-bit
+595 model verifies Q[3:0] after four shifts; actual PCB Q wiring is unknown.
+Independent guard asserts disable asynchronously on loss of any permissive.
+Diagnostic PRE-PCB wrappers hold physical output_disable high permanently;
+diagnostic shift/latch frames require a manual Master S3 press. No automatic
+frames, PCB, acoustics or permanent programming are introduced.
+Receiver error counters include fragments during initial clock/watchdog startup.
+The array consumes explicit error events, and latches fatal errors only after
+the first sync lock. Training stays disabled; historical startup counters cannot
+prevent all later diagnostics. After lock, faults require local RUN reset.
+Array logic/ILA use receiver-clock synchronized alive and lock, separately
+from the raw independent watchdog used by the physical P5 interlock. Reset,
+MMCM lock and watchdog each assert their own three-stage reset synchronizer
+without combinational logic before its asynchronous input. Their released
+states combine only inside the array clock domain. No raw local-domain status
+gates serializer data or ILA probes. Watchdog loss still clears all three stages
+asynchronously, even if the received clock has stopped.
+The array endpoint reuses the core RUN reset release instead of independently
+resynchronizing the same raw reset into a second chain. Independent reset
+chains could release on different cycles and reconverge (CDC-11). RUN already
+includes the core reset, MMCM and link-reset synchronizers; the endpoint adds
+only the separate local-watchdog assertion/release chain.
+CRC acceptance is evaluated on VALID falling, using the fully registered
+16-bit received CRC and payload. The final serial input is captured first;
+it does not feed a half-cycle-wide CRC/header comparison. This preserves
+the existing frame_valid cycle and 146-cycle decoder compensation, while
+giving the registered CRC comparison a full system cycle. Raw sync_data
+still has the same source-synchronous input setup/hold budget.

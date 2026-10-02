@@ -1,0 +1,1 @@
+Post-route AggressiveExplore failed to improve sync_data-to-good_crc setup (-0.099 ns); CDC Critical=0. Superseded by registered CRC comparison on existing VALID-fall commit cycle. Historical refinement script paths describe the original invocation; do not run the archived script from this new directory.

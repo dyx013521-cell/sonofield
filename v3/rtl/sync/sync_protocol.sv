@@ -16,20 +16,24 @@ module sync_protocol(input wire clk,rst_n,sync_data,sync_valid,
  reg [7:0] count;
  reg [127:0] shift_payload;
  reg [15:0] crc,rx_crc;
- reg complete,good_crc,overlong;
+ reg complete,overlong;
  wire [15:0] next_crc={rx_crc[14:0],sync_data};
  always @(posedge clk) begin
   if(!rst_n) begin
    count<=0;crc<=16'hffff;rx_crc<=0;shift_payload<=0;payload<=0;
-   complete<=0;good_crc<=0;overlong<=0;frame_valid<=0;frame_error<=0;
+   complete<=0;overlong<=0;frame_valid<=0;frame_error<=0;
   end else begin
    frame_valid<=0;frame_error<=0;
    if(!sync_valid) begin
     if(count!=0) begin
-     if(complete && good_crc && !overlong) frame_valid<=1;
+     // Final CRC bit was captured on the previous edge. Compare registered
+     // words here, retaining the original VALID-fall commit cycle and avoiding
+     // a long half-cycle path from the raw serial input through CRC equality.
+     if(complete && rx_crc==crc && shift_payload[127:112]==HEADER &&
+        shift_payload[111:104]==BOARD_ID && !overlong) frame_valid<=1;
      else frame_error<=1;
     end
-    count<=0;crc<=16'hffff;rx_crc<=0;complete<=0;good_crc<=0;overlong<=0;
+    count<=0;crc<=16'hffff;rx_crc<=0;complete<=0;overlong<=0;
    end else if(complete) begin
     overlong<=1; // Reject the whole overlong frame, including its valid CRC prefix.
    end else begin
@@ -41,9 +45,6 @@ module sync_protocol(input wire clk,rst_n,sync_data,sync_valid,
      rx_crc<=next_crc;
      if(count==FRAME_BITS-1) begin
       complete<=1;payload<=shift_payload;
-      if(next_crc==crc && shift_payload[127:112]==HEADER && shift_payload[111:104]==BOARD_ID)
-       good_crc<=1;
-      else good_crc<=0;
      end
     end
    end

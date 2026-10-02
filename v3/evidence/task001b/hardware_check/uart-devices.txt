@@ -1,0 +1,7 @@
+
+Status       : OK
+Class        : Ports
+FriendlyName : USB-SERIAL CH340 (COM7)
+InstanceId   : USB\VID_1A86&PID_7523\8&148914A8&0&1
+
+

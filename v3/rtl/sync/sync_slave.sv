@@ -4,7 +4,9 @@ module sync_slave #(parameter integer LINK_CYCLES=0,LOCK_FRAMES=3,TIMEOUT_CYCLES
  output reg sync_locked,output wire [63:0] slave_timestamp,
  output reg signed [63:0] offset_value,output reg trigger_pulse,echo_toggle,
  output reg [31:0] crc_errors,sequence_errors,timeout_errors,
- output wire [31:0] received_sequence);
+ output wire [31:0] received_sequence,
+ output wire scheduled_apply_valid,output wire [63:0] scheduled_apply_at,
+ output wire fatal_error_event);
  import sync_defs::*;
  wire frame_valid,frame_error;
  wire [127:0] payload;
@@ -29,6 +31,12 @@ module sync_slave #(parameter integer LINK_CYCLES=0,LOCK_FRAMES=3,TIMEOUT_CYCLES
  wire [63:0] expected_next=slave_timestamp+64'd1;
  wire [63:0] delta=target-expected_next;
  wire [63:0] event_lead=sent_time-slave_timestamp;
+ assign fatal_error_event=frame_error || age==TIMEOUT_CYCLES-1 ||
+  (frame_valid && (!sequential || !known_cmd ||
+   (cmd!=CMD_SYNC && !(sync_locked && event_lead>2 && !event_lead[63] && !reset_pending && !trigger_pending))));
+ assign scheduled_apply_valid=accepted && cmd==CMD_TRIGGER_AT && sync_locked &&
+  event_lead>2 && !event_lead[63] && !reset_pending && !trigger_pending;
+ assign scheduled_apply_at=sent_time;
  wire load=accepted && cmd==CMD_SYNC && !sync_locked;
  wire sync_clear=reset_pending && slave_timestamp==reset_at-64'd1;
  wire wrap_pulse;

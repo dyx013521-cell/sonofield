@@ -1,0 +1,25 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/amd2025_2/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe top_clock_tb -s top_clock_tb_snapshot -debug typical 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'array_clk' remains unconnected for this instance [D:/codex_project/sonofield/v3/tb/top_clock_tb.sv:14]
+WARNING: [VRFC 10-3645] port 'array_clk' remains unconnected for this instance [D:/codex_project/sonofield/v3/tb/top_clock_tb.sv:19]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.sync_defs
+Compiling module work.clk_manager(SIMULATION=1'b1)
+Compiling module work.sync_button(STABLE_CYCLES=16)
+Compiling module work.timestamp_counter
+Compiling module work.sync_master
+Compiling module work.delay_measure
+Compiling module work.dual_sync_top(SIMULATION=1'b1,WA...
+Compiling module work.sync_protocol
+Compiling module work.sync_slave_default
+Compiling module work.dual_sync_top(MASTER=1'b0,SIMULA...
+Compiling module work.top_clock_tb
+Built simulation snapshot top_clock_tb_snapshot

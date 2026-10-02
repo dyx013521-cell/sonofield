@@ -1,0 +1,15 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/amd2025_2/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe serializer64_tb -s serializer64_tb_snapshot -debug typical 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.serializer64
+Compiling module work.array_output_guard
+Compiling module work.serializer64_tb
+Built simulation snapshot serializer64_tb_snapshot
